@@ -28,6 +28,8 @@ body {
 }
 
 .navbar-logo a {
+  align-items: center;
+  display: flex;
   text-decoration: none;
 }
 
