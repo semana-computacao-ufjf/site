@@ -110,7 +110,7 @@ body {
   width: 5em;
 }
 
-@media screen {
+@media screen and (max-width: 600px) {
   .banner-text img {
     width: 70%;
   }
