@@ -38,6 +38,12 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.navbar-navigation-links ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
 .navbar-navigation-links a {
   color: var(--dark-gray);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -46,6 +52,18 @@ body {
 }
 
 .navbar-navigation-links a:hover {
+  color: var(--red);
+}
+
+.nav-icon {
+  color: var(--dark-gray);
+  cursor: pointer;
+  display: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 1.5em;
+}
+
+.nav-icon:hover {
   color: var(--red);
 }
 
@@ -83,11 +101,10 @@ body {
 
 .inside-banner {
   background: linear-gradient(
-      50deg,
-      rgba(255, 255, 255, 0.4) 40%,
-      rgba(176, 25, 23, 0) 100%
-    ),
-    url(.jpg);
+    50deg,
+    rgba(255, 255, 255, 0.4) 40%,
+    rgba(176, 25, 23, 0) 100%
+  );
   background-blend-mode: hard-light, normal;
   height: 100%;
   margin: 0;
@@ -118,11 +135,10 @@ body {
 @media screen and (max-width: 600px) {
   .inside-banner {
     background: linear-gradient(
-        50deg,
-        rgba(255, 255, 255, 0.5) 50%,
-        rgba(176, 25, 23, 0) 100%
-      ),
-      url(.jpg);
+      50deg,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(176, 25, 23, 0) 100%
+    );
     background-blend-mode: hard-light, normal;
   }
 
@@ -137,5 +153,30 @@ body {
 
   .cta-btn {
     margin: 1.8em 2em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-name {
+    display: none;
+  }
+
+  .navbar-navigation-links li {
+    display: none;
+  }
+
+  li.nav-icon {
+    display: inline-block;
+  }
+
+  .nav-menu ul {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .nav-menu li {
+    display: block;
+    padding-bottom: 0.3em;
   }
 }
