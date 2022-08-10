@@ -116,9 +116,25 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .inside-banner {
+    background: linear-gradient(
+        50deg,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(176, 25, 23, 0) 100%
+      ),
+      url(.jpg);
+    background-blend-mode: hard-light, normal;
+  }
+
+  .banner-text {
+    padding-top: 11em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  }
+
   .banner-text img {
     width: 70%;
   }
+
   .cta-btn {
     margin: 1.8em 2em;
   }
