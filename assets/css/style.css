@@ -191,6 +191,48 @@ footer div {
 
 /* FIM DO FOOTER */
 
+.column {
+  float: left;
+  width: 20%;
+}
+
+.button-programacao {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: var(--dark-red);
+}
+
+.button-programacao-unable {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: var(--medium-gray);
+}
+
+.button-programacao:hover, .button-programacao-unable:hover {
+  background-color: var(--red);
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 
 /*
   * MEDIA QUERY (lidar com responsividade e diferentes tamanhos de tela)
