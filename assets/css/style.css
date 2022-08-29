@@ -191,9 +191,38 @@ footer div {
 
 /* FIM DO FOOTER */
 
-.column {
+.column-button {
   float: left;
   width: 20%;
+}
+
+.column-img {
+  float: left;
+  width: 25%;
+}
+
+.column-date {
+  margin-top: 5%;
+  margin-right: 5%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 18px;
+  background-color: var(--dark-red);
+  width: 10%;
+}
+
+.column-details {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border-radius: 18px;
+  border: 3px solid var(--dark-red);
+  width: 50%;
 }
 
 .button-programacao {
@@ -226,6 +255,11 @@ footer div {
 
 .button-programacao:hover, .button-programacao-unable:hover {
   background-color: var(--red);
+}
+
+.margin-prog {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 @media screen and (max-width: 600px) {
