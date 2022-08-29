@@ -10,3 +10,4 @@ function changeColor(day)
     document.getElementById(day).style.backgroundColor = '#b01917';
     
 }
+changeColor("day1");
