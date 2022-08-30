@@ -175,7 +175,7 @@ body {
 }
 
 .timer-h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
 }
 
@@ -259,6 +259,14 @@ footer div {
     display: block;
     padding-bottom: 0.3em;
   }
+
+  .timer-h1 {
+    font-size: x-large;
+  }
+
+  .time-container h2 {
+    font-size: medium;
+  }
 }
 
 /* Tamanho de celulares e telas grandes */
@@ -306,6 +314,14 @@ footer div {
     margin: 0;
     padding: 0;
   }
+
+  .time-container {
+    padding: 0 0.5em;
+  }
+
+  .timer-h1 {
+    font-size: large;
+  }
 }
 
 /* Tamanho de celulares pequenos|comuns */
@@ -316,6 +332,18 @@ footer div {
     display: block;
     text-align: center;
   } */
+
+  .time-container {
+    padding: 0 0.2em;
+  }
+
+  .time-container h2 {
+    font-size: small;
+  }
+
+  .timer-h1 {
+    font-size: medium;
+  }
 
   /* Corrige tamanhos, margens e paddings do footer: */
   .footer-logos h3 {
