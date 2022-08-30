@@ -190,6 +190,10 @@ body {
   text-align: center;
 }
 
+.time-container h2 {
+  font-weight: normal;
+}
+
 /* FIM DO TIMER */
 
 
