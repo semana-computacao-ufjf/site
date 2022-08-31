@@ -159,6 +159,16 @@ body {
 
 /* FIM DO BANNER (NO CONTAINER) */
 
+/* INÍCIO DA LISTA DE PATROCINADORES */
+.sponsor-title {
+  color: var(--dark-gray);
+  font-size: 2em;
+  font-weight: bold;
+  margin: 1.25em;
+}
+
+/* FIM DA LISTA DE PATROCINADORES */
+
 /* INÍCIO DO FOOTER */
 
 footer {
