@@ -193,36 +193,46 @@ footer div {
 
 .column-button {
   float: left;
+  justify-content: center;
   width: 20%;
 }
 
 .column-img {
   float: left;
-  width: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .column-date {
   margin-top: 5%;
-  margin-right: 5%;
-  float: left;
+  margin-right: 5%; 
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 50px;
-  border-radius: 18px;
+  align-items: center; 
+  border-radius: 4px;
   background-color: var(--dark-red);
-  width: 10%;
+  color: white;
 }
 
 .column-details {
+  margin-left: 2%;
   float: left;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
   border-radius: 18px;
-  border: 3px solid var(--dark-red);
-  width: 50%;
+}
+
+.column-details-title{
+  padding-left: 2%;
+  padding-right: 2%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  color: var(--red);
 }
 
 .button-programacao {
