@@ -13,3 +13,35 @@ navBtn.addEventListener("click", () => {
 
 /* FIM DA LÓGICA PARA ABRIR/FECHAR O MENU EM TELAS PEQUENAS */
 
+/* INÍCIO DA LÓGICA PARA ATUALIZAR O CRONOMETRO */
+
+function updateTimer() {
+  const deadline = new Date("Oct 17, 2022 00:00:00").getTime();
+  const now = new Date().getTime();
+  const timeDifference = deadline - now;
+
+  const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+  document.getElementById("days-counter").innerHTML = days;
+  document.getElementById("hours-counter").innerHTML = hours;
+  document.getElementById("minutes-counter").innerHTML = minutes;
+  document.getElementById("seconds-counter").innerHTML = seconds;
+}
+
+setInterval(updateTimer, 1000);
+
+/* FIM DA LÓGICA PARA ATUALIZAR O CRONOMETRO */
+
+/* INÍCIO DA LÓGICA PARA EXIBIR O VIDEO DE TUTORIAL DE INSCRIÇÃO */
+
+const videoBtn = document.querySelector("#show-video");
+const videoContainer = document.querySelector(".enroll-tutorial-video");
+
+videoBtn.addEventListener("click", () => {
+  videoContainer.style.display = videoContainer.style.display === "block" ? "none" : "block";
+});
+
+/* FIM DA LÓGICA PARA EXIBIR O VIDEO DE TUTORIAL DE INSCRIÇÃO */

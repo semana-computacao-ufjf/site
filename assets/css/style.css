@@ -28,6 +28,10 @@ body {
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 
+.shadow-text {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 /* INÍCIO DE CLASSES DO NAVBAR */
 .navbar {
   align-items: center;
@@ -159,6 +163,82 @@ body {
 
 /* FIM DO BANNER (NO CONTAINER) */
 
+/* INÍCIO DO TIMER */
+
+.timer-container {
+  background-color: var(--red);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.6em 0;
+  margin: 0;
+}
+
+.timer-h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.timer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.time-container {
+  padding: 0 2em;
+  text-align: center;
+}
+
+.time-container h2 {
+  font-weight: normal;
+}
+
+/* FIM DO TIMER */
+
+/* INÍCIO DO SEGUNDO CTA */
+.enroll-cta {
+  font-size: small;
+  text-align: center;
+}
+
+.enroll-cta h1 {
+  color: var(--dark-gray);
+  font-size: 3em;
+}
+
+.enroll-cta a {
+  background-color: var(--dark-red);
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 2em;
+  font-weight: bold;
+  margin: 1em;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  width: 25%;
+}
+
+.enroll-cta p {
+  margin: 1.5em 0;
+}
+
+#show-video {
+  color: var(--dark-red);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.enroll-tutorial-video {
+  display: none;
+  margin: 1em 0;
+}
+
+/* FIM DO SEGUNDO CTA */
+
 /* INÍCIO DA LISTA DE PATROCINADORES */
 .sps-title {
   color: var(--dark-gray);
@@ -231,7 +311,6 @@ footer div {
 
 /* FIM DO FOOTER */
 
-
 /*
   * MEDIA QUERY (lidar com responsividade e diferentes tamanhos de tela)
 */
@@ -282,6 +361,13 @@ footer div {
     width: 4em;
   }
 
+  .timer-h1 {
+    font-size: x-large;
+  }
+
+  .time-container h2 {
+    font-size: medium;
+  }
 }
 
 /* Tamanho de celulares e telas grandes */
@@ -346,6 +432,13 @@ footer div {
     width: 3em;
   }
 
+  .time-container {
+    padding: 0 0.5em;
+  }
+
+  .timer-h1 {
+    font-size: large;
+  }
 }
 
 /* Tamanho de celulares pequenos|comuns */
@@ -383,6 +476,17 @@ footer div {
 
   .sps-low-container img {
     width: 50%;
+
+  .time-container {
+    padding: 0 0.2em;
+  }
+
+  .time-container h2 {
+    font-size: small;
+  }
+
+  .timer-h1 {
+    font-size: medium;
   }
 
   /* Corrige tamanhos, margens e paddings do footer: */
