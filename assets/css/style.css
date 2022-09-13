@@ -357,6 +357,93 @@ footer div {
 
 /* FIM DO FOOTER */
 
+.column-button {
+  float: left;
+  justify-content: center;
+  width: 20%;
+}
+
+.column-img {
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.column-date {
+  margin-top: 5%;
+  margin-right: 5%; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border-radius: 4px;
+  background-color: var(--dark-red);
+  color: white;
+}
+
+.column-details {
+  margin-left: 2%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+}
+
+.column-details-title{
+  padding-left: 2%;
+  padding-right: 2%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  color: var(--red);
+}
+
+.button-programacao {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: var(--dark-red);
+}
+
+.button-programacao-unable {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: var(--medium-gray);
+}
+
+.button-programacao:hover, .button-programacao-unable:hover {
+  background-color: var(--red);
+}
+
+.margin-prog {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
 /*
   * MEDIA QUERY (lidar com responsividade e diferentes tamanhos de tela)
 */
