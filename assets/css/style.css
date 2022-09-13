@@ -95,6 +95,11 @@ body {
   width: 26px;
 }
 
+.social-ufjf {
+  height: 36px;
+  width: 36px;
+}
+
 .color-red {
   color: var(--red);
 }
@@ -476,6 +481,7 @@ footer div {
 
   .sps-low-container img {
     width: 50%;
+  }
 
   .time-container {
     padding: 0 0.2em;
