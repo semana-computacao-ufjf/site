@@ -201,6 +201,27 @@ body {
 
 /* FIM DO TIMER */
 
+/* INÍCIO DA DESCRIÇÃO */
+
+.event-description-container {
+  background-color: var(--pearl-white);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2em 3em;
+}
+
+.event-description {
+  color: var(--dark-gray);
+  font-weight: 800;
+}
+
+.description-ufjf {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/* FIM DA DESCRIÇÃO */
+
 /* INÍCIO DO SEGUNDO CTA */
 .enroll-cta {
   font-size: small;
@@ -243,6 +264,26 @@ body {
 }
 
 /* FIM DO SEGUNDO CTA */
+
+/* INÍCIO DA PROGRAMAÇÃO */
+
+.schedule-container {
+  padding: 2em 3em;
+}
+
+.schedule-title {
+  color: var(--dark-gray);
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.schedule-later {
+  font-weight: 600;
+  text-align: center;
+}
+
+/* FIM DA PROGRAMAÇÃO */
+
 
 /* INÍCIO DA LISTA DE PATROCINADORES */
 .sps-title {
@@ -443,6 +484,12 @@ footer div {
 
   .timer-h1 {
     font-size: large;
+  }
+  
+  .event-description-container {
+    flex-direction: column;
+    padding: 1em;
+    text-align: center;
   }
 }
 
