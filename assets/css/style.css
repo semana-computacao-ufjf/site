@@ -267,17 +267,15 @@ body {
 
 /* INÍCIO DA PROGRAMAÇÃO */
 
-.schedule-container {
-  padding: 2em 3em;
-}
-
 .schedule-title {
   color: var(--dark-gray);
   font-size: 2em;
   font-weight: bold;
+  margin: 1.25em;
 }
 
 .schedule-later {
+  color: var(--dark-gray);
   font-weight: 600;
   text-align: center;
 }
