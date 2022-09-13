@@ -106,6 +106,12 @@ body {
 
 /* FIM DE CLASSES DO NAVBAR */
 
+.section-title {
+  color: var(--dark-gray);
+  font-size: 2em;
+  font-weight: bold;
+  margin: 1.25em;
+}
 
 /* INÍCIO DO BANNER (NO CONTAINER) */
 .banner-container {
@@ -282,7 +288,6 @@ body {
 
 /* FIM DA PROGRAMAÇÃO */
 
-
 /* INÍCIO DA LISTA DE PATROCINADORES */
 .sps-title {
   color: var(--dark-gray);
@@ -318,10 +323,48 @@ body {
 
 .sps-container:hover {
   background-color: var(--red);
-  background: rgba(224, 17, 24, 0.6)
+  background: rgba(224, 17, 24, 0.6);
 }
 
 /* FIM DA LISTA DE PATROCINADORES */
+
+/* INÍCIO REDES SOCIAIS */
+
+.social-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-ic {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-right: 0.5em;
+  width: 1.6em;
+}
+
+.social-links-container a {
+  align-items: center;
+  color: var(--dark-gray);
+  display: flex;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  text-decoration: none;
+}
+
+.social-links-container a:hover {
+  color: var(--red);
+}
+
+.map-iframe {
+  border-radius: 6px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  height: 30em;
+  width: 40em;
+}
+
+/* FIM REDES SOCIAIS */
 
 /* INÍCIO DO FOOTER */
 
@@ -343,7 +386,6 @@ footer div {
 .footer-logos h3 {
   color: var(--dark-gray);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
   font-size: medium;
 }
 
@@ -361,7 +403,6 @@ footer div {
 
 /* Tamanho de alguns tablets (a partide de 800px já não entra (tamanho de PC)) */
 @media screen and (max-width: 800px) {
-
   /* Esconde o nome ("Semana da Computação") da Navbar */
   .nav-name {
     display: none;
@@ -377,7 +418,7 @@ footer div {
     display: inline-block;
   }
 
-/* Define como vai aparecer a lista */
+  /* Define como vai aparecer a lista */
   .nav-menu ul {
     display: block;
     list-style-type: none;
@@ -412,11 +453,30 @@ footer div {
   .time-container h2 {
     font-size: medium;
   }
+
+  .social-container {
+    justify-content: space-around;
+  }
+
+  .social-ic {
+    width: 1.3em;
+  }
+  
+  .social-links-container a {
+    font-size: 1.1em;
+  }
+
+  .map-iframe {
+    border-radius: 6px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    height: 20em;
+    width: 100%;
+  }
+  
 }
 
 /* Tamanho de celulares e telas grandes */
 @media screen and (max-width: 600px) {
-
   /* Corrige exibição do botão */
   .cta-btn-container {
     display: flex;
@@ -483,27 +543,40 @@ footer div {
   .timer-h1 {
     font-size: large;
   }
-  
+
   .event-description-container {
     flex-direction: column;
     padding: 1em;
     text-align: center;
   }
+
+  .social-container {
+    flex-direction: column;
+  }
+
+  .social-links-container {
+    padding: 0.5em;
+  }
+
 }
 
 /* Tamanho de celulares pequenos|comuns */
 @media screen and (max-width: 400px) {
-
   /* Muda formatação do texto do banner */
   /* .banner-text-only {
     display: block;
     text-align: center;
   } */
 
+  .section-title {
+    margin: 0;
+    text-align: center;
+  }
+
   .sps-tier {
     flex-direction: column;
   }
-  
+
   .sps-container {
     padding: 0.4em 0.4em 0.2em;
   }
@@ -540,6 +613,10 @@ footer div {
     font-size: medium;
   }
 
+  .social-links-container {
+    padding: 0;
+  }
+
   /* Corrige tamanhos, margens e paddings do footer: */
   .footer-logos h3 {
     font-size: smaller;
@@ -549,7 +626,7 @@ footer div {
     padding-left: 0.2em;
     width: 2em;
   }
-  
+
   footer .social-media-links {
     padding: 0;
     margin: 0;
