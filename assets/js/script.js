@@ -13,3 +13,21 @@ navBtn.addEventListener("click", () => {
 
 /* FIM DA LÓGICA PARA ABRIR/FECHAR O MENU EM TELAS PEQUENAS */
 
+function updateTimer() {
+  const deadline = new Date("Oct 17, 2022 00:00:00").getTime();
+  const now = new Date().getTime();
+  const timeDifference = deadline - now;
+
+  const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+  document.getElementById("days-counter").innerHTML = days;
+  document.getElementById("hours-counter").innerHTML = hours;
+  document.getElementById("minutes-counter").innerHTML = minutes;
+  document.getElementById("seconds-counter").innerHTML = seconds;
+}
+
+setInterval(updateTimer, 1000);
+
