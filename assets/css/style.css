@@ -325,6 +325,62 @@ body {
 
 /* FIM DA LISTA DE PATROCINADORES */
 
+/* INICIO REALIZADORES */
+
+.rlz-img {
+  border-radius: 50%;
+  /* width: 10%; */
+}
+
+.rlz-title {
+  color: var(--dark-gray);
+  font-size: 2em;
+  font-weight: bold;
+  margin: 1.25em;
+}
+
+.rlz-tier {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3em 0em;
+}
+
+.rlz-container {
+  background-color: var(--light-gray);
+  border-radius: 6px;
+  padding: 1em 1em 0.4em;
+}
+
+.rlz-top-container img {
+  width: 17em;
+}
+
+.rlz-mid-container img {
+  width: 11em;
+}
+
+.rlz-low-container img {
+  width: 6em;
+}
+
+.rlz-a {
+  text-decoration:none;
+}
+
+.rlz-name {
+  color: #494746;
+  text-decoration:none;
+  align-items: center;
+}
+
+.rlz-group {
+  text-decoration:none;
+  color: #494746;
+  align-items: center;
+}
+/* FIM REALIZADORES */
+
 /* INÍCIO DO FOOTER */
 
 footer {
