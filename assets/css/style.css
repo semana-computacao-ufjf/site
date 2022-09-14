@@ -9,12 +9,11 @@
 }
 
 /* Remove margens e paddings, adiciona fonte padrão e remove barra de rolagem no desktop */
-body {
+html, body {
   font-family: "Open Sans", sans-serif;
-  margin: 0;
+  margin: 0 0;
   padding: 0;
   width: 100%;
-  display: inline-block;
   overflow-x: hidden;
 }
 
@@ -81,6 +80,8 @@ body {
 }
 
 .social-media-links {
+  align-items: center;
+  display: flex;
   padding-right: 1em;
 }
 
@@ -96,8 +97,9 @@ body {
 }
 
 .social-ufjf {
-  height: 36px;
-  width: 36px;
+  margin-left: 1em;
+  height: 4em;
+  width: 4em;
 }
 
 .color-red {
@@ -145,8 +147,11 @@ body {
 }
 
 .text-inside {
-  padding: 0 5em 0 0;
   color: var(--dark-gray);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 0 5em 0 0;
+  -webkit-text-stroke-width: 0.03em;
+  -webkit-text-stroke-color: var(--light-gray);
 }
 
 .banner-text-only {
@@ -177,16 +182,18 @@ body {
 /* INÍCIO DO TIMER */
 
 .timer-container {
+  align-items: center;
   background-color: var(--red);
   color: white;
   display: flex;
   justify-content: space-evenly;
-  padding: 0.6em 0;
+  padding: 0;
   margin: 0;
 }
 
 .timer-h1 {
-  font-size: 2.5em;
+  font-size: 2em;
+  line-height: 90%;
   text-align: center;
 }
 
@@ -194,6 +201,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 
 .time-container {
@@ -218,12 +226,8 @@ body {
 
 .event-description {
   color: var(--dark-gray);
-  font-weight: 800;
-}
-
-.description-ufjf {
-  font-size: 1em;
-  font-weight: 600;
+  font-weight: 500;
+  text-align: justify;
 }
 
 /* FIM DA DESCRIÇÃO */
@@ -334,12 +338,18 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 2em;
 }
 
 .social-ic {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   margin-right: 0.5em;
   width: 1.6em;
+}
+
+.social-ufjf-ic {
+  height: 2.5em;
+  width: 2.5em;
 }
 
 .social-links-container a {
@@ -383,6 +393,12 @@ footer div {
   text-decoration: none;
 }
 
+.footer-logos {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .footer-logos h3 {
   color: var(--dark-gray);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -393,6 +409,10 @@ footer div {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   padding-left: 1em;
   width: 3em;
+}
+
+.footer-ufjf {
+  width: 4em;
 }
 
 /* FIM DO FOOTER */
@@ -568,9 +588,26 @@ footer div {
     text-align: center;
   } */
 
+  .social-media-links {
+    padding: 0;
+  }
+
+  .social-ufjf-link {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .social-ufjf {
+    margin: auto;
+    height: 3em;
+    padding: 0;
+    width: 3em;
+  }
+
   .section-title {
     margin: 0;
     text-align: center;
+    text-transform: uppercase;
   }
 
   .sps-tier {
@@ -610,7 +647,7 @@ footer div {
   }
 
   .timer-h1 {
-    font-size: medium;
+    font-size: 2em;
   }
 
   .social-links-container {
