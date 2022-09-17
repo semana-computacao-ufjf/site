@@ -403,31 +403,30 @@ html, body {
   padding: 1em 1em 0.4em;
 }
 
-.rlz-top-container img {
-  width: 17em;
-}
 
 .rlz-mid-container img {
   width: 11em;
 }
 
-.rlz-low-container img {
-  width: 6em;
-}
-
 .rlz-a {
   text-decoration:none;
+  margin: auto;
+  padding: 1%;
 }
 
 .rlz-name {
   color: #494746;
   text-decoration:none;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .rlz-group {
   text-decoration:none;
-  color: #494746;
+  color: #494746;;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 /* FIM REALIZADORES */
@@ -723,6 +722,12 @@ footer div {
 
 }
 
+@media(max-width: 400px) {
+  .rlz-lists {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* Tamanho de celulares pequenos|comuns */
 @media screen and (max-width: 400px) {
   /* Muda formatação do texto do banner */
