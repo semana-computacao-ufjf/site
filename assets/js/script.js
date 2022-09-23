@@ -86,6 +86,7 @@ navbar.addEventListener("click", (e) => {
   if (e.target.className.includes("speakers-link")) {
     mainContainer.classList.remove("container-active");
     speakersContainer.classList.add("container-active");
+    speakersContainer.classList.add("animate-up");
   } else {
     speakersContainer.classList.remove("container-active");
     mainContainer.classList.add("container-active");
