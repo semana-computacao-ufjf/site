@@ -4,10 +4,11 @@ const navBtn = document.querySelector(".nav-icon"); // Pega o botão do navbar p
 const navMenu = document.querySelector(".navbar-navigation-links"); // Pega o menu do navbar
 
 navBtn.addEventListener("click", () => {
-  if (navMenu.className === "navbar-navigation-links") {  // Checa se a classe do navMenu tem apenas o ícone visível
+  if (navMenu.className === "navbar-navigation-links") {
+    // Checa se a classe do navMenu tem apenas o ícone visível
     navMenu.className += " nav-menu"; // Adiciona a classe do menu do navbar
   } else {
-    navMenu.className = "navbar-navigation-links";  // Remove a classe do menu do navbar
+    navMenu.className = "navbar-navigation-links"; // Remove a classe do menu do navbar
   }
 });
 
@@ -21,7 +22,9 @@ function updateTimer() {
   const timeDifference = deadline - now;
 
   const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const hours = Math.floor(
+    (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
   const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
@@ -41,7 +44,52 @@ const videoBtn = document.querySelector("#show-video");
 const videoContainer = document.querySelector(".enroll-tutorial-video");
 
 videoBtn.addEventListener("click", () => {
-  videoContainer.style.display = videoContainer.style.display === "block" ? "none" : "block";
+  videoContainer.style.display =
+    videoContainer.style.display === "block" ? "none" : "block";
 });
 
 /* FIM DA LÓGICA PARA EXIBIR O VIDEO DE TUTORIAL DE INSCRIÇÃO */
+
+/* LÓGICA DA TABELA */
+function changeColor(day) {
+  collection = document.getElementsByClassName("button-programacao");
+  for (i in collection) {
+    if (i < 5) {
+      collection[i].style.backgroundColor = "#888482";
+    }
+  }
+  document.getElementById(day).style.backgroundColor = "#b01917";
+}
+
+function changeTable(tday) {
+  collection = document.getElementsByClassName("table-day");
+  for (i in collection) {
+    if (i < 5) {
+      collection[i].style.visibility = "hidden";
+      collection[i].style.display = "none";
+    }
+  }
+  document.getElementById(tday).style.display = "block";
+  document.getElementById(tday).style.visibility = "visible";
+}
+// changeColor("day1");
+document.getElementById("day1").click();
+/* FIM LÓGICA DA TABELA */
+
+
+/* INÍCIO DA LÓGICA PARA EXIBIR PALESTRANTES */
+const navbar = document.querySelector("#navbar");
+const mainContainer = document.querySelector(".main-container");
+const speakersContainer = document.querySelector(".speakers-container");
+
+navbar.addEventListener("click", (e) => {
+  if (e.target.className.includes("speakers-link")) {
+    mainContainer.classList.remove("container-active");
+    speakersContainer.classList.add("container-active");
+  } else {
+    speakersContainer.classList.remove("container-active");
+    mainContainer.classList.add("container-active");
+  }
+});
+
+/* FIM DA LÓGICA PARA EXIBIR PALESTRANTES */
