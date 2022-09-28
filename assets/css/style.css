@@ -6,6 +6,7 @@
   --dark-gray: #494746;
   --red: #e01118;
   --dark-red: #b01917;
+  --blue: #1c34a1;
 }
 
 /* Remove margens e paddings, adiciona fonte padrão e remove barra de rolagem no desktop */
@@ -330,12 +331,24 @@ body {
   width: 17em;
 }
 
+.sps-bitka img {
+  width: 12em;
+}
+
 .sps-mid-container img {
   width: 11em;
 }
 
+.sps-chicorei {
+  padding: 0.1em 0.5em;
+}
+
+.sps-chicorei img {
+  width: 8em;
+}
+
 .sps-low-container img {
-  width: 6em;
+  width: 8em;
 }
 
 .sps-container:hover {
@@ -510,6 +523,10 @@ footer div {
   color: white;
 }
 
+.column-date-blue {
+  background-color: var(--blue);
+}
+
 .column-details {
   margin-left: 2%;
   float: left;
@@ -520,12 +537,16 @@ footer div {
 }
 
 .column-details-title {
-  padding-left: 2%;
-  padding-right: 2%;
-  float: left;
-  display: flex;
-  justify-content: center;
+  /* padding-left: 2%; */
+  /* padding-right: 2%; */
+  /* float: left; */
+  /* justify-content: center; */
   color: var(--red);
+  display: flex;
+}
+
+.column-details-name {
+  line-height: 85%;
 }
 
 .button-programacao {
@@ -621,10 +642,23 @@ footer div {
   color: var(--dark-gray);
 }
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+.minicurso {
+  color: var(--dark-red);
+  font-weight: bold;
+}
+
+.palestra {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.evento {
+  color: var(--dark-gray);
+  font-weight: bold;
+}
+
+.td-icon {
+  width: 8%;
 }
 
 /*
@@ -701,6 +735,18 @@ footer div {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     height: 20em;
     width: 100%;
+  }
+
+  .button-programacao {
+    padding: 1em;
+  }
+
+  .td-icon img {
+    width: 2.5em;
+  }
+
+  .column-date {
+    text-align: center;
   }
 }
 
@@ -785,6 +831,22 @@ footer div {
 
   .social-links-container {
     padding: 0.5em;
+  }
+
+  .button-programacao {
+    padding: 0.5em;
+  }
+
+  .margin-prog {
+    margin: 0.5em;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .column-details-name {
+    line-height: 100%;
   }
 }
 
@@ -881,6 +943,23 @@ footer div {
     margin: 0;
     padding: 0;
     text-align: center;
+  }
+
+  .margin-prog {
+    margin: 1%;
+  }
+
+  .td-icon {
+    display: none;
+  }
+
+  .column-date {
+    padding: 0.5em;
+  }
+
+  .button-programacao {
+    padding: 0.25em;
+    margin: 0;
   }
 
   /* Corrige tamanhos, margens e paddings do footer: */
