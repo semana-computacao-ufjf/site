@@ -195,6 +195,7 @@ html, body {
   font-size: 2em;
   line-height: 90%;
   text-align: center;
+  padding-top: 10em;
 }
 
 .timer {
@@ -380,7 +381,10 @@ html, body {
 
 .rlz-img {
   border-radius: 50%;
-  /* width: 10%; */
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  
 }
 
 .rlz-title {
