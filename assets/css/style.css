@@ -592,10 +592,10 @@ footer div {
 }
 
 .speaker-container {
+  align-items: stretch;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin: 0.6em 0.8em;
 }
 
