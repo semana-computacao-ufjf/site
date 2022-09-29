@@ -600,14 +600,16 @@ footer div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0.6em 0.8em;
+  padding: 0.6em 0.8em;
+  width: 95%;
 }
 
 .speaker-row {
+  align-items: center;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   margin: 0 1em;
+  width: 100%;
 }
 
 .speaker-pic {
@@ -635,6 +637,7 @@ footer div {
 
 .speaker-link {
   font-weight: bold;
+  justify-content: flex-end;
   list-style-type: none;
 }
 
