@@ -19,6 +19,11 @@ body {
   overflow-x: hidden;
 }
 
+::selection {
+  color: white;
+  background-color: var(--dark-red);
+}
+
 /* Remove barra de rolagem */
 ::-webkit-scrollbar {
   display: none;
@@ -213,6 +218,10 @@ body {
   font-size: 2em;
   line-height: 70%;
   text-align: center;
+}
+
+.begins-in {
+  line-height: 100%;
 }
 
 .timer {
