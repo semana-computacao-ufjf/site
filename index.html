@@ -33,7 +33,7 @@
 
     <!-- LINKS PARA AS DIFERENTES PARTES -->
     <div class="navbar-navigation-links">
-      <ul>
+      <ul class="nav-links-ul">
         <li class="nav-icon">&#9776;</li>
         <li><a href="#descricao" class="nav-link">Apresentação</a></li>
         <li><a href="#programacao" class="nav-link">Programação</a></li>
@@ -41,6 +41,7 @@
         <li><a href="#nossos-patrocinadores" class="nav-link">Patrocinadores</a></li>
         <li><a href="#organizadores" class="nav-link">Organizadores</a></li>
         <li><a href="#contato" class="nav-link">Contato</a></li>
+        <li><a class="nav-link speakers-link">Palestrantes</a></li>
       </ul>
     </div>
 
@@ -73,7 +74,7 @@
   <!-- FIM NAVBAR -->
 
   <!-- INÍCIO DO CORPO DO SITE -->
-  <section class="container">
+  <section class="container main-container container-active">
 
     <!-- INÍCIO DO CALL TO ACTION (BANNER NO INÍCIO DO SITE) -->
     <section class="banner-container">
@@ -131,7 +132,7 @@
         Ciências Exatas, as coordenações de curso, a chefia de departamento, o corpo docente e discentes dos cursos
         oferecidos pelo DCC, de forma participativa, democrática e transparente, acolhendo sugestões e críticas da
         comunidade acadêmica.
-        <br>
+        <br><br>
         O evento é uma oportunidade para que os alunos participem de palestras,
         minicursos e da maratona de programação com temas relevantes na área de Ciência da Computação e áreas afins. Na
         última edição contamos com mais de 300 participantes e nossa expectativa é que neste ano esse número aumente
@@ -159,362 +160,1076 @@
     <!-- INÍCIO DA SEÇÃO DE PROGRAMAÇÃO -->
     <section class="schedule-container" id="programacao">
       <h1 class="section-title">PROGRAMAÇÃO</h1>
-      <section class="scs-container">
-        <h2 class="schedule-later">
-          Em breve mais informações
-        </h2>
-        <hr />
-
-        <!--
+      <section>
         <section class="margin-prog">
-          <div class="row">
+          <div class="row row-prog">
             <div class="column-button">
-              <button class="button-programacao" onclick="changeColor('day1'); changeTable('tday1')" id="day1">Segunda-feira</button>
+              <button class="button-programacao" onclick="changeColor('day1'); changeTable('tday1')"
+                id="day1">Segunda</button>
             </div>
             <div class="column-button">
-              <button class="button-programacao" onclick="changeColor('day2'); changeTable('tday2')" id="day2">Terça-feira</button>
+              <button class="button-programacao" onclick="changeColor('day2'); changeTable('tday2')"
+                id="day2">Terça</button>
             </div>
             <div class="column-button">
-              <button class="button-programacao" onclick="changeColor('day3'); changeTable('tday3')" id="day3">Quarta-feira</button>
+              <button class="button-programacao" onclick="changeColor('day3'); changeTable('tday3')"
+                id="day3">Quarta</button>
             </div>
             <div class="column-button">
-              <button class="button-programacao" onclick="changeColor('day4'); changeTable('tday4')" id="day4">Quinta-feira</button>
+              <button class="button-programacao" onclick="changeColor('day4'); changeTable('tday4')"
+                id="day4">Quinta</button>
             </div>
             <div class="column-button">
-              <button class="button-programacao" onclick="changeColor('day5'); changeTable('tday5')" id="day5">Sexta-feira</button>
+              <button class="button-programacao" onclick="changeColor('day5'); changeTable('tday5')"
+                id="day5">Sexta</button>
             </div>
           </div>
           <table class="table-day" id="tday1">
             <tr>
-              <td width="8%">
-                <img src="/assets/img/eng.png" width="50%">
+              <td class="td-icon">
+                <img src="/assets/img/icons/eng.png" width="50%">
               </td>
               <td width="8%">
-                <h1 class ="column-date">12h-13h</h1>
+                <h1 class="column-date">08h-12h</h1>
               </td>
-              <td class ="column-details">
+              <td class="column-details">
                 <div class="row">
-                <h3 class ="column-details-title">Mineração de dados</h3>
-                <h5 class ="column-details-name">Professor Lucas Gabriel Matheus (UFRJ)</h5>
-                <p class ="column-details-dpt">SegundaSegundaSegundaSegundaLorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. </p>  
+                  <h3 class="column-details-title">Minicurso: Introdução ao Figma</h3>
+                  <h5 class="column-details-name">Gabriel Botelho e Helena Salles</h5>
+                  <span class="column-details-dpt">
+                    <span class="minicurso">Minicurso</span> de Figma, editor gráfico e de prototipagem para projetos de
+                    design na web.
+                  </span>
                 </div>
               </td>
-              <td>
-                <h4>LINK AQUI! OU SALA</h4>
+              <td width="10%" class="local-table">
+                <h4>Sala L107</h4>
               </td>
             </tr>
             <tr>
-              <td width="8%">
-                <img src="/assets/img/eng.png" width="50%">
+              <td class="td-icon">
+                <img src="/assets/img/icons/eng.png" width="50%">
               </td>
               <td width="8%">
-                <h1 class ="column-date">12h-13h</h1>
+                <h1 class="column-date">14h-17h</h1>
               </td>
-              <td class ="column-details">
+              <td class="column-details">
                 <div class="row">
-                <h3 class ="column-details-title">Mineração de dados</h3>
-                <h5 class ="column-details-name">Professor Lucas Gabriel Matheus (UFRJ)</h5>
-                <p class ="column-details-dpt">SegundaSegundaSegundaLorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. </p>  
+                  <h3 class="column-details-title">Minicurso Básico de Laravel</h3>
+                  <h5 class="column-details-name">João Pedro Ferreira (Code JR)</h5>
+                  <p class="column-details-dpt">
+                    <span class="minicurso">Minicurso</span> sobre o framework web de PHP mais usado do mundo: Laravel.
+                  </p>
                 </div>
               </td>
-              <td>
-                <h4>LINK AQUI! OU SALA</h4>
+              <td width="10%" class="local-table">
+                <h4>Sala L205</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/palestra.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date column-date-blue">17h-18h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title palestra">Palestra Interfaces Cérebro Máquina: O elo entre a mente
+                    humana e as máquinas</h3>
+                  <h5 class="column-details-name">Gabriel Souza</h5>
+                  <p class="column-details-dpt">
+                    <span class="palestra">Palestra</span>.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>A definir</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/palestra.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date column-date-blue">19h-22h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title palestra">Abertura Semana do ICE</h3>
+                  <h5 class="column-details-name">Instituto de Ciências Exatas e Bárbara Quintela</h5>
+                  <p class="column-details-dpt">
+                    <span class="palestra">Mesa Redonda:</span> Os desafios das mulheres nas ciências (exatas), na
+                    pesquisa e nas universidades.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>A definir</h4>
               </td>
             </tr>
           </table>
           <table class="table-day" id="tday2">
             <tr>
-              <td width="8%">
-                <img src="/assets/img/eng.png" width="50%">
+              <td class="td-icon">
+                <img src="/assets/img/icons/eng.png" width="50%">
               </td>
               <td width="8%">
-                <h1 class ="column-date">12h-13h</h1>
+                <h1 class="column-date">08h-12h</h1>
               </td>
-              <td class ="column-details">
+              <td class="column-details">
                 <div class="row">
-                <h3 class ="column-details-title">Mineração de dados</h3>
-                <h5 class ="column-details-name">Professor Lucas Gabriel Matheus (UFRJ)</h5>
-                <p class ="column-details-dpt">TercaTercaTercaTercaLorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. </p>  
+                  <h3 class="column-details-title">Minicurso: React</h3>
+                  <h5 class="column-details-name">Gabriel Mattos, Thaís de Jesus Soares e Yuri Medeiros da Silva Santos
+                    (GET EngComp)</h5>
+                  <p class="column-details-dpt">
+                    <span class="minicurso">Minicurso</span> sobre a biblioteca JavaScript mais utilizada da atualidade,
+                    o React.
+                  </p>
                 </div>
               </td>
-              <td>
-                <h4>LINK AQUI! OU SALA</h4>
+              <td width="10%" class="local-table">
+                <h4>Sala L107</h4>
               </td>
             </tr>
             <tr>
-              <td width="8%">
-                <img src="/assets/img/eng.png" width="50%">
+              <td class="td-icon">
+                <img src="/assets/img/icons/eng.png" width="50%">
               </td>
               <td width="8%">
-                <h1 class ="column-date">12h-13h</h1>
+                <h1 class="column-date">14h-17h</h1>
               </td>
-              <td class ="column-details">
+              <td class="column-details">
                 <div class="row">
-                <h3 class ="column-details-title">Mineração de dados</h3>
-                <h5 class ="column-details-name">Professor Lucas Gabriel Matheus (UFRJ)</h5>
-                <p class ="column-details-dpt">TercaTercaTercaLorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. </p>  
+                  <h3 class="column-details-title">Hackathon</h3>
+                  <h5 class="column-details-name"></h5>
+                  <p class="column-details-dpt">
+                    <span class="minicurso">Hackathon</span> organizado pelo DCC.
+                  </p>
                 </div>
               </td>
-              <td>
-                <h4>LINK AQUI! OU SALA</h4>
+              <td width="10%" class="local-table">
+                <h4>Sala L205</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/palestra.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date column-date-blue">17h-18h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title palestra">Palestra: A Modelagem de Todas as Coisas</h3>
+                  <h5 class="column-details-name">Priscila Capriles (UFJF)</h5>
+                  <p class="column-details-dpt">
+                    <span class="palestra">Palestra</span> sobre modelagem computacional.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>A definir</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/palestra.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date column-date-blue">19h-20h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title palestra">Palestra: BITKA Analytics - Conheça a nossa história nesses
+                    apenas 2 anos de existência</h3>
+                  <h5 class="column-details-name">Marcelo Ladeira Reis e Lívio Drumond Guerra (BITKA)</h5>
+                  <p class="column-details-dpt">
+                    <span class="palestra">Palestra</span> sobre a BITKA Analytics.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>Online, link a definir.</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/palestra.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date column-date-blue">20h-21h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title palestra">Palestra: Teorias, Práticas e Posturas Vencedoras no Mercado
+                    de TI</h3>
+                  <h5 class="column-details-name">Carlos Augusto (RERUM Engenharia de Sistemas)</h5>
+                  <p class="column-details-dpt">
+                    <span class="palestra">Palestra</span> sobre mercado de trabalho e boas práticas de TI.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>Online, link a definir.</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/eng.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date">21h-22h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title">Recrutamento Thoughtworks e experiência da pessoa candidata</h3>
+                  <h5 class="column-details-name">Hélio (Thoughtworks)</h5>
+                  <p class="column-details-dpt">
+                    <span class="minicurso">Recrutamento</span> da empresa parceira Thoughtworks.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>Online, link a definir.</h4>
               </td>
             </tr>
           </table>
+
           <table class="table-day" id="tday3">
             <tr>
-              <td width="8%">
-                <img src="/assets/img/eng.png" width="50%">
+              <td class="td-icon">
+                <img src="/assets/img/icons/eng.png" width="50%">
               </td>
               <td width="8%">
-                <h1 class ="column-date">12h-13h</h1>
+                <h1 class="column-date">08h-12h</h1>
               </td>
-              <td class ="column-details">
+              <td class="column-details">
                 <div class="row">
-                <h3 class ="column-details-title">Mineração de dados</h3>
-                <h5 class ="column-details-name">Professor Lucas Gabriel Matheus (UFRJ)</h5>
-                <p class ="column-details-dpt">QuartaQuartaQuartaQuartaLorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. </p>  
+                  <h3 class="column-details-title">Mostra de Departamento</h3>
+                  <h5 class="column-details-name">DCC</h5>
+                  <p class="column-details-dpt">
+                    <span class="minicurso">Mostra de Departamento</span>.
+                  </p>
                 </div>
               </td>
-              <td>
-                <h4>LINK AQUI! OU SALA</h4>
+              <td width="10%" class="local-table">
+                <h4>A definir</h4>
               </td>
             </tr>
             <tr>
-              <td width="8%">
-                <img src="/assets/img/eng.png" width="50%">
+              <td class="td-icon">
+                <img src="/assets/img/icons/eng.png" width="50%">
               </td>
               <td width="8%">
-                <h1 class ="column-date">12h-13h</h1>
+                <h1 class="column-date">08h-12h</h1>
               </td>
-              <td class ="column-details">
+              <td class="column-details">
                 <div class="row">
-                <h3 class ="column-details-title">Mineração de dados</h3>
-                <h5 class ="column-details-name">Professor Lucas Gabriel Matheus (UFRJ)</h5>
-                <p class ="column-details-dpt">QuartaQuartaQuartaLorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. </p>  
+                  <h3 class="column-details-title">Minicurso: Git e GitHub</h3>
+                  <h5 class="column-details-name">Ana Carolina Vieira, Carlos Alexandre Pires e João Víctor Oliveira
+                    (GET EngComp)</h5>
+                  <p class="column-details-dpt">
+                    <span class="minicurso">Minicurso</span> sobre os sistemas de versionamento e versionamento em nuvem
+                    mais utilizados do mundo.
+                  </p>
                 </div>
               </td>
-              <td>
-                <h4>LINK AQUI! OU SALA</h4>
+              <td width="10%" class="local-table">
+                <h4>L107</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/eng.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date">08h-12h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title">Processo Seletivo: BITKA</h3>
+                  <h5 class="column-details-name">BITKA</h5>
+                  <p class="column-details-dpt">
+                    <span class="minicurso">Processo Seletivo</span>.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>A definir.</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/eng.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date">14h-16h30</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title">Minicurso: Do zero ao Julia</h3>
+                  <h5 class="column-details-name">João Victor Oliveira e Rafaela da Silva Cunha (GET EngComp)</h5>
+                  <p class="column-details-dpt">
+                    <span class="minicurso">Minicurso</span> sobre a Linguagem de Programação Julia.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>L107</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/palestra.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date column-date-blue">17h-18h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title palestra">Palestra: Pós-Graduação em Modelagem Computacional</h3>
+                  <h5 class="column-details-name"></h5>
+                  <p class="column-details-dpt">
+                    <span class="palestra">Palestra</span> sobre a pós-graduação em Modelagem Computacional.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>A definir</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/palestra.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date column-date-blue">19h-20h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title palestra">Palestra: Extract, Transform, Load: Insights de grandes
+                    análises de dados</h3>
+                  <h5 class="column-details-name">Wendel Moreira (Chico Rei)</h5>
+                  <p class="column-details-dpt">
+                    <span class="palestra">Palestra</span> sobre análise de dados.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>Online, link a definir</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/palestra.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date column-date-blue">20h-21h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title palestra">Palestra: Como utilizar o Postman para aprimorar o
+                    desenvolvimento de software</h3>
+                  <h5 class="column-details-name">Hélder Garcia Santos (LEVTY)</h5>
+                  <p class="column-details-dpt">
+                    <span class="palestra">Palestra</span> sobre o Postman, plataforma de auxílio ao desenvolvimento de
+                    APIs.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>Online, link a definir</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/palestra.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date column-date-blue">21h-22h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title palestra">Palestra: Data Science no mundo real</h3>
+                  <h5 class="column-details-name">Guilherme</h5>
+                  <p class="column-details-dpt">
+                    <span class="palestra">Palestra</span> sobre Data Science em aplicações reais.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>Online, link a definir</h4>
               </td>
             </tr>
           </table>
+
           <table class="table-day" id="tday4">
             <tr>
-              <td width="8%">
-                <img src="/assets/img/eng.png" width="50%">
+              <td class="td-icon">
+                <img src="/assets/img/icons/eng.png" width="50%">
               </td>
               <td width="8%">
-                <h1 class ="column-date">12h-13h</h1>
+                <h1 class="column-date">08h-12h</h1>
               </td>
-              <td class ="column-details">
+              <td class="column-details">
                 <div class="row">
-                <h3 class ="column-details-title">Mineração de dados</h3>
-                <h5 class ="column-details-name">Professor Lucas Gabriel Matheus (UFRJ)</h5>
-                <p class ="column-details-dpt">QuintaQuintaQuintaQuintaLorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. </p>  
+                  <h3 class="column-details-title">Minicurso: Amazon AWS - Crie, implante e gerencie aplicações seguras
+                    e escaláveis</h3>
+                  <h5 class="column-details-name">Marcelo (OKN)</h5>
+                  <p class="column-details-dpt">
+                    <span class="minicurso">Minicurso</span> sobre uso da plataforma de computação em nuvem da Amazon.
+                  </p>
                 </div>
               </td>
-              <td>
-                <h4>LINK AQUI! OU SALA</h4>
+              <td width="10%" class="local-table">
+                <h4>Sala L107</h4>
               </td>
             </tr>
             <tr>
-              <td width="8%">
-                <img src="/assets/img/eng.png" width="50%">
+              <td class="td-icon">
+                <img src="/assets/img/icons/eng.png" width="50%">
               </td>
               <td width="8%">
-                <h1 class ="column-date">12h-13h</h1>
+                <h1 class="column-date">14h-17h</h1>
               </td>
-              <td class ="column-details">
+              <td class="column-details">
                 <div class="row">
-                <h3 class ="column-details-title">Mineração de dados</h3>
-                <h5 class ="column-details-name">Professor Lucas Gabriel Matheus (UFRJ)</h5>
-                <p class ="column-details-dpt">QuintaQuintaQuintaLorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. </p>  
+                  <h3 class="column-details-title">Minicurso: Aprenda Node JS do Zero em 4h</h3>
+                  <h5 class="column-details-name">Yuri (Codi Academy)</h5>
+                  <p class="column-details-dpt">
+                    <span class="minicurso">Minicurso</span> sobre a runtime JavaScript para computadores, e uma das
+                    ferramentas de desenvolvimento mais importantes atualmente: Node.js.
+                  </p>
                 </div>
               </td>
-              <td>
-                <h4>LINK AQUI! OU SALA</h4>
+              <td width="10%" class="local-table">
+                <h4>Sala L107</h4>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/eng.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date">14h-17h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title">Hackathon</h3>
+                  <h5 class="column-details-name">DCC</h5>
+                  <p class="column-details-dpt">
+                    <span class="minicurso">Hackathon</span> do DCC.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>Sala L205</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/eng.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date">14h-17h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title">Processo Seletivo LEVTY</h3>
+                  <h5 class="column-details-name">LEVTY</h5>
+                  <p class="column-details-dpt">
+                    <span class="minicurso">Processo Seletivo</span> da empresa LEVTY.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>Sala L205</h4>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/palestra.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date column-date-blue">17h-18h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title palestra">Palestra: Pós-Graduação em Ciência da Computação</h3>
+                  <h5 class="column-details-name">DCC</h5>
+                  <p class="column-details-dpt">
+                    <span class="palestra">Palestra</span> sobre a Pós-Graduação em Ciência da Computação.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>A definir</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/palestra.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date column-date-blue">19h-20h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title palestra">Palestra: Uma introdução aos Sistemas de Recomendação:
+                    conceitos básicos e como usar textos para melhorar as recomendações </h3>
+                  <h5 class="column-details-name">Vitor Tonon (SiDi)</h5>
+                  <p class="column-details-dpt">
+                    <span class="palestra">Palestra</span> sobre uso de Processamento de Linguagem Natural.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>Online, link a definir</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/palestra.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date column-date-blue">20h-21h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title palestra">Palestra: Inteligência Artificial em Teste de Software</h3>
+                  <h5 class="column-details-name">Eliane Colins</h5>
+                  <p class="column-details-dpt">
+                    <span class="palestra">Palestra</span> sobre IA e testes.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>Online, link a definir</h4>
               </td>
             </tr>
           </table>
+
           <table class="table-day" id="tday5">
             <tr>
-              <td width="8%">
-                <img src="/assets/img/eng.png" width="50%">
+              <td class="td-icon">
+                <img src="/assets/img/icons/eng.png" width="50%">
               </td>
               <td width="8%">
-                <h1 class ="column-date">12h-13h</h1>
+                <h1 class="column-date">08h-12h</h1>
               </td>
-              <td class ="column-details">
+              <td class="column-details">
                 <div class="row">
-                <h3 class ="column-details-title">Mineração de dados</h3>
-                <h5 class ="column-details-name">Professor Lucas Gabriel Matheus (UFRJ)</h5>
-                <p class ="column-details-dpt">SextaSextaSextaSextaLorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. </p>  
+                  <h3 class="column-details-title">Maratona de Programação</h3>
+                  <h5 class="column-details-name">DCC</h5>
+                  <p class="column-details-dpt">
+                    <span class="minicurso">Maratona de Programação</span> organizada pelo DCC.
+                  </p>
                 </div>
               </td>
-              <td>
-                <h4>LINK AQUI! OU SALA</h4>
+              <td width="10%" class="local-table">
+                <h4>Salas L107 e L205</h4>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-icon">
+                <img src="/assets/img/icons/eng.png" width="50%">
+              </td>
+              <td width="8%">
+                <h1 class="column-date">14h-18h</h1>
+              </td>
+              <td class="column-details">
+                <div class="row">
+                  <h3 class="column-details-title">Visita Técnica a Empresa</h3>
+                  <h5 class="column-details-name"></h5>
+                  <p class="column-details-dpt">
+                    <span class="evento">Visita Técnica</span> para conhecer o dia a dia de uma empresa de tecnologia.
+                  </p>
+                </div>
+              </td>
+              <td width="10%" class="local-table">
+                <h4>Empresa</h4>
               </td>
             </tr>
             <tr>
-              <td width="8%">
-                <img src="/assets/img/eng.png" width="50%">
+              <td class="td-icon">
+                <img src="/assets/img/icons/palestra.png" width="50%">
               </td>
               <td width="8%">
-                <h1 class ="column-date">12h-13h</h1>
+                <h1 class="column-date column-date-blue">17h-22h</h1>
               </td>
-              <td class ="column-details">
+              <td class="column-details">
                 <div class="row">
-                <h3 class ="column-details-title">Mineração de dados</h3>
-                <h5 class ="column-details-name">Professor Lucas Gabriel Matheus (UFRJ)</h5>
-                <p class ="column-details-dpt">SextaSextaSextaLorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maiores suscipit praesentium repellendus eos perspiciatis impedit illum officia natus sit enim id quae sequi ipsum est magnam, inventore assumenda ea. </p>  
+                  <h3 class="column-details-title palestra">Show de Talentos do ICE</h3>
+                  <h5 class="column-details-name"></h5>
+                  <p class="column-details-dpt">
+                    <span class="palestra">Show de Talentos</span> de alunos e professores do ICE.
+                  </p>
                 </div>
               </td>
-              <td>
-                <h4>LINK AQUI! OU SALA</h4>
+              <td width="10%" class="local-table">
+                <h4>A definir</h4>
               </td>
             </tr>
           </table>
         </section>
-      -->
+        <!-- FIM DA SEÇÃO DE PROGRAMAÇÃO -->
       </section>
-      <!-- FIM DA SEÇÃO DE PROGRAMAÇÃO -->
     </section>
 
-    <!-- FIM DA SEÇÃO DE PROGRAMAÇÃO -->
-
     <!-- INÍCIO DA LISTA DE PATROCINADORES -->
-  </section>
-  <!-- FIM DO CORPO DO SITE -->
+    <section class="all-sps-container">
 
-  <section class="all-sps-container">
+      <h1 class="section-title" id="nossos-patrocinadores">PATROCINADORES</h1>
 
-    <h1 class="section-title" id="nossos-patrocinadores">PATROCINADORES</h1>
+      <section class="sps-lists">
 
-    <section class="sps-lists scs-container">
-
-      <h2 class="schedule-later">
-        Em breve mais informações
-      </h2>
-      <hr />
-
-      <!--
         <section class="sps-tier sps-top-tier">
-          <a href="#" class="sps-top-link sps-link">
-            <div class="sps-top-container sps-container shadow"><img src="./assets/img/sponsors/google.png" alt="">
+          <a href="#" class="sps-top-link sps-link" target="_blank">
+            <div class="sps-top-container sps-container sps-bitka shadow"><img
+                src="./assets/img/sponsors/platina-bitka.svg" alt="BITKA Analytics">
             </div>
           </a>
-          <a href="#" class="sps-top-link sps-link">
-            <div class="sps-top-container sps-container shadow"><img src="./assets/img/sponsors/google.png" alt="">
+          <a href="#" class="sps-top-link sps-link" target="_blank">
+            <div class="sps-top-container sps-container shadow"><img src="./assets/img/sponsors/platina-levty.png"
+                alt="Levty">
             </div>
           </a>
-          <a href="#" class="sps-top-link sps-link">
-            <div class="sps-top-container sps-container shadow"><img src="./assets/img/sponsors/google.png" alt="">
+          <a href="#" class="sps-top-link sps-link" target="_blank">
+            <div class="sps-top-container sps-container shadow"><img src="./assets/img/sponsors/platina-rerum.png"
+                alt="RERUM Engenharia de Sistemas">
             </div>
           </a>
         </section>
 
         <section class="sps-tier sps-mid-tier">
-          <a href="#" class="sps-mid-link sps-link">
-            <div class="sps-mid-container sps-container shadow"><img src="./assets/img/sponsors/google.png" alt="">
+          <a href="#" class="sps-mid-link sps-link" target="_blank">
+            <div class="sps-mid-container sps-container sps-chicorei shadow"><img
+                src="./assets/img/sponsors/ouro-chicorei.png" alt="Chico Rei">
             </div>
           </a>
-          <a href="#" class="sps-mid-link sps-link">
-            <div class="sps-mid-container sps-container shadow"><img src="./assets/img/sponsors/google.png" alt="">
+          <a href="#" class="sps-mid-link sps-link" target="_blank">
+            <div class="sps-mid-container sps-container shadow"><img src="./assets/img/sponsors/ouro-codi.png"
+                alt="Codi Academy">
             </div>
           </a>
-          <a href="#" class="sps-mid-link sps-link">
-            <div class="sps-mid-container sps-container shadow"><img src="./assets/img/sponsors/google.png" alt="">
-            </div>
-          </a>
-          <a href="#" class="sps-mid-link sps-link">
-            <div class="sps-mid-container sps-container shadow"><img src="./assets/img/sponsors/google.png" alt="">
-            </div>
-          </a>
-          <a href="#" class="sps-mid-link sps-link">
-            <div class="sps-mid-container sps-container shadow"><img src="./assets/img/sponsors/google.png" alt="">
+          <a href="#" class="sps-mid-link sps-link" target="_blank">
+            <div class="sps-mid-container sps-container shadow"><img src="./assets/img/sponsors/ouro-okn.svg" alt="OKN">
             </div>
           </a>
         </section>
 
         <section class="sps-tier sps-low-tier">
-          <a href="#" class="sps-low-link sps-link">
-            <div class="sps-low-container sps-container shadow"><img src="./assets/img/sponsors/google.png" alt="">
-            </div>
-          </a>
-          <a href="#" class="sps-low-link sps-link">
-            <div class="sps-low-container sps-container shadow"><img src="./assets/img/sponsors/google.png" alt="">
-            </div>
-          </a>
-          <a href="#" class="sps-low-link sps-link">
-            <div class="sps-low-container sps-container shadow"><img src="./assets/img/sponsors/google.png" alt="">
-            </div>
-          </a>
-          <a href="#" class="sps-low-link sps-link">
-            <div class="sps-low-container sps-container shadow"><img src="./assets/img/sponsors/google.png" alt="">
-            </div>
-          </a>
-          <a href="#" class="sps-low-link sps-link">
-            <div class="sps-low-container sps-container shadow"><img src="./assets/img/sponsors/google.png" alt="">
-            </div>
-          </a>
-          <a href="#" class="sps-low-link sps-link">
-            <div class="sps-low-container sps-container shadow"><img src="./assets/img/sponsors/google.png" alt="">
+          <a href="http://codejr.com.br/" class="sps-low-link sps-link" target="_blank">
+            <div class="sps-low-container sps-container shadow"><img src="./assets/img/sponsors/prata-code.png"
+                alt="Code Empresa Júnior de Computação">
             </div>
           </a>
         </section>
-        -->
+
+      </section>
+    </section>
+    <!-- FIM DA LISTA DE PATROCINADORES -->
+    
+    <!-- INÍCIO LISTA DE APOIADORES -->
+    <section class="all-supporters-container">
+      <h1 class="section-title">APOIADORES</h1>
+        <section class="sps-lists">
+          <section class="sps-tier sps-mid-container">
+            <a href="https://www.thoughtworks.com/pt-br" target="_blank" rel="noopener noreferrer" class="sup-link">
+              <div class="sps-container shadow"><img src="./assets/img/sponsors/prata-thoughworks.png" alt="ThoughtWorks"></div>
+            </a>
+          </section>
+        </section>
+    </section>
+    <!-- FIM DA LISTA DE APOIADORES -->
+
+    <!-- INÍCIO REDES SOCIAIS E CONTATO -->
+
+    <section class="social-media-container" id="contato">
+      <h1 class="social-media-section-title section-title">CONTATO</h1>
+
+      <section class="social-container">
+
+        <section class="social-media-links-container">
+
+          <div class="social-links-container">
+            <a href="mailto:semana-da-computacao@ice.ufjf.br" target="_blank">
+              <svg class="social-ic" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M13 19C13 18.66 13.04 18.33 13.09 18H4V8L12 13L20 8V13.09C20.72 13.21 21.39 13.46 22 13.81V6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H13.09C13.04 19.67 13 19.34 13 19M20 6L12 11L4 6H20M20 22V20H16V18H20V16L23 19L20 22Z" />
+              </svg>
+              semana-da-computacao@ice.ufjf.br
+            </a>
+            <a href="tel:+553221023327">
+              <svg class="social-ic" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+              </svg>
+              (32) 2102-3327
+            </a>
+            <a href="https://www.ufjf.br" target="_blank">
+              <img class="social-ic social-ufjf-ic" src="./assets/img/logo-ufjf.png" alt="Logo UFJF">
+              Site da UFJF
+            </a>
+          </div>
+
+        </section>
+
+        <section class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.1247953818397!2d-43.373810185466745!3d-21.775430603952174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989ba1c18d2a97%3A0xacf1ee467831259e!2sICE%20-%20UFJF!5e0!3m2!1spt-BR!2sbr!4v1663093381486!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="map-iframe"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+      </section>
 
     </section>
-  </section>
-  <!-- FIM DA LISTA DE PATROCINADORES -->
+    <!-- FIM REDES SOCIAIS E CONTATO -->
 
+    <h1 class="rlz-title" id="organizadores">ORGANIZADORES</h1>
 
-
-  <!-- INÍCIO REDES SOCIAIS E CONTATO -->
-
-  <section class="social-media-container" id="contato">
-    <h1 class="social-media-section-title section-title">CONTATO</h1>
-
-    <section class="social-container">
-
-      <section class="social-media-links-container">
-
-        <div class="social-links-container">
-          <a href="mailto:semana-da-computacao@ice.ufjf.br" target="_blank">
-            <svg class="social-ic" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M13 19C13 18.66 13.04 18.33 13.09 18H4V8L12 13L20 8V13.09C20.72 13.21 21.39 13.46 22 13.81V6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H13.09C13.04 19.67 13 19.34 13 19M20 6L12 11L4 6H20M20 22V20H16V18H20V16L23 19L20 22Z" />
-            </svg>
-            semana-da-computacao@ice.ufjf.br
-          </a>
-          <a href="tel:+553221023327">
-            <svg class="social-ic" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
-            </svg>
-            (32) 2102-3327
-          </a>
-          <a href="https://www.ufjf.br" target="_blank">
-            <img class="social-ic social-ufjf-ic" src="./assets/img/logo-ufjf.png" alt="Logo UFJF">
-            Site da UFJF
-          </a>
+    <section class="rlz-lists rlz-tier rlz-top-tier">
+      <a href="#" class="rlz-top-link rlz-a" target="_blank">
+        <div class="rlz-mid-container"><img src="/assets/img/rlz/pedro_henrique_valle.jpg" alt="" class="rlz-img">
+          <h4 class="rlz-name">Pedro Henrique Valle</h4>
+          <h5 class="rlz-group">Site/Marketing</h5>
         </div>
-
-      </section>
-
-      <section class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.1247953818397!2d-43.373810185466745!3d-21.775430603952174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989ba1c18d2a97%3A0xacf1ee467831259e!2sICE%20-%20UFJF!5e0!3m2!1spt-BR!2sbr!4v1663093381486!5m2!1spt-BR!2sbr"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="map-iframe"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </section>
+      </a>
+      <a href="#" class="rlz-top-link rlz-a" target="_blank">
+        <div class="rlz-mid-container"><img src="/assets/img/rlz/pedro_henrique.jpg" alt="" class="rlz-img">
+          <h4 class="rlz-name">Pedro Henrique</h4>
+          <h5 class="rlz-group">Site/Marketing</h5>
+        </div>
+      </a>
+      <a href="#" class="rlz-top-link rlz-a" target="_blank">
+        <div class="rlz-mid-container"><img src="/assets/img/rlz/rafael_coelho.jpg" alt="" class="rlz-img">
+          <h4 class="rlz-name">Rafael Coelho</h4>
+          <h5 class="rlz-group">Site/Marketing</h5>
+        </div>
+      </a>
+      <a href="#" class="rlz-top-link rlz-a" target="_blank">
+        <div class="rlz-mid-container"><img src="/assets/img/rlz/matheus.jpg" alt="" class="rlz-img">
+          <h4 class="rlz-name">Matheus</h4>
+          <h5 class="rlz-group">Site/Marketing</h5>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/isadorafer" class="rlz-top-link rlz-a" target="_blank">
+        <div class="rlz-mid-container"><img src="/assets/img/rlz/isadora.jpg" alt="" class="rlz-img">
+          <h4 class="rlz-name">Isadora Ferreira</h4>
+          <h5 class="rlz-group">Estudante</h5>
+        </div>
+      </a>
+      <a href="#" class="rlz-top-link rlz-a" target="_blank">
+        <div class="rlz-mid-container"><img src="/assets/img/rlz/carlos_alexandre.jpg" alt="" class="rlz-img">
+          <h4 class="rlz-name">Carlos Alexandre</h4>
+          <h5 class="rlz-group">Site/Marketing</h5>
+        </div>
+      </a>
     </section>
+    <section class="rlz-lists rlz-tier rlz-top-tier">
+      <a href="#" class="rlz-top-link rlz-a" target="_blank">
+        <div class="rlz-mid-container"><img src="/assets/img/rlz/isadora.jpg" alt="" class="rlz-img">
+          <h4 class="rlz-name">Matheus Avila</h4>
+          <h5 class="rlz-group">Site/Marketing</h5>
+        </div>
+      </a>
+      <a href="#" class="rlz-top-link rlz-a" target="_blank">
+        <div class="rlz-mid-container"><img src="/assets/img/rlz/isadora.jpg" alt="" class="rlz-img">
+          <h4 class="rlz-name">Matheus Avila</h4>
+          <h5 class="rlz-group">Site/Marketing</h5>
+        </div>
+      </a>
+      <a href="#" class="rlz-top-link rlz-a" target="_blank">
+        <div class="rlz-mid-container"><img src="/assets/img/rlz/isadora.jpg" alt="" class="rlz-img">
+          <h4 class="rlz-name">Matheus Avila</h4>
+          <h5 class="rlz-group">Site/Marketing</h5>
+        </div>
+      </a>
+    </section>
+  </section>
+  </section>
 
   </section>
-  <!-- FIM REDES SOCIAIS E CONTATO -->
-
   </section>
 
+  <section class="container speakers-container">
+    <h1 class="section-title">PALESTRANTES</h1>
+    <div class="speaker-container">
+
+      <div class="speaker-row">
+        <div class="speaker-pic">
+          <img src="./assets/img/speakers/speaker-carlos-lima.webp" alt="Carlos Lima" class="speaker-img">
+        </div>
+        <div class="speaker-info">
+          <h1>Carlos Lima</h1>
+          <h3>Teorias, Práticas e Posturas Vencedoras no Mercado de TI</h3>
+          <h4>Sócio fundador da RERUM | Mestre em Sistemas e Computação</h4>
+          <p>Sócio fundador da RERUM Engenharia de Sistemas, Mestre em Sistemas e Computação pelo Instituto Militar de Engenharia, com ênfase em Tratamento da Informação, Engenheiro Eletricista com ênfase em Sistemas e Computação. Possui 34 Anos de experiência na modelagem e desenvolvimento de arquiteturas e sistemas distribuídos.</p>
+        </div>
+      </div>
+
+      <div class="speaker-row">
+        <div class="speaker-pic">
+          <img src="./assets/img/speakers/speaker-gabriel-botelho.webp" alt="Gabriel Botelho" class="speaker-img">
+        </div>
+        <div class="speaker-info">
+          <h1>Gabriel Botelho</h1>
+          <h3>Introdução ao Figma</h3>
+          <h4>Sócio Fundador da Upload Tech</h4>
+          <p>Sócio Fundador da Upload Tech e Estudante.</p>
+        </div>
+        <div class="speaker-link">
+          <ul class="speaker-links-ul">
+            <li class="speaker-link">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="speaker-row">
+        <div class="speaker-pic">
+          <img src="./assets/img/speakers/speaker-gabriel-souza.webp" alt="Gabriel Souza" class="speaker-img">
+        </div>
+        <div class="speaker-info">
+          <h1>Gabriel Souza</h1>
+          <h3>Interfaces Cérebro-Máquina: O elo entre a mente humana e as máquinas</h3>
+          <h4>Engenheiro Computacional | Doutorando em Modelagem Computacional</h4>
+          <p>Gabriel Souza é Engenheiro Computacional pela UFJF e doutorando em Modelagem Computacional pela mesma instituição. Possui experiência com modelos matemáticos de neurônios e Interfaces Cérebro-Máquina (ICM). Além disso, atua como revisor em eventos internacionais de mineração e ciência de dados. Atualmente desenvolve algoritmos de ICMs com aprendizado semi-supervisionado. Possui interesse nas áreas de Aprendizado de Máquina, Aprendizado Estatístico, Algoritmos Evolutivos e Neurociência Teórica.</p>
+        </div>
+        <div class="speaker-link">
+          <ul class="speaker-links-ul">
+            <li class="speaker-link">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="speaker-row">
+        <div class="speaker-pic">
+          <img src="./assets/img/speakers/speaker-helder-santos.webp" alt="Helder Santos" class="speaker-img">
+        </div>
+        <div class="speaker-info">
+          <h1>Helder Santos</h1>
+          <h3>Como utilizar o Postman para aprimorar o desenvolvimento de software</h3>
+          <h4>Team Tech Lead</h4>
+          <p>Hélder Garcia Santos é Engenheiro Mecatrônico graduado pela UFSJ. Trabalha a mais de 5 anos na área de desenvolvimento de software e atualmente atua como Team Tech Lead na empresa LEVTY. Hélder é fluente em quatro idiomas e estuda no momento Japonês. Ministra cursos internos das mais diversas áreas da computação e hoje oferece a oportunidade de ensinar, por meio desta palestra, como lidar com as mais diversas API's que existem à nossa disposição. </p>
+        </div>
+        <div class="speaker-link">
+          <ul class="speaker-links-ul">
+            <li class="speaker-link">
+              <a href="https://www.linkedin.com/in/h%C3%A9lder-garcia-santos-4a4b57190/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="speaker-row">
+        <div class="speaker-pic">
+          <img src="./assets/img/speakers/speaker-helena-salles.webp" alt="Helena Salles" class="speaker-img">
+        </div>
+        <div class="speaker-info">
+          <h1>Helena Salles</h1>
+          <h3>Introdução ao Figma</h3>
+          <h4>Sócia fundadora da Upload Tech</h4>
+          <p>Sócia fundadora da Upload Tech e Estudante da UFJF.</p>
+        </div>
+        <div class="speaker-link">
+          <ul class="speaker-links-ul">
+            <li class="speaker-link">
+              <a href="https://www.linkedin.com/in/helena-carvalho-lannes-5816b9201/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="speaker-row">
+        <div class="speaker-pic">
+          <img src="./assets/img/speakers/speaker-helio-filho.webp" alt="Hélio Navarro" class="speaker-img">
+        </div>
+        <div class="speaker-info">
+          <h1>Hélio Navarro</h1>
+          <h3>Recrutamento Thoughtworks e experiência da pessoa candidata</h3>
+          <h4>Tech Recruiter na Thoughtworks | Psicólogo Clínico</h4>
+          <p>Formado em Gestão pela UEMG e Psicologia pela UFMG, Hélio começou sua carreira com recrutamento quando treinou, selecionou e liderou um grupo de brasileiros em um intercâmbio voluntário para Hartwell, nos EUA, em 2014. Mais tarde, trabalhou com atrações e operações na Walt Disney Resort, em Orlando; fez um intercâmbio acadêmico na Universidad de Buenos Aires onde estudou espanhol, recursos humanos, cinema e psicanálise; e nos últimos anos tem se dedicado ao recrutamento Tech.</p>
+        </div>
+        <div class="speaker-link">
+          <ul class="speaker-links-ul">
+            <li class="speaker-link">
+              <a href="https://www.linkedin.com/in/helionavarro/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="speaker-row">
+        <div class="speaker-pic">
+          <img src="./assets/img/speakers/speaker-joao-pedro-ferreira.webp" alt="João Pedro Ferreira Pedreira" class="speaker-img">
+        </div>
+        <div class="speaker-info">
+          <h1>João Pedro Ferreira Pedreira</h1>
+          <h3>Curso básico de Laravel</h3>
+          <h4>Desenvolvedor Backend | Diretor de Projetos na Code JR</h4>
+          <p>Graduando em Sistemas de informação na UFJF. Diretor de projetos na Code Empresa Junior de Computação e desenvolvedor fullstack Symfony na SWL.</p>
+        </div>
+        <div class="speaker-link">
+          <ul class="speaker-links-ul">
+            <li class="speaker-link">
+              <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-ferreira-pedreira-b6228619b/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="speaker-row">
+        <div class="speaker-pic">
+          <img src="./assets/img/speakers/speaker-livio.webp" alt="Lívio " class="speaker-img">
+        </div>
+        <div class="speaker-info">
+          <h1>Lívio Drumond Guerra</h1>
+          <h3>BITKA Analytics - Conheça a nossa história nesses apenas 2 anos de existência</h3>
+          <h4>Project Manager</h4>
+          <p>Project Manager na BITKA Analytics</p>
+        </div>
+        <div class="speaker-link">
+          <ul class="speaker-links-ul">
+            <li class="speaker-link">
+              <a href="https://www.linkedin.com/in/livioguerra/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="speaker-row">
+        <div class="speaker-pic">
+          <img src="./assets/img/speakers/speaker-marcelo-okano.webp" alt="Marcelo Okano" class="speaker-img">
+        </div>
+        <div class="speaker-info">
+          <h1>Marcelo Okano</h1>
+          <h3>AMAZON AWS - Crie, implante e gerencie aplicações seguras e escaláveis</h3>
+          <h4>CEO</h4>
+          <p>Formado em Engenharia Elétrica pela Escola Politécnica da USP com pós graduação em Engenharia de Software e Gestão de Projetos. Atuação em centenas de projetos nacionais e internacionais de tecnologia, marketing e comunicação digital. Diretor executivo da OKN onde dedica-se ao desenvolvimento de projetos de Cloud Computing, Big Data Analytics, APIs, Integrações e Arquitetura Serverless.</p>
+        </div>
+        <div class="speaker-link">
+          <ul class="speaker-links-ul">
+            <li class="speaker-link">
+              <a href="https://www.linkedin.com/in/marcelookano/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="speaker-row">
+        <div class="speaker-pic">
+          <img src="./assets/img/speakers/speaker-marcelo-reis.webp" alt="Marcelo Reis" class="speaker-img">
+        </div>
+        <div class="speaker-info">
+          <h1>Marcelo Reis</h1>
+          <!-- <h3>X</h3> -->
+          <h4>Optimization Director</h4>
+          <p>I have more than 15 years of experience developing advanced analytics solutions. I currently lead a team of 40+ operational research professionals in Brazil at Accenture Applied Intelligence where I have the opportunity, on a daily basis, to solve a diversity of complex problems for a for various companies using combinatorial optimization techniques.
+            I have a Computer Science BSc degree at UFV (Federal University of Viçosa - Brazil / MG) in 2002, and a Computer Science MSc degree at PUC-Rio (Pontifical Catholic University of Rio de Janeiro - Brazil / RJ) in Combinatorial Optimization in 2004. I also have some academic papers published, including one in the Mathematical Programming journal.</p>
+        </div>
+        <div class="speaker-link">
+          <ul class="speaker-links-ul">
+            <li class="speaker-link">
+              <a href="https://www.linkedin.com/in/marcelo-reis-a3b76925/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="speaker-row">
+        <div class="speaker-pic">
+          <img src="./assets/img/speakers/speaker-priscila-caprilles.webp" alt="Priscila Caprilles" class="speaker-img">
+        </div>
+        <div class="speaker-info">
+          <h1>Priscila Caprilles</h1>
+          <h3>A Modelagem de Todas as Coisas</h3>
+          <h4>Professora Adjunta @ UFJF</h4>
+          <p>Biomédica formada pela Universidade Federal do Estado do Rio de Janeiro. Mestre e Doutora em Modelagem Computacional pelo Laboratório Nacional de Computação Científica. Foi Vice-diretora Executiva da Fundação de Apoio e Desenvolvimento ao Ensino, Pesquisa e Extensão (Fadepe). É Professora Adjunta no Departamento de Ciência da Computação, Professora Permanente na Pós-graduação em Modelagem Computacional, Coordenadora do Time Enactus UFJF e do Grupo de Pesquisa do CNPq, o Grupo de Modelagem Computacional Aplicada (GMCA). Atua nas áreas de Empreendedorismo, Bioinformática, Biologia Computacional, Inteligência Computacional e Desenvolvimento de Sistemas</p>
+        </div>
+        <div class="speaker-link">
+          <ul class="speaker-links-ul">
+            <li class="speaker-link">
+              <a href="https://www.linkedin.com/in/priscila-capriles-goliatt/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="speaker-row">
+        <div class="speaker-pic">
+          <img src="./assets/img/speakers/speaker-vitor-tonon.webp" alt="Vitor Tonon" class="speaker-img">
+        </div>
+        <div class="speaker-info">
+          <h1>Vitor Tonon</h1>
+          <h3>Introdução aos sistemas de recomendação: alguns conceitos básicos e como usar textos para melhorar as recomendações</h3>
+          <h4>Software Developer JR - NLP | SiDi</h4>
+          <p>Graduado e Mestre em Ciências de Computação pelo ICMC/USP. No seu mestrado, desenvolveu sua dissertação na área de sistemas de recomendação e explicabilidade. Atualmente trabalha como Desenvolvedor de Software do SiDi, onde atua em projetos Samsung. Tem experiência nas áres de Machine Learning e NLP, em especial na área de sistemas de recomendação.</p>
+        </div>
+        <div class="speaker-link">
+          <ul class="speaker-links-ul">
+            <li class="speaker-link">
+              <a href="https://www.linkedin.com/in/vitor-rodrigues-tonon-17b940136/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="speaker-row">
+        <div class="speaker-pic">
+          <img src="./assets/img/speakers/speaker-wendel-moreira.webp" alt="Wendel Moreira" class="speaker-img">
+        </div>
+        <div class="speaker-info">
+          <h1>Wendel Moreira</h1>
+          <h3>Extract, Transform, Load. Insights de grandes análises de dados</h3>
+          <h4>Diretor de TI</h4>
+          <p>Graduado em Sistemas de Informação, especialista em Analytics e Business Intelligence e diretor de TI do grupo Chico Rei (chicorei.com, umapenca.com, maisuni.com). Trabalha há mais de 15 anos na área de TI.</p>
+        </div>
+        <div class="speaker-link">
+          <ul class="speaker-links-ul">
+            <li class="speaker-link">
+              <a href="https://www.linkedin.com/in/wendel-moreira/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
   <!-- FIM DO CORPO DO SITE -->
 
   <!-- INÍCIO DO FOOTER -->
