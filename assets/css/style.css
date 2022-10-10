@@ -575,6 +575,10 @@ footer div {
   background-color: var(--blue);
 }
 
+.column-date-green {
+  background-color:green;
+}
+
 .column-details {
   margin-left: 2%;
   float: left;
@@ -700,6 +704,11 @@ footer div {
 
 .palestra {
   color: var(--blue);
+  font-weight: bold;
+}
+
+.title-green{
+  color:green;
   font-weight: bold;
 }
 
