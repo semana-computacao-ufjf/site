@@ -1,3 +1,13 @@
+/* CRIA ALERTA PARA LEMBRAR DA CONFIRMAÇÃO */
+
+function confirmationAlert() {
+  alert(
+    "Confirme sua inscrição com a doação de uma caixa de leite na secretaria do DCC ou um PIX de R$6,00 para o número (32) 98820-4465 até sexta-feira (14/10)."
+  );
+}
+
+confirmationAlert();
+
 /* INÍCIO DA LÓGICA PARA ABRIR/FECHAR O MENU EM TELAS PEQUENAS */
 
 const navBtn = document.querySelector(".nav-icon"); // Pega o botão do navbar para abrir o menu do navbar e fechar o menu do navbar
@@ -75,7 +85,6 @@ function changeTable(tday) {
 // changeColor("day1");
 document.getElementById("day1").click();
 /* FIM LÓGICA DA TABELA */
-
 
 /* INÍCIO DA LÓGICA PARA EXIBIR PALESTRANTES */
 const navbar = document.querySelector("#navbar");

@@ -29,6 +29,14 @@ body {
   display: none;
 }
 
+a:hover {
+  color: var(--red);
+}
+
+a:visited {
+  color: var(--dark-red);
+}
+
 .container-active {
   display: block !important;
 }
@@ -258,6 +266,23 @@ body {
 }
 
 /* FIM DA DESCRIÇÃO */
+
+.alert-cta {
+  background-color: var(--red);
+  color: white;
+  font-weight: bold;
+  padding: 2em 1em 2em;
+  text-align: center;
+}
+
+.alert-cta h1 {
+  font-size: 1.5em;
+}
+
+.alert-phone {
+  font-size: 1.25em;
+  padding: 0 0.5em;
+}
 
 /* INÍCIO DO SEGUNDO CTA */
 .enroll-cta {
@@ -561,14 +586,15 @@ footer div {
 }
 
 .column-date {
+  align-items: center;
+  background-color: var(--dark-red);
+  border-radius: 4px;
+  color: white;
+  display: flex;
   margin-top: 5%;
   margin-right: 5%;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  background-color: var(--dark-red);
-  color: white;
+  text-align: center;
 }
 
 .column-date-blue {
@@ -595,10 +621,6 @@ footer div {
   /* justify-content: center; */
   color: var(--red);
   display: flex;
-}
-
-.column-details-name {
-  line-height: 85%;
 }
 
 .button-programacao {
