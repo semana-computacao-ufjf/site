@@ -323,6 +323,25 @@ a:visited {
 .enroll-tutorial-video {
   display: none;
   margin: 1em 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.enroll-tutorial-video::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+
+.tutorial-video {
+  /* height: 22em;
+  width: 85%; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* FIM DO SEGUNDO CTA */
@@ -602,7 +621,7 @@ footer div {
 }
 
 .column-date-green {
-  background-color:green;
+  background-color: green;
 }
 
 .column-details {
@@ -729,8 +748,8 @@ footer div {
   font-weight: bold;
 }
 
-.title-green{
-  color:green;
+.title-green {
+  color: green;
   font-weight: bold;
 }
 
@@ -857,7 +876,6 @@ footer div {
 
 /* Tamanho de celulares e telas grandes */
 @media screen and (max-width: 600px) {
-
   .nav-menu {
     align-items: center;
     text-align: center;
@@ -921,13 +939,13 @@ footer div {
     justify-content: center;
     margin: 0;
   }
-  
+
   .sps-top-link {
     margin: 0;
     width: 80%;
     text-align: center;
   }
-  
+
   .sps-top-container {
     margin: 0.5em 0;
     width: 100%;
@@ -1180,7 +1198,7 @@ footer div {
   animation: 1s linear 0s 1 getBigger;
 }
 
-.enroll-cta:hover {
+.enroll-cta-a:hover {
   animation: 1s linear 0s 1 getBigger;
 }
 
