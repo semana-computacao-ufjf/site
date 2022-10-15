@@ -2,7 +2,7 @@
 
 function confirmationAlert() {
   alert(
-    "Confirme sua inscrição com a doação de uma caixa de leite na secretaria do DCC ou um PIX de R$6,00 para o número (32) 98820-4465 até sexta-feira (14/10)."
+    "Confirme sua inscrição com a doação de uma caixa de leite na secretaria do DCC ou um PIX de R$6,00 para o número (32) 98820-4465 até segunda-feira (17/10)."
   );
 }
 

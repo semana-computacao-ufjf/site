@@ -24,6 +24,16 @@ body {
   background-color: var(--dark-red);
 }
 
+.awards-container::selection {
+  background-color: white;
+  color: var(--dark-red);
+}
+
+.timer-container::selection {
+  background-color: white;
+  color: var(--dark-red);
+}
+
 /* Remove barra de rolagem */
 ::-webkit-scrollbar {
   display: none;
@@ -331,7 +341,7 @@ a:visited {
 .enroll-tutorial-video::after {
   padding-top: 56.25%;
   display: block;
-  content: '';
+  content: "";
 }
 
 .tutorial-video {
@@ -362,6 +372,41 @@ a:visited {
 }
 
 /* FIM DA PROGRAMAÇÃO */
+
+.awards-container {
+  background-color: var(--dark-red);
+  color: white;
+  margin: 3em 0;
+  padding: 2em 3em;
+}
+
+.awards-columns {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3em 0;
+  padding: 2em 3em;
+}
+
+.awards-title {
+  color: white;
+}
+
+.awards-lists {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 5%;
+}
+
+.award-event {
+  color: white;
+}
+
+.award-classification {
+  color: var(--light-gray);
+  font-weight: bolder;
+}
 
 /* INÍCIO DA LISTA DE PATROCINADORES */
 .sps-title {
@@ -975,8 +1020,9 @@ footer div {
     width: 5em;
   }
 
-  .time-container {
-    padding: 0 0.5em;
+  .awards-columns {
+    flex-direction: column;
+    padding: 0;
   }
 
   .timer-h1 {
@@ -1135,6 +1181,10 @@ footer div {
 
   .column-date {
     padding: 0.5em;
+  }
+
+  .local-table h4 {
+    text-align: center;
   }
 
   .button-programacao {
