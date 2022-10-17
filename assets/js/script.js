@@ -6,7 +6,7 @@ function confirmationAlert() {
   );
 }
 
-confirmationAlert();
+// confirmationAlert();
 
 /* INÍCIO DA LÓGICA PARA ABRIR/FECHAR O MENU EM TELAS PEQUENAS */
 

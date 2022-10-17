@@ -222,6 +222,11 @@ a:visited {
 
 /* INÍCIO DO TIMER */
 
+.timer-finished-title {
+  font-size: 2em;
+  padding: 1em 0;
+}
+
 .timer-container {
   align-items: center;
   background-color: var(--red);
@@ -972,6 +977,10 @@ footer div {
   .text-inside {
     margin: 0;
     padding: 0;
+  }
+
+  .timer-finished-title {
+    text-align: center;
   }
 
   .sps-container {
