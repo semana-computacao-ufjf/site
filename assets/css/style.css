@@ -126,6 +126,10 @@ footer div {
   width: 3em;
 }
 
+.footer-code {
+  width: 5em;
+}
+
 .footer-ufjf {
   width: 4em;
 }
@@ -175,3 +179,4 @@ footer div {
     padding: 0;
   }
 }
+
