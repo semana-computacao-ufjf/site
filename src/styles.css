@@ -6,8 +6,11 @@
   --dark-gray: #494746;
   --new-light-blue: #50bac8;
   --new-purple: #5d36bb;
+  --new-light-purple: #9973ff;
   --new-light-green: #38e2a5;
   --dark-blue: #273657;
+  --new-lightest-blue: #e0f3f5;
+  --new-lightest-purple: #E6DFF6;
 }
 
 @font-face {
@@ -82,4 +85,20 @@ a:visited {
 
 .shadow-text {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.blue-neon-text {
+  color: var(--new-lightest-blue);
+  text-shadow: 0 0 5px var(--new-light-blue), 0 0 15px var(--new-light-blue),
+    0 0 20px var(--new-light-blue), 0 0 40px var(--new-light-blue),
+    0 0 60px var(--new-purple), 0 0 10px var(--new-light-green),
+    0 0 98px var(--new-purple);
+}
+
+.purple-neon-text {
+  color: var(--new-lightest-purple);
+  text-shadow: 0 0 5px var(--new-light-purple), 0 0 15px var(--new-light-purple),
+    0 0 20px var(--new-light-purple), 0 0 40px var(--new-light-purple),
+    0 0 60px var(--new-purple), 0 0 10px var(--new-light-blue),
+    0 0 98px var(--new-purple);
 }
