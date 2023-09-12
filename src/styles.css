@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --pearl-white: #f1f1f1;
+  --light-gray: #bcbec0;
+  --medium-gray: #888482;
+  --dark-gray: #494746;
+  --new-light-blue: #50bac8;
+  --new-purple: #5d36bb;
+  --new-light-green: #38e2a5;
+  --dark-blue: #273657;
+}
+
+@font-face {
+  font-family: "Lovelo";
+  src: url("assets/fonts/Lovelo-Black.otf");
+}
+
+@font-face {
+  font-family: "Lovelo Line Bold";
+  src: url("assets/fonts/Lovelo-Line-Bold.otf");
+}
+
+@font-face {
+  font-family: "Nickainley";
+  src: url("assets/fonts/Nickainley.otf");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("assets/fonts/Quicksand-Book.otf");
+}
+
+@font-face {
+  font-family: "Quicksand Bold";
+  src: url("assets/fonts/Quicksand-Bold.otf");
+}
+
+html,
+body {
+  font-family: "Quicksand", sans-serif;
+  height: 100%;
+  margin: 0 0;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background-image: url("assets/img/background.png");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lovelo";
+}
+
+::selection {
+  color: var(--new-purple);
+  background-color: var(--new-light-blue);
+}
+
+/* Remove barra de rolagem */
+::-webkit-scrollbar {
+  display: none;
+}
+
+a:hover {
+  color: var(--new-light-green);
+}
+
+a:visited {
+  color: var(--new-purple);
+}
+
+.shadow {
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.shadow-text {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
