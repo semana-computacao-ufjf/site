@@ -1,0 +1,10 @@
+div {
+  border-radius: 6px;
+  padding: 8px 8px;
+  text-align: center;
+  width: fit-content;
+}
+
+h2 {
+  margin: 0;
+}

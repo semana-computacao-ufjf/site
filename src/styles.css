@@ -5,6 +5,7 @@
   --medium-gray: #888482;
   --dark-gray: #494746;
   --lightest-blue: #e0f3f5;
+  --neon-blue: #3FD8D6;
   --light-blue: #50bac8;
   --dark-blue: #273657;
   --blue-accent: #3f588d;
@@ -12,6 +13,7 @@
   --lightest-purple: #e6dff6;
   --light-purple: #9973ff;
   --light-green: #38e2a5;
+  --logo-bg: #3990a8;
 }
 
 @font-face {

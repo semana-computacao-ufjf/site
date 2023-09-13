@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -15,6 +15,8 @@ import MenuItem from '../shared/classes/menu-item';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
+  @Input() eventEdition: string = '';
+
   faBars = faBars;
   faFacebookF = faFacebookF;
   faInstagram = faInstagram;
@@ -22,6 +24,7 @@ export class NavbarComponent {
 
   innerWidth?: number;
   showMobileMenu: boolean = true;
+  logoFontSize: string = '0.6rem';
 
   menuItems: MenuItem[] = [
     new MenuItem('Apresentação', '#descricao'),
