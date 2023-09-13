@@ -1,0 +1,21 @@
+.event-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2em 3em;
+}
+
+.event-description {
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+  .event-description-container {
+    flex-direction: column;
+    padding: 1em;
+    text-align: center;
+  }
+}
