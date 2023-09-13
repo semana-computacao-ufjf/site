@@ -39,3 +39,29 @@
 .time-container h2 {
   font-weight: normal;
 }
+
+@media screen and (max-width: 800px) {
+  .timer-h1 {
+    font-size: x-large;
+  }
+
+  .time-container h2 {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .alternative-title {
+    text-align: center;
+  }
+
+  .timer-h1 {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .timer-h1 {
+    font-size: 2em;
+  }
+}
