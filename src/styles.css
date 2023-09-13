@@ -80,7 +80,7 @@ a {
 }
 
 a:hover {
-  box-shadow: inset 100px 0 0 0 var(--light-blue);
+  box-shadow: inset 120px 0 0 0 var(--light-blue);
   color: var(--dark-blue);
 }
 

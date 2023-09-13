@@ -5,6 +5,7 @@ import {
   faFacebookF,
   faInstagram,
   faYoutube,
+  faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 
 import MenuItem from '../shared/classes/menu-item';
@@ -21,6 +22,7 @@ export class NavbarComponent {
   faFacebookF = faFacebookF;
   faInstagram = faInstagram;
   faYoutube = faYoutube;
+  faLinkedin = faLinkedin;
 
   innerWidth?: number;
   showMobileMenu: boolean = true;
