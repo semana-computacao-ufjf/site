@@ -6,6 +6,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { BannerComponent } from './banner/banner.component';
 import { ClockCtaComponent } from './clock-cta/clock-cta.component';
 import { EventDescriptionComponent } from './event-description/event-description.component';
 import { LogoComponent } from './logo/logo.component';
@@ -18,6 +19,7 @@ import { LogoComponent } from './logo/logo.component';
     ClockCtaComponent,
     LogoComponent,
     EventDescriptionComponent,
+    LogoComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],

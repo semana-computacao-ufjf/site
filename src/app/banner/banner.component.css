@@ -1,0 +1,70 @@
+.banner-container {
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  background-image: url("../../assets/img/banner-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40em;
+  width: 100%;
+}
+
+.inside-banner {
+  background: linear-gradient(
+    50deg,
+    rgba(152, 115, 255, 0.4) 40%,
+    rgba(57, 144, 168, 0.4) 100%
+  );
+  background-blend-mode: hard-light, normal;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-text {
+  max-width: 50%;
+  padding: 8em 4em 0;
+}
+
+.banner-text-only,
+.cta-btn-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0.6em;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .btn {
+    margin: 1em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Corrige exibição do botão */
+  .cta-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Remove margens do botão */
+  .btn {
+    margin: 0;
+    width: 100%;
+  }
+
+  .banner-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /* Centraliza texto */
+  .text-inside {
+    margin: 0;
+    padding: 0;
+  }
+}

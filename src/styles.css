@@ -5,7 +5,7 @@
   --medium-gray: #888482;
   --dark-gray: #494746;
   --lightest-blue: #e0f3f5;
-  --neon-blue: #3FD8D6;
+  --neon-blue: #3fd8d6;
   --light-blue: #50bac8;
   --dark-blue: #273657;
   --blue-accent: #3f588d;
@@ -46,7 +46,6 @@ body {
   font-family: "Quicksand", sans-serif;
   height: 100%;
   margin: 0 0;
-  overflow-x: hidden;
   padding: 0;
   width: 100%;
 }
@@ -109,4 +108,33 @@ a:visited {
   text-shadow: 0 0 5px var(--light-purple), 0 0 15px var(--light-purple),
     0 0 20px var(--light-purple), 0 0 40px var(--light-purple),
     0 0 60px var(--purple), 0 0 10px var(--light-blue), 0 0 98px var(--purple);
+}
+
+.btn {
+  background-color: var(--blue-accent);
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 2em;
+  padding: 1em 2em;
+  width: 25%;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--logo-bg);
+}
+
+.btn a {
+  box-shadow: none;
+  color: white;
+  text-decoration: none;
+  transition: none;
+}
+
+@media screen and (max-width: 800px) {
+  .btn {
+    margin: 1em;
+  }
 }

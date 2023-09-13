@@ -11,5 +11,6 @@ export class LogoComponent {
   @Input() nameColor: string = 'var(--neon-blue)';
   @Input() backgroundColor: string = 'none';
   @Input() wordBreak: boolean = false;
+  @Input() hasShadow: boolean = false;
   @Input() fontSize: string = '';
 }

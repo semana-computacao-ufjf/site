@@ -63,7 +63,7 @@
   margin-right: 0.5em;
 }
 
-.social-icon:hover {
+.social-icon:hover, .nav-icon:hover {
   color: var(--light-green);
 }
 

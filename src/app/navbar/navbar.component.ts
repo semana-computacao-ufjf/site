@@ -38,6 +38,9 @@ export class NavbarComponent {
 
   ngOnInit() {
     this.innerWidth = window.innerWidth;
+    if (this.innerWidth < 800) {
+      this.showMobileMenu = false;
+    }
   }
 
   @HostListener('window:resize', ['$event'])

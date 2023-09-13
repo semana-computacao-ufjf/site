@@ -1,8 +1,12 @@
 <app-navbar class="navbar" [eventEdition]="eventEdition"></app-navbar>
 
+<main>
+  <app-banner [eventBeginDate]="eventBeginDate" [eventEndDate]="eventEndDate"
+    [eventEdition]="eventEdition"></app-banner>
 
-<app-clock-cta [eventBeginDate]="eventBeginDate" [eventEndDate]="eventEndDate"></app-clock-cta>
+  <app-clock-cta [eventBeginDate]="eventBeginDate" [eventEndDate]="eventEndDate"></app-clock-cta>
 
-<app-event-description id="descricao"></app-event-description>
+  <app-event-description id="descricao"></app-event-description>
+
 
 <app-footer class="footer"></app-footer>
