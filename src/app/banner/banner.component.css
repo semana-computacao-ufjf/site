@@ -39,7 +39,7 @@
 }
 
 @media screen and (max-width: 800px) {
-  .btn {
+  .c-btn {
     margin: 1em;
   }
 }
@@ -52,7 +52,7 @@
   }
 
   /* Remove margens do botão */
-  .btn {
+  .c-btn {
     margin: 0;
     width: 100%;
   }

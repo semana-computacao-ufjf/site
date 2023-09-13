@@ -110,7 +110,7 @@ a:visited {
     0 0 60px var(--purple), 0 0 10px var(--light-blue), 0 0 98px var(--purple);
 }
 
-.btn {
+.c-btn {
   background-color: var(--blue-accent);
   border-radius: 6px;
   color: white;
@@ -122,11 +122,11 @@ a:visited {
   text-align: center;
 }
 
-.btn:hover {
+.c-btn:hover {
   background-color: var(--logo-bg);
 }
 
-.btn a {
+.c-btn a {
   box-shadow: none;
   color: white;
   text-decoration: none;
@@ -134,7 +134,7 @@ a:visited {
 }
 
 @media screen and (max-width: 800px) {
-  .btn {
+  .c-btn {
     margin: 1em;
   }
 }

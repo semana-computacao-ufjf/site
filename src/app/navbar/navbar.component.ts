@@ -30,9 +30,9 @@ export class NavbarComponent {
     new MenuItem('Apresentação', '#descricao'),
     new MenuItem('Inscrições', '#inscricoes'),
     new MenuItem('Programação', '#programacao'),
-    new MenuItem('Patrocinadores', '#nossos-patrocinadores'),
-    new MenuItem('Organizadores', '#organizadores'),
+    new MenuItem('Patrocinadores', '#apoiadores'),
     new MenuItem('Contato', '#contato'),
+    new MenuItem('Organizadores', '#organizadores'),
     new MenuItem('Palestrantes', '#palestrantes'),
   ];
 
