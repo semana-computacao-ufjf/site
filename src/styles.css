@@ -7,9 +7,9 @@
   --lightest-blue: #e0f3f5;
   --light-blue: #50bac8;
   --dark-blue: #273657;
-  --blue-accent: #3F588D;
+  --blue-accent: #3f588d;
   --purple: #5d36bb;
-  --lightest-purple: #E6DFF6;
+  --lightest-purple: #e6dff6;
   --light-purple: #9973ff;
   --light-green: #38e2a5;
 }
@@ -72,8 +72,15 @@ h6 {
   display: none;
 }
 
+a {
+  box-shadow: inset 0 0 0 0 var(--light-blue);
+  padding: 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
 a:hover {
-  color: var(--light-green);
+  box-shadow: inset 100px 0 0 0 var(--light-blue);
+  color: var(--dark-blue);
 }
 
 a:visited {
@@ -92,14 +99,12 @@ a:visited {
   color: var(--lightest-blue);
   text-shadow: 0 0 5px var(--light-blue), 0 0 15px var(--light-blue),
     0 0 20px var(--light-blue), 0 0 40px var(--light-blue),
-    0 0 60px var(--purple), 0 0 10px var(--light-green),
-    0 0 98px var(--purple);
+    0 0 60px var(--purple), 0 0 10px var(--light-green), 0 0 98px var(--purple);
 }
 
 .purple-neon-text {
   color: var(--lightest-purple);
   text-shadow: 0 0 5px var(--light-purple), 0 0 15px var(--light-purple),
     0 0 20px var(--light-purple), 0 0 40px var(--light-purple),
-    0 0 60px var(--purple), 0 0 10px var(--light-blue),
-    0 0 98px var(--purple);
+    0 0 60px var(--purple), 0 0 10px var(--light-blue), 0 0 98px var(--purple);
 }

@@ -23,15 +23,14 @@
   padding: 0;
 }
 
+.navbar-navigation-links li {
+  margin-right: 1em;
+}
+
 .navbar-navigation-links a {
   color: white;
   font-size: 0.9em;
-  margin-right: 1em;
   text-decoration: none;
-}
-
-.navbar-navigation-links a:hover {
-  color: var(--light-green);
 }
 
 .nav-icon {
@@ -39,10 +38,6 @@
   cursor: pointer;
   display: none;
   font-size: 1.5em;
-}
-
-.nav-icon:hover {
-  color: var(--light-green);
 }
 
 .speakers-link {
@@ -55,8 +50,11 @@
   padding-right: 1em;
 }
 
-.social-media-links a {
+.social-media-links a,
+.navbar-logo a {
+  box-shadow: none;
   text-decoration: none;
+  transition: none;
 }
 
 .social-icon {
@@ -86,7 +84,10 @@
   }
 
   .nav-menu ul {
-    display: block;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     list-style-type: none;
     text-align: center;
   }
@@ -94,5 +95,6 @@
   .nav-menu li {
     display: block;
     padding-bottom: 0.3em;
+    margin: 0;
   }
 }
