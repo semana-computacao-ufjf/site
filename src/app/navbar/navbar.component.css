@@ -1,6 +1,7 @@
 .navbar {
   align-items: center;
-  background-color: var(--pearl-white);
+  background-color: var(--blue-accent);
+  color: white;
   display: flex;
   justify-content: space-between;
 }
@@ -12,7 +13,6 @@
 }
 
 .nav-logo {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   margin-left: 0.5em;
   width: 3em;
 }
@@ -24,27 +24,25 @@
 }
 
 .navbar-navigation-links a {
-  color: var(--dark-gray);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: white;
   font-size: 0.9em;
   margin-right: 1em;
   text-decoration: none;
 }
 
 .navbar-navigation-links a:hover {
-  color: var(--red);
+  color: var(--light-green);
 }
 
 .nav-icon {
-  color: var(--dark-gray);
+  color: white;
   cursor: pointer;
   display: none;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   font-size: 1.5em;
 }
 
 .nav-icon:hover {
-  color: var(--new-light-green);
+  color: var(--light-green);
 }
 
 .speakers-link {
@@ -62,14 +60,13 @@
 }
 
 .social-icon {
-  color: var(--dark-gray);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: white;
   font-size: 1.5em;
   margin-right: 0.5em;
 }
 
 .social-icon:hover {
-  color: var(--new-light-green);
+  color: var(--light-green);
 }
 
 .social-ufjf {
