@@ -1,0 +1,41 @@
+.timer-container {
+  align-items: center;
+  /* background-color: var(--blue-accent); */
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+
+.alternative-title {
+  font-size: 2em;
+  padding: 1em 0;
+}
+
+.timer-h1 {
+  /* font-family: "Nickainley"; */
+  font-size: 2em;
+  line-height: 70%;
+  text-align: center;
+}
+
+.begins-in {
+  line-height: 100%;
+}
+
+.timer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.time-container {
+  padding: 0 2em;
+  text-align: center;
+}
+
+.time-container h2 {
+  font-weight: normal;
+}
