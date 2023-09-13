@@ -1,0 +1,71 @@
+.enroll-cta {
+  font-size: small;
+  text-align: center;
+}
+
+.enroll-cta h1 {
+  color: var(--light-blue);
+  font-size: 3em;
+}
+
+.enroll-cta a {
+  background-color: var(--light-green);
+  border-radius: 6px;
+  box-shadow: none;
+  color: var(--dark-blue);
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: bolder;
+  margin: 1em;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  transition: none;
+}
+
+.enroll-cta p {
+  margin: 2.5em 0;
+}
+
+.enroll-cta span {
+  cursor: pointer;
+  font-size: 2em;
+  text-decoration: underline;
+  text-decoration-color: var(--light-blue);
+}
+
+.enroll-cta span:hover {
+  /* PURPLE NEON TEXT */
+  color: var(--lightest-purple);
+  text-shadow: 0 0 5px var(--light-purple), 0 0 15px var(--light-purple),
+    0 0 20px var(--light-purple), 0 0 40px var(--light-purple),
+    0 0 60px var(--purple), 0 0 10px var(--light-blue), 0 0 98px var(--purple);
+  text-decoration-color: var(--light-purple);
+}
+
+.video-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.enroll-tutorial-video {
+  margin: 1em 0;
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+}
+
+.enroll-tutorial-video::after {
+  padding-top: 56.25%;
+  display: block;
+  content: "";
+}
+
+.tutorial-video {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
