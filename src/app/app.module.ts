@@ -10,16 +10,20 @@ import { BannerComponent } from './banner/banner.component';
 import { ClockCtaComponent } from './clock-cta/clock-cta.component';
 import { EventDescriptionComponent } from './event-description/event-description.component';
 import { LogoComponent } from './logo/logo.component';
+import { AlertComponent } from './alert/alert.component';
+import { RegisterCtaComponent } from './register-cta/register-cta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     NavbarComponent,
+    BannerComponent,
     ClockCtaComponent,
-    LogoComponent,
     EventDescriptionComponent,
     LogoComponent,
+    AlertComponent,
+    RegisterCtaComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],
