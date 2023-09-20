@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-evenly;
   padding: 0;
-  margin: 0;
+  margin: 2.5em 0 1.5em;
 }
 
 .alternative-title {
@@ -13,9 +13,8 @@
   padding: 1em 0;
 }
 
-.timer-h1 {
-  /* font-family: "Nickainley"; */
-  font-size: 2em;
+.timer-title {
+  font-size: 4em;
   line-height: 70%;
   text-align: center;
 }
@@ -28,6 +27,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-top: 2em;
   padding: 0;
 }
 
@@ -36,16 +36,16 @@
   text-align: center;
 }
 
-.time-container h2 {
+.time-container h3 {
   font-weight: normal;
 }
 
 @media screen and (max-width: 800px) {
-  .timer-h1 {
-    font-size: x-large;
+  .timer-title {
+    font-size: 4em;
   }
 
-  .time-container h2 {
+  .time-container h3 {
     font-size: medium;
   }
 }
@@ -55,13 +55,26 @@
     text-align: center;
   }
 
-  .timer-h1 {
-    font-size: large;
+  .timer-title {
+    font-size: 4em;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .timer-h1 {
+@media screen and (max-width: 500px) {
+  .timer {
+    flex-direction: column;
+  }
+
+  .time-container {
+    margin: 0.8em 0;
+  }
+
+  .timer h2 {
+    font-size: 3em;
+  }
+
+  .timer h3 {
     font-size: 2em;
   }
+
 }

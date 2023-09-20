@@ -1,4 +1,4 @@
-.navbar {
+.c-navbar {
   align-items: center;
   background-color: var(--blue-accent);
   color: white;
@@ -20,7 +20,7 @@
 .navbar-navigation-links ul {
   display: flex;
   list-style-type: none;
-  padding: 0;
+  padding: 1em 0 0;
 }
 
 .navbar-navigation-links li {

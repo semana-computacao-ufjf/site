@@ -26,7 +26,7 @@ export class NavbarComponent {
 
   innerWidth?: number;
   showMobileMenu: boolean = true;
-  logoFontSize: string = '0.6rem';
+  logoFontSize: string = '0.8rem';
 
   menuItems: MenuItem[] = [
     new MenuItem('Apresentação', '#descricao'),

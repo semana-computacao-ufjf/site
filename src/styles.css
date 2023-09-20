@@ -16,6 +16,8 @@
   --logo-bg: #3990a8;
 }
 
+@import "~bootstrap/dist/css/bootstrap.css";
+
 @font-face {
   font-family: "Lovelo";
   src: url("assets/fonts/Lovelo-Black.otf");
@@ -118,7 +120,6 @@ a:visited {
   font-weight: bold;
   margin: 2em;
   padding: 1em 2em;
-  width: 25%;
   text-align: center;
 }
 

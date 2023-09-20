@@ -5,24 +5,24 @@
   <h1 class="alternative-title" *ngIf="!showTimer() && !isPastEventDate() && isInEventWeek()">O evento já começou!</h1>
   <div *ngIf="showTimer()">
     <div>
-      <h1 class="timer-h1 begins-in purple-neon-text">COMEÇA EM</h1>
+      <h1 class="timer-title begins-in purple-neon-text">COMEÇA EM</h1>
     </div>
     <div class="timer">
       <div class="time-container">
-        <h1 class="timer-h1 shadow-text">{{ daysRemaining }}</h1>
-        <h2 class="shadow-text blue-neon-text">Dias</h2>
+        <h2 class="timer-title shadow-text">{{ daysRemaining }}</h2>
+        <h3 class="shadow-text blue-neon-text">Dias</h3>
       </div>
       <div class="time-container">
-        <h1 class="timer-h1 shadow-text">{{ hoursRemaining }}</h1>
-        <h2 class="shadow-text blue-neon-text">Horas</h2>
+        <h2 class="timer-title shadow-text">{{ hoursRemaining }}</h2>
+        <h3 class="shadow-text blue-neon-text">Horas</h3>
       </div>
       <div class="time-container">
-        <h1 class="timer-h1 shadow-text">{{ minutesRemaining }}</h1>
-        <h2 class="shadow-text blue-neon-text">Minutos</h2>
+        <h2 class="timer-title shadow-text">{{ minutesRemaining }}</h2>
+        <h3 class="shadow-text blue-neon-text">Minutos</h3>
       </div>
       <div class="time-container">
-        <h1 class="timer-h1 shadow-text">{{ secondsRemaining }}</h1>
-        <h2 class="shadow-text blue-neon-text">Segundos</h2>
+        <h2 class="timer-title shadow-text">{{ secondsRemaining }}</h2>
+        <h3 class="shadow-text blue-neon-text">Segundos</h3>
       </div>
     </div>
   </div>

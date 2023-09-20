@@ -6,6 +6,7 @@
 .enroll-cta h1 {
   color: var(--light-blue);
   font-size: 3em;
+  margin-bottom: 1em;
 }
 
 .enroll-cta a {
@@ -32,6 +33,11 @@
   font-size: 2em;
   text-decoration: underline;
   text-decoration-color: var(--light-blue);
+}
+
+.enroll-cta a:hover {
+  background-color: var(--purple);
+  color: white;
 }
 
 .enroll-cta span:hover {

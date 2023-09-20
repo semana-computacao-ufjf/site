@@ -1,4 +1,4 @@
-<app-navbar class="navbar" [eventEdition]="eventEdition"></app-navbar>
+<app-navbar class="c-navbar" [eventEdition]="eventEdition"></app-navbar>
 
 <main>
   <app-banner [eventBeginDate]="eventBeginDate" [eventEndDate]="eventEndDate"
@@ -11,6 +11,16 @@
   <app-alert *ngIf="false"></app-alert>
 
   <app-register-cta id="inscricoes"></app-register-cta>
+
+  <app-schedule id="programacao"></app-schedule>
+
+  <app-awards id="premiacoes"></app-awards>
+
+  <app-supporters-list id="apoiadores"></app-supporters-list>
+
+  <app-contact-section id="contato"></app-contact-section>
+
+  <app-organizers-list id="organizadores"></app-organizers-list>
 </main>
 
-<app-footer class="footer"></app-footer>
+<app-footer class="c-footer"></app-footer>

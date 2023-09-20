@@ -38,9 +38,21 @@
   text-align: center;
 }
 
+.c-btn a {
+  font-size: 1em;
+}
+
 @media screen and (max-width: 800px) {
   .c-btn {
     margin: 1em;
+  }
+
+  .banner-text {
+    max-width: 70%;
+  }
+
+  .banner-text-only {
+    margin-left: 0.5em;
   }
 }
 
