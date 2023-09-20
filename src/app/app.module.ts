@@ -12,7 +12,9 @@ import { EventDescriptionComponent } from './event-description/event-description
 import { LogoComponent } from './logo/logo.component';
 import { AlertComponent } from './alert/alert.component';
 import { RegisterCtaComponent } from './register-cta/register-cta.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 import { AwardsComponent } from './awards/awards.component';
+import { SupportersListComponent } from './supporters-list/supporters-list.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { OrganizersListComponent } from './organizers-list/organizers-list.component';
 import { OrganizerProfileComponent } from './organizer-profile/organizer-profile.component';
@@ -28,7 +30,9 @@ import { OrganizerProfileComponent } from './organizer-profile/organizer-profile
     LogoComponent,
     AlertComponent,
     RegisterCtaComponent,
+    ScheduleComponent,
     AwardsComponent,
+    SupportersListComponent,
     ContactSectionComponent,
     OrganizersListComponent,
     OrganizerProfileComponent,
