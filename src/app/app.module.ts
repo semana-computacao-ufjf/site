@@ -30,6 +30,7 @@ import { OrganizerProfileComponent } from './organizer-profile/organizer-profile
     RegisterCtaComponent,
     AwardsComponent,
     ContactSectionComponent,
+    OrganizersListComponent,
     OrganizerProfileComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule],

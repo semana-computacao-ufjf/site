@@ -25,6 +25,7 @@ a {
 a:hover {
   box-shadow: inset 450px 0 0 0 var(--light-blue);
   color: var(--dark-blue);
+  font-weight: bolder;
 }
 
 fa-icon {

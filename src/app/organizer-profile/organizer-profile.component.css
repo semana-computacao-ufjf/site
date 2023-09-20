@@ -36,3 +36,35 @@ a:hover {
   text-align: center;
   text-decoration: none;
 }
+
+/* Animação de hover específica para esse caso */
+.organizer-link :hover > .organizer-name {
+  background-position: -50% 100%;
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.organizer-name {
+  --initialTextColor: white;
+  --slideTextColor: var(--dark-blue);
+
+  --initialBgColor: #00000000;
+  --slideBgColor: var(--light-blue);
+
+  background-image: linear-gradient(
+    90deg,
+    var(--initialBgColor) 0%,
+    var(--initialBgColor) 50%,
+    var(--slideBgColor) 50%,
+    var(--slideBgColor) 100%
+  );
+
+  background-size: 400%;
+
+  color: var(--initialTextColor);
+
+  padding: 0.2em;
+
+  transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63),
+    color 0.3s linear;
+}
