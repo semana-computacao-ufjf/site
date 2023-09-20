@@ -12,6 +12,7 @@ import { EventDescriptionComponent } from './event-description/event-description
 import { LogoComponent } from './logo/logo.component';
 import { AlertComponent } from './alert/alert.component';
 import { RegisterCtaComponent } from './register-cta/register-cta.component';
+import { AwardsComponent } from './awards/awards.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { RegisterCtaComponent } from './register-cta/register-cta.component';
     LogoComponent,
     AlertComponent,
     RegisterCtaComponent,
+    AwardsComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],

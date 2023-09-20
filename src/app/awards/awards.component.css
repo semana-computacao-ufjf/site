@@ -1,0 +1,17 @@
+section {
+  background-color: var(--blue-accent);
+  color: white;
+  padding: 2em;
+}
+
+div {
+  margin-top: 1em;
+}
+
+h2 {
+  color: var(--light-green);
+}
+
+.award-classification {
+  font-weight: bold;
+}
