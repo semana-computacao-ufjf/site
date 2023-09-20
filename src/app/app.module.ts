@@ -13,6 +13,7 @@ import { LogoComponent } from './logo/logo.component';
 import { AlertComponent } from './alert/alert.component';
 import { RegisterCtaComponent } from './register-cta/register-cta.component';
 import { AwardsComponent } from './awards/awards.component';
+import { ContactSectionComponent } from './contact-section/contact-section.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { AwardsComponent } from './awards/awards.component';
     AlertComponent,
     RegisterCtaComponent,
     AwardsComponent,
+    ContactSectionComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],

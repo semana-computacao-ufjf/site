@@ -1,0 +1,42 @@
+section {
+  padding: 2em;
+}
+
+h2 {
+  color: white;
+}
+
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  box-shadow: inset 450px 0 0 0 var(--light-blue);
+  color: var(--dark-blue);
+}
+
+fa-icon {
+  font-size: 1.5em;
+  margin-right: 1.5em;
+}
+
+.social-media-icon {
+  font-size: 1.7em;
+}
+
+.social-ufjf-ic {
+  height: 3em;
+  margin-right: 0.8em;
+  width: 3em;
+}
