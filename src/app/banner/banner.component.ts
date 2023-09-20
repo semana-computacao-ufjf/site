@@ -9,7 +9,7 @@ export class BannerComponent {
   @Input() eventEdition: string = '';
   @Input() eventBeginDate?: Date;
   @Input() eventEndDate?: Date;
-  logoFontSize: string = '3.5rem';
+  logoFontSize: string = '3rem';
 
   getMonthPtBr(mes: number): string {
     const meses = [
