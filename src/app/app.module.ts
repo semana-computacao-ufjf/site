@@ -14,6 +14,8 @@ import { AlertComponent } from './alert/alert.component';
 import { RegisterCtaComponent } from './register-cta/register-cta.component';
 import { AwardsComponent } from './awards/awards.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { OrganizersListComponent } from './organizers-list/organizers-list.component';
+import { OrganizerProfileComponent } from './organizer-profile/organizer-profile.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
     RegisterCtaComponent,
     AwardsComponent,
     ContactSectionComponent,
+    OrganizerProfileComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],

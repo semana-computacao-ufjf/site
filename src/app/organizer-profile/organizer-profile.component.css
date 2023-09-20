@@ -1,0 +1,38 @@
+a:hover {
+  box-shadow: none;
+}
+
+.organizer-container {
+  align-items: center;
+  border-radius: 6px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em 1em 0.4em;
+}
+
+.organizer-link {
+  text-decoration: none;
+}
+
+.organizer-image {
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  object-fit: cover;
+  margin-bottom: 1em;
+  width: 11em;
+}
+
+.organizer-name {
+  color: white;
+  text-decoration: none;
+}
+
+.organizer-role {
+  color: white;
+  max-width: 140px;
+  text-align: center;
+  text-decoration: none;
+}

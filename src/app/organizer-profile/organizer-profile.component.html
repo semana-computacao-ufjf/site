@@ -1,0 +1,9 @@
+<a [href]="organizer.profileLink" class="organizer-link" target="_blank">
+  <div class="organizer-container">
+    <img [src]="organizer.imageSrc" [alt]="'Foto de ' + organizer.fullName" class="organizer-image">
+    <h4 class="organizer-name">{{ organizer.fullName }}</h4>
+    <p class="organizer-role">
+      {{ organizer.role }}
+    </p>
+  </div>
+</a>

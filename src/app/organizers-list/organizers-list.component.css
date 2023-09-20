@@ -1,0 +1,14 @@
+section {
+  margin: 1em 0;
+  padding: 2em;
+}
+
+h2 {
+  color: white;
+}
+
+.organizers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
