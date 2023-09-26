@@ -27,12 +27,13 @@ a:hover {
 
 .organizer-name {
   color: white;
+  text-align: center;
   text-decoration: none;
 }
 
 .organizer-role {
   color: white;
-  max-width: 140px;
+  max-width: 200px;
   text-align: center;
   text-decoration: none;
 }

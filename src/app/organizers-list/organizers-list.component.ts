@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import Organizer from '../shared/classes/organizer';
+import { OrganizersData } from '../shared/data/OrganizersData';
 
 @Component({
   selector: 'app-organizers-list',
@@ -7,12 +8,9 @@ import Organizer from '../shared/classes/organizer';
   styleUrls: ['./organizers-list.component.css'],
 })
 export class OrganizersListComponent {
-  organizers: Organizer[] = [
-    // new Organizer(
-    //   'https://www.google.com',
-    //   './assets/img/organizers/pfp.png',
-    //   'Teste Teste',
-    //   'Professor de abobrinhas'
-    // ),
-  ];
+  organizers: Organizer[] = [];
+
+  ngOnInit() {
+    this.organizers = OrganizersData;
+  }
 }

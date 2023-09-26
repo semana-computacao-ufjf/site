@@ -1,8 +1,8 @@
 <section *ngIf="supportersList && supportersList.length > 0">
   <h2>{{ supporterTypeName }}</h2>
 
-  <div class="container text-center supporters-container">
-    <div class="row row-cols-lg-5 row-cols-md-3 row-cols-sm-2 row-cols-xs-1">
+  <div class="supporters-container text-center d-flex justify-content-center align-items-center">
+    <div class="row row-cols-lg-5 row-cols-md-3 row-cols-sm-2 row-cols-xs-1 d-flex align-items-center justify-content-evenly">
       <div class="col" *ngFor="let supporter of supportersList; let index = index">
         <a [href]="supporter.url" target="_blank">
           <img [src]="supporter.logoPath" [alt]="supporter.name" class="img-fluid">
