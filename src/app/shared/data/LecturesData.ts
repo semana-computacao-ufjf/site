@@ -2,7 +2,7 @@ import Lecture from '../classes/lecture';
 import Speaker from '../classes/speaker';
 import TypeEnum from '../enums/type-enum';
 
-export const Lectures = [
+export const LecturesData = [
   // Segunda
   [
     new Lecture(

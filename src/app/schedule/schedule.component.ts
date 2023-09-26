@@ -3,7 +3,7 @@ import Lecture from '../shared/classes/lecture';
 import TypeEnum from '../shared/enums/type-enum';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import Speaker from '../shared/classes/speaker';
-import { Lectures } from '../shared/data/Lectures';
+import { LecturesData } from '../shared/data/LecturesData';
 
 @Component({
   selector: 'app-schedule',
@@ -15,7 +15,7 @@ export class ScheduleComponent {
 
   daysList = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta'];
 
-  lectureListByDays: Lecture[][] = Lectures;
+  lectureListByDays: Lecture[][] = LecturesData;
 
   getIcon(type: number): IconDefinition {
     return TypeEnum.getIcon(type);

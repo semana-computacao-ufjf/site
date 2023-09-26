@@ -1,6 +1,3 @@
-import { Lectures } from '../data/Lectures';
-import Lecture from './lecture';
-
 export default class Speaker {
   _description: string;
   _fullName: string;
