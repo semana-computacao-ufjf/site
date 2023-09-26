@@ -5,6 +5,7 @@ import Speaker from './speaker';
 export default class Lecture {
   private _dateTime: Date;
   private _description: string;
+  private _duration: number; // tempo em minutos
   private _id: number;
   private _location: string;
   private _speaker?: Speaker;
@@ -15,6 +16,7 @@ export default class Lecture {
     id: number,
     dateTime: Date,
     description: string,
+    duration: number,
     location: string,
     title: string,
     type: number,
@@ -23,6 +25,7 @@ export default class Lecture {
     this._id = id;
     this._dateTime = dateTime;
     this._description = description;
+    this._duration = duration;
     this._location = location;
     this._speaker = speaker;
     this._title = title;
@@ -47,6 +50,10 @@ export default class Lecture {
 
   get description(): string {
     return this._description;
+  }
+
+  get duration(): number {
+    return this._duration;
   }
 
   get location(): string {

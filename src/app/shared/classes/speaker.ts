@@ -1,3 +1,4 @@
+import { Lectures } from '../data/Lectures';
 import Lecture from './lecture';
 
 export default class Speaker {
@@ -5,7 +6,7 @@ export default class Speaker {
   _fullName: string;
   _id: number;
   _imageSrc: string;
-  _lectureGiven: Lecture;
+  _lectureGiven: number;
   _profileLink: string;
   _role: string;
 
@@ -16,7 +17,7 @@ export default class Speaker {
     imageSrc: string,
     profileLink: string,
     role: string,
-    lectureGiven: Lecture
+    lectureGiven: number
   ) {
     this._id = id;
     this._fullName = fullName;
@@ -43,7 +44,7 @@ export default class Speaker {
     return this._imageSrc;
   }
 
-  get lectureGiven(): Lecture {
+  get lectureGiven(): number {
     return this._lectureGiven;
   }
 

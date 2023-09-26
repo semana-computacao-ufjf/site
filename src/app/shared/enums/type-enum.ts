@@ -9,12 +9,12 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 export default class TypeEnum {
-  Palestra = 0;
-  Minicurso = 1;
-  ProcessoSeletivo = 2;
-  Competicao = 3;
-  VisitaTecnica = 4;
-  ShowTalentos = 5;
+  static Palestra: number = 0;
+  static Minicurso: number = 1;
+  static ProcessoSeletivo: number = 2;
+  static Competicao: number = 3;
+  static VisitaTecnica: number = 4;
+  static ShowTalentos: number = 5;
 
   static getTypes(): string[] {
     return [
@@ -32,7 +32,7 @@ export default class TypeEnum {
   }
 
   static getColor(type: number): string {
-    const colors = [''];
+    const colors = ['info', 'light', 'warning', 'success', 'danger', 'primary'];
     return colors[type];
   }
 
