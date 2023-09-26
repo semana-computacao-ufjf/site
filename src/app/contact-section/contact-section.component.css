@@ -49,3 +49,9 @@ fa-icon {
   justify-content: center;
   margin-top: 1em;
 }
+
+@media screen and (max-width: 400px) {
+  .social-media-container a {
+    font-size: small;
+  }
+}

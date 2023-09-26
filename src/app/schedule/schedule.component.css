@@ -30,7 +30,7 @@ li a.active {
 }
 
 @media screen and (max-width: 400px) {
-  ul a {
-    font-size: 12px;
+  .nav-tab-li-items {
+    flex-direction: column;
   }
 }

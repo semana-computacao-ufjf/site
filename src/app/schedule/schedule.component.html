@@ -4,7 +4,7 @@
 
   <div>
     <ul class="nav nav-tabs justify-content-center">
-      <li class="nav-item d-flex">
+      <li class="nav-item d-flex nav-tab-li-items">
         <a class="nav-link" [class]="{'active' : dayActive === dayIndex}" aria-current="page"
           *ngFor="let day of daysList; let dayIndex = index" (click)="changeDay(dayIndex)">{{ day }}</a>
       </li>

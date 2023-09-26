@@ -39,7 +39,10 @@ export class ContactSectionComponent {
   @HostListener('window:resize', ['$event'])
   onWindowResize() {
     this.innerWidth = window.innerWidth;
-    if (this.innerWidth < 500) {
+    if (this.innerWidth < 310) {
+      this.mapWidth = 275;
+      this.mapHeight = 200;
+    } else if (this.innerWidth >= 310 && this.innerWidth < 500) {
       this.mapWidth = 300;
       this.mapHeight = 200;
     } else {
