@@ -1,9 +1,5 @@
 .c-navbar {
-  align-items: center;
   background-color: var(--blue-accent);
-  color: white;
-  display: flex;
-  justify-content: space-between;
 }
 
 .navbar-logo a {
@@ -20,14 +16,13 @@
 .navbar-navigation-links ul {
   display: flex;
   list-style-type: none;
-  padding: 1em 0 0;
 }
 
 .navbar-navigation-links li {
   margin-right: 1em;
 }
 
-.navbar-navigation-links a {
+.nav-link-a {
   color: white;
   font-size: 0.9em;
   text-decoration: none;
@@ -64,7 +59,8 @@
   margin-right: 0.5em;
 }
 
-.social-icon:hover, .nav-icon:hover {
+.social-icon:hover,
+.nav-icon:hover {
   color: var(--light-green);
 }
 
@@ -115,5 +111,9 @@
     height: 2em;
     padding: 0;
     width: 2em;
+  }
+
+  .social-media-links {
+    margin: auto;
   }
 }

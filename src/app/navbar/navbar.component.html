@@ -1,42 +1,48 @@
-<nav class="c-navbar" id="navbar">
+<nav class="navbar navbar-expand-lg c-navbar" id="navbar">
   <!-- LOGOS -->
-  <div class="navbar-logo shadow-text">
-    <a href="#navbar">
-      <img class="nav-logo" src="./assets/img/logos/logo-semcomp-23.png" alt="Logo da Semana da Computação.">
-      <app-logo [eventEdition]="eventEdition" [wordBreak]="true" [fontSize]="logoFontSize"
-        [hasShadow]="true"></app-logo>
-    </a>
-  </div>
+  <div class="container-fluid">
+    <div class="navbar-brand navbar-logo shadow-text">
+      <a href="#navbar">
+        <img class="nav-logo" src="./assets/img/logos/logo-semcomp-23.png" alt="Logo da Semana da Computação.">
+        <app-logo [eventEdition]="eventEdition" [wordBreak]="true" [fontSize]="logoFontSize"
+          [hasShadow]="true"></app-logo>
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <fa-icon class="nav-icon shadow-text" [icon]="faBars"></fa-icon>
+    </button>
 
-  <!-- LINKS PARA AS DIFERENTES PARTES -->
-  <div class="navbar-navigation-links" [class]="{'nav-menu': showMobileMenu}">
-    <ul class="nav-links-ul">
-      <fa-icon class="nav-icon shadow-text" [icon]="faBars" (click)="toggleMenu()"></fa-icon>
-      <ng-container *ngIf="showMobileMenu">
-        <li *ngFor="let item of menuItems">
-          <a [href]="item.link" class="nav-link shadow-text">{{ item.name }}</a>
+    <!-- LINKS PARA AS DIFERENTES PARTES -->
+    <div class="collapse navbar-collapse navbar-navigation-links" id="navbarNav">
+      <ul class="nav-links-ul navbar-nav">
+        <li class="nav-item" *ngFor="let item of menuItems">
+          <a [href]="item.link" class="nav-link shadow-text nav-link-a">{{ item.name }}</a>
         </li>
-      </ng-container>
-    </ul>
+        <!-- </ng-container> -->
+      </ul>
+    </div>
+
+    <!-- LINKS PARA AS REDES SOCIAIS -->
+    <div class="social-media-links">
+      <a href="https://www.instagram.com/semanadacomputacaoufjf/" target="_blank">
+        <fa-icon class="social-icon shadow-text" [icon]="faInstagram"></fa-icon>
+      </a>
+      <a href="https://www.facebook.com/semanadacomputacaoufjf" target="_blank">
+        <fa-icon class="social-icon shadow-text" [icon]="faFacebookF"></fa-icon>
+      </a>
+      <a href="https://www.youtube.com/channel/UCuShdSFgW-59_XE6v631l_Q" target="_blank">
+        <fa-icon class="social-icon shadow-text" [icon]="faYoutube"></fa-icon>
+      </a>
+      <a href="https://www.linkedin.com/company/semana-da-computacao-ufjf/" target="_blank">
+        <fa-icon class="social-icon shadow-text" [icon]="faLinkedin"></fa-icon>
+      </a>
+      <a href="https://www.ufjf.br/deptocomputacao/eventos/semana-da-computacao/" target="_blank"
+        class="social-ufjf-link shadow-text">
+        <img class="social-icon social-ufjf" src="./assets/img/logos/logo-ufjf.png" alt="Logo UFJF">
+      </a>
+    </div>
+
   </div>
 
-  <div class="social-media-links">
-    <a href="https://www.instagram.com/semanadacomputacaoufjf/" target="_blank">
-      <fa-icon class="social-icon shadow-text" [icon]="faInstagram"></fa-icon>
-    </a>
-    <a href="https://www.facebook.com/semanadacomputacaoufjf" target="_blank">
-      <fa-icon class="social-icon shadow-text" [icon]="faFacebookF"></fa-icon>
-    </a>
-    <a href="https://www.youtube.com/channel/UCuShdSFgW-59_XE6v631l_Q" target="_blank">
-      <fa-icon class="social-icon shadow-text" [icon]="faYoutube"></fa-icon>
-    </a>
-    <a href="https://www.linkedin.com/company/semana-da-computacao-ufjf/" target="_blank">
-      <fa-icon class="social-icon shadow-text" [icon]="faLinkedin"></fa-icon>
-    </a>
-    <a href="https://www.ufjf.br/deptocomputacao/eventos/semana-da-computacao/" target="_blank"
-      class="social-ufjf-link shadow-text">
-      <img class="social-icon social-ufjf" src="./assets/img/logos/logo-ufjf.png" alt="Logo UFJF">
-    </a>
-  </div>
-  <!-- LINKS PARA AS REDES SOCIAIS -->
 </nav>

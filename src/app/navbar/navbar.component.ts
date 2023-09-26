@@ -24,8 +24,6 @@ export class NavbarComponent {
   faYoutube = faYoutube;
   faLinkedin = faLinkedin;
 
-  innerWidth?: number;
-  showMobileMenu: boolean = true;
   logoFontSize: string = '0.8rem';
 
   menuItems: MenuItem[] = [
@@ -37,25 +35,4 @@ export class NavbarComponent {
     new MenuItem('Organizadores', '#organizadores'),
     new MenuItem('Palestrantes', '#palestrantes'),
   ];
-
-  ngOnInit() {
-    this.innerWidth = window.innerWidth;
-    if (this.innerWidth < 800) {
-      this.showMobileMenu = false;
-    }
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onWindowResize() {
-    this.innerWidth = window.innerWidth;
-    if (this.innerWidth < 800) {
-      this.showMobileMenu = false;
-    } else {
-      this.showMobileMenu = true;
-    }
-  }
-
-  toggleMenu() {
-    this.showMobileMenu = !this.showMobileMenu;
-  }
 }

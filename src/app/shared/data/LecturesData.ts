@@ -39,15 +39,15 @@ export const LecturesData: Lecture[][] = [
       TypeEnum.Minicurso,
       SpeakersData[1]
     ),
-    new Lecture(
-      3,
-      new Date(2023, 9, 23, 17, 0),
-      '',
-      60,
-      '',
-      '',
-      TypeEnum.Palestra
-    ),
+    // new Lecture(
+    //   3,
+    //   new Date(2023, 9, 23, 17, 0),
+    //   '',
+    //   60,
+    //   '',
+    //   '',
+    //   TypeEnum.Palestra
+    // ),
     new Lecture(
       4,
       new Date(2023, 9, 23, 19, 0),
