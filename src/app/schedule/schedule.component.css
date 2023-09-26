@@ -1,0 +1,27 @@
+ul a {
+  color: white;
+  font-weight: bolder;
+}
+
+li a.active {
+  color: var(--dark-blue);
+}
+
+.lecture-type-indicator div {
+  border-radius: 100%;
+  display: inline-block;
+  min-width: 46px;
+  padding: 0.6em;
+}
+
+@media screen and (max-width: 450px) {
+  ul a {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  ul a {
+    font-size: 12px;
+  }
+}
