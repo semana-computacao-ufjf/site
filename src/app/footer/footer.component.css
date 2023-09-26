@@ -24,6 +24,7 @@ footer div {
 .footer-logos h3 {
   color: var(--light-blue);
   font-size: medium;
+  margin: 0;
 }
 
 .footer-logo {
@@ -62,5 +63,16 @@ footer div {
   footer .social-icon {
     font-size: 1.5em;
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    flex-direction: column-reverse;
+    padding: 0.5em 0;
+  }
+
+  .footer-logos h3 {
+    margin: 0 0.4em;
   }
 }
