@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'Semana da Computação | UFJF';
   firstEventDate = new Date(1998, 1, 1);
-  eventBeginDate = new Date(2023, 10, 23);
-  eventEndDate = new Date(2023, 10, 27);
+  // OBS: meses no JavaScript começam em 0 = Janeiro
+  eventBeginDate = new Date(2023, 9, 23, 0);
+  eventEndDate = new Date(2023, 19, 27, 0);
   eventNumber: number = 0;
   eventEdition: string = '';
 
