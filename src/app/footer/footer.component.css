@@ -21,9 +21,11 @@ footer div {
   justify-content: space-evenly;
 }
 
-.footer-logos h3 {
-  color: var(--light-blue);
+.footer-logos p {
+  color: white;
+  font-family: "Lovelo";
   font-size: medium;
+  font-weight: bolder;
   margin: 0;
 }
 

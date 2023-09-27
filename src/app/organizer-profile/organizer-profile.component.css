@@ -27,6 +27,10 @@ a:hover {
 
 .organizer-name {
   color: white;
+  font-family: "Lovelo";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
   text-align: center;
   text-decoration: none;
 }

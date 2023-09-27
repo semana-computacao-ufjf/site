@@ -27,6 +27,11 @@ li a.active {
   padding: 0.6em;
 }
 
+.lecture-lecturer {
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
 @media screen and (max-width: 450px) {
   ul a {
     font-size: medium;

@@ -53,7 +53,7 @@ body {
 }
 
 body {
-  background-image: url("assets/img/background.png");
+  background-image: url("assets/img/background.webp");
 }
 
 h1,
@@ -99,14 +99,16 @@ a:visited {
 }
 
 .blue-neon-text {
-  color: var(--lightest-blue);
+  /* color: var(--lightest-blue); */
+  color: white;
   text-shadow: 0 0 5px var(--light-blue), 0 0 15px var(--light-blue),
     0 0 20px var(--light-blue), 0 0 40px var(--light-blue),
     0 0 60px var(--purple), 0 0 10px var(--light-green), 0 0 98px var(--purple);
 }
 
 .purple-neon-text {
-  color: var(--lightest-purple);
+  /* color: var(--lightest-purple); */
+  color: white;
   text-shadow: 0 0 5px var(--light-purple), 0 0 15px var(--light-purple),
     0 0 20px var(--light-purple), 0 0 40px var(--light-purple),
     0 0 60px var(--purple), 0 0 10px var(--light-blue), 0 0 98px var(--purple);

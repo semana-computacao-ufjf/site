@@ -28,7 +28,7 @@ export const OrganizersData: Organizer[] = [
   ),
   new Organizer(
     'https://www.linkedin.com/in/isadorafer',
-    'assets/img/organizers/isadora.jpg',
+    'assets/img/organizers/isadora.webp',
     'Isadora Gonçalves Ferreira',
     'Discente da graduação em Ciência da Computação'
   ),

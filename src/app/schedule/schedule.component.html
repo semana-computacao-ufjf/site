@@ -3,7 +3,8 @@
   <h2>Programação</h2>
 
   <div>
-    <ul class="nav justify-content-center nav-ul" [class]="{'nav-tabs': innerWidth > 450, 'nav-pills': innerWidth <= 450}">
+    <ul class="nav justify-content-center nav-ul"
+      [class]="{'nav-tabs': innerWidth > 450, 'nav-pills': innerWidth <= 450}">
       <li class="nav-item d-flex nav-tab-li-items">
         <a class="nav-link" [class]="{'active' : dayActive === dayIndex}" aria-current="page"
           *ngFor="let day of daysList; let dayIndex = index" (click)="changeDay(dayIndex)">{{ day }}</a>
@@ -14,6 +15,14 @@
   <div class="table-container table-responsive align-middle"
     *ngFor="let lectureList of lectureListByDays; let index = index">
     <table class="table table-dark table-striped-columns" *ngIf="index === dayActive">
+      <thead>
+        <tr>
+          <th scope="col">Tipo</th>
+          <th scope="col">Horário</th>
+          <th scope="col">Detalhes</th>
+          <th scope="col">Localização</th>
+        </tr>
+      </thead>
       <tbody>
         <tr *ngFor="let lecture of lectureList; let index = index">
           <td align="center" valign="middle" class="lecture-type-indicator w-auto px-2"
@@ -30,11 +39,13 @@
             </div>
           </td>
 
-          <td align="center" valign="middle" class="lecture-info w-75">
+          <!-- <th scope="row"> -->
+          <th scope="row" align="center" valign="middle" class="lecture-info w-75">
             <h3 class="lecture-title">{{ lecture.title }}</h3>
-            <h5 class="lecture-lecturer" *ngIf="lecture.speaker">{{ lecture?.speaker?.fullName }}</h5>
+            <p class="lecture-lecturer" *ngIf="lecture.speaker">{{ lecture?.speaker?.fullName }}</p>
             <p>{{ lecture.description }}</p>
-          </td>
+          </th>
+          <!-- </th> -->
 
           <td align="center" valign="middle" class="lecture-location w-25">
             {{ lecture.location }}
