@@ -14,6 +14,7 @@
   --light-purple: #9973ff;
   --light-green: #38e2a5;
   --logo-bg: #3990a8;
+  --blue-bg: #1d305b;
 }
 
 @import "~bootstrap/dist/css/bootstrap.css";
