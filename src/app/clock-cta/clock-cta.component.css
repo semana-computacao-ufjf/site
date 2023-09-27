@@ -69,6 +69,10 @@
     margin: 0.8em 0;
   }
 
+  .timer-title {
+    font-size: 3em;
+  }
+
   .timer h2 {
     font-size: 3em;
   }

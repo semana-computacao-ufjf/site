@@ -40,7 +40,7 @@ export class ContactSectionComponent {
   onWindowResize() {
     this.innerWidth = window.innerWidth;
     if (this.innerWidth < 310) {
-      this.mapWidth = 275;
+      this.mapWidth = 250;
       this.mapHeight = 200;
     } else if (this.innerWidth >= 310 && this.innerWidth < 500) {
       this.mapWidth = 300;

@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import Lecture from '../shared/classes/lecture';
 import TypeEnum from '../shared/enums/type-enum';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import Speaker from '../shared/classes/speaker';
 import { LecturesData } from '../shared/data/LecturesData';
 
 @Component({
@@ -17,12 +16,13 @@ export class ScheduleComponent {
 
   lectureListByDays: Lecture[][] = LecturesData;
 
+  innerWidth: number = 480;
+
   getIcon(type: number): IconDefinition {
     return TypeEnum.getIcon(type);
   }
 
   getColor(type: number): string {
-    // return 'danger';
     return TypeEnum.getColor(type);
   }
 
@@ -36,5 +36,14 @@ export class ScheduleComponent {
 
   changeDay(day: number): void {
     this.dayActive = day;
+  }
+
+  ngOnInit() {
+    this.innerWidth = window.innerWidth;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onWindowResize() {
+    this.innerWidth = window.innerWidth;
   }
 }

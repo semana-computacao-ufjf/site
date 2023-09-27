@@ -16,6 +16,10 @@ li a.active {
   color: var(--dark-blue);
 }
 
+.nav-tab-li-items {
+  cursor: pointer;
+}
+
 .lecture-type-indicator div {
   border-radius: 100%;
   display: inline-block;
@@ -25,12 +29,20 @@ li a.active {
 
 @media screen and (max-width: 450px) {
   ul a {
-    font-size: small;
+    font-size: medium;
+  }
+
+  .nav-ul {
+    margin-bottom: 1em;
   }
 }
 
 @media screen and (max-width: 400px) {
   .nav-tab-li-items {
     flex-direction: column;
+  }
+
+  .nav-tab-li-items .nav-link.active {
+    background-color: var(--light-blue);
   }
 }

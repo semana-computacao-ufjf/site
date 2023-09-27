@@ -5,7 +5,7 @@
   <h1 class="alternative-title" *ngIf="!showTimer() && !isPastEventDate() && isInEventWeek()">O evento já começou!</h1>
   <div *ngIf="showTimer()">
     <div>
-      <h1 class="timer-title begins-in purple-neon-text">COMEÇA EM</h1>
+      <h1 class="timer-title begins-in purple-neon-text">COMEÇA <br *ngIf="innerWidth < 600"> EM</h1>
     </div>
     <div class="timer">
       <div class="time-container">

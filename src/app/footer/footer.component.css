@@ -75,4 +75,9 @@ footer div {
   .footer-logos h3 {
     margin: 0 0.4em;
   }
+
+  footer .social-media-links {
+    margin: 0 0.4em;
+    text-align: center;
+  }
 }

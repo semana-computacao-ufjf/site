@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 
 @Component({
   selector: 'app-clock-cta',
@@ -15,6 +15,8 @@ export class ClockCtaComponent {
   hoursRemaining: number = 0;
   minutesRemaining: number = 0;
   secondsRemaining: number = 0;
+
+  innerWidth: number = window.innerWidth;
 
   ngOnInit(): void {
     // Checa se deve mostrar timer
@@ -88,5 +90,10 @@ export class ClockCtaComponent {
       (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
     );
     this.secondsRemaining = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onWindowResize() {
+    this.innerWidth = window.innerWidth;
   }
 }

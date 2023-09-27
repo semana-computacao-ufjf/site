@@ -101,6 +101,11 @@
 }
 
 @media screen and (max-width: 500px) {
+
+  .nav-links-ul {
+    text-align: center;
+  }
+
   .nav-logo {
     margin: 0;
     width: 2em;
