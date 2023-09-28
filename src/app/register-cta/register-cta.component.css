@@ -83,6 +83,12 @@ p.type-member-cta {
   width: 100%;
 }
 
+.registering-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 550px) {
   .enroll-cta a {
     margin: 1em 0;
