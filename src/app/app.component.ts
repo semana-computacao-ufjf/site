@@ -14,6 +14,8 @@ export class AppComponent implements OnInit {
   eventNumber: number = 0;
   eventEdition: string = '';
 
+  alertMessageDonations: string = 'Para confirmar a sua participação em todos os minicursos, é necessário realizar uma doação de 1kg de alimento não perecível ou 1 caixa de leite. O local de entrega será divulgado em breve.'
+
   ngOnInit() {
     this.eventNumber =
       this.eventBeginDate.getFullYear() - this.firstEventDate.getFullYear();

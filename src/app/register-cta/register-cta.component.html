@@ -1,13 +1,24 @@
 <section class="enroll-cta">
 
   <h1 class="shadow-text">Se interessou?</h1>
-  <a class="c-btn shadow-text" href="https://oauth.integra.nrc.ice.ufjf.br/login" target="_blank">Se
-    inscreva!</a>
-  <p>
-    <span id="show-video" class="blue-neon-text" (click)="toggleShowVideo()">Saiba como</span>
-  </p>
+  <div class="row registering-container">
+    <div class="col-sm-2 col-xs-1 registering-col" >
+      <p class="type-member-cta blue-neon-text">É aluno?</p>
+      <p class="description shadow-text">Você pode se inscrever pelo site abaixo. Assista ao vídeo para saber como se inscrever</p>
+      <a class="c-btn shadow-text" href="https://oauth.integra.nrc.ice.ufjf.br/login" target="_blank">Se
+        inscreva!</a>
+    </div>
+    <div class="col-sm-2 col-xs-1 registering-col">
+      <p class="type-member-cta blue-neon-text">Não é aluno?</p>
+      <p class="description shadow-text"><span class="bold">Não alunos também podem se inscrever!</span></p>
+      <p class="description shadow-text">Não perca essa oportunidade de aprender sobre diversos assuntos na área de tecnologia!</p>
+      <a class="c-btn shadow-text" href="https://integra4.integra.nrc.ice.ufjf.br/integra/geral/listaEventos.zul"
+        target="_blank">Se
+        inscreva!</a>
+    </div>
+  </div>
 
-  <div class="video-container" *ngIf="showVideo">
+  <div class="video-container">
     <div class="enroll-tutorial-video">
       <iframe class="tutorial-video" src="https://www.youtube.com/embed/70I67c9bM4c"
         section-title="YouTube video player" frameborder="0"

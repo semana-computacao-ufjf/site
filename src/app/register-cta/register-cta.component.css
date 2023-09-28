@@ -1,12 +1,12 @@
 .enroll-cta {
   font-size: small;
   text-align: center;
+  margin-bottom: 3em;
 }
 
 .enroll-cta h1 {
   color: var(--light-blue);
   font-size: 3em;
-  margin-bottom: 1em;
 }
 
 .enroll-cta a {
@@ -28,25 +28,32 @@
   margin: 2.5em 0;
 }
 
-.enroll-cta span {
-  cursor: pointer;
-  font-size: 2em;
-  text-decoration: underline;
-  text-decoration-color: var(--light-blue);
-}
-
 .enroll-cta a:hover {
   background-color: var(--purple);
   color: white;
 }
 
-.enroll-cta span:hover {
-  /* PURPLE NEON TEXT */
-  color: var(--lightest-purple);
-  text-shadow: 0 0 5px var(--light-purple), 0 0 15px var(--light-purple),
-    0 0 20px var(--light-purple), 0 0 40px var(--light-purple),
-    0 0 60px var(--purple), 0 0 10px var(--light-blue), 0 0 98px var(--purple);
-  text-decoration-color: var(--light-purple);
+p.description {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 1em 0 !important;
+}
+
+.bold {
+  font-weight: bolder;
+  margin: 0 !important;
+}
+
+.registering-container {
+  margin-bottom: 3em;
+}
+
+p.type-member-cta {
+  color: white;
+  font-size: 2em;
+  font-weight: bolder;
+  margin: 0 0 2.5em !important;
 }
 
 .video-container {
@@ -74,4 +81,27 @@
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  .enroll-cta a {
+    margin: 1em 0;
+  }
+
+  .registering-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .registering-col {
+    padding: 0;
+  }
+
+  .description {
+    font-size: medium !important;
+  }
+
+  p.type-member-cta {
+    margin: 1.5em 0 !important;
+  }
 }

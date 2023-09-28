@@ -3,7 +3,7 @@ import Organizer from '../classes/organizer';
 export const OrganizersData: Organizer[] = [
   new Organizer(
     '',
-    'assets/img/organizers/pessoa_placeholder.png',
+    'assets/img/organizers/luciana.webp',
     'Luciana Brugiolo Gonçalves',
     'Docente no Departamento de Ciência da Computação'
   ),
@@ -22,7 +22,7 @@ export const OrganizersData: Organizer[] = [
 
   new Organizer(
     'https://www.linkedin.com/in/carlosalexandre94/',
-    'assets/img/organizers/pessoa_placeholder.png',
+    'assets/img/organizers/carlos.webp',
     'Carlos Alexandre',
     'Discente do Programa de Pós-graduação em Modelagem Computacional'
   ),
