@@ -16,6 +16,11 @@ li a.active {
   color: var(--dark-blue);
 }
 
+.no-info {
+  color: white;
+  font-size: 1rem;
+}
+
 .nav-tab-li-items {
   cursor: pointer;
 }

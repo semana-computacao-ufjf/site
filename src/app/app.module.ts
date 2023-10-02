@@ -18,6 +18,7 @@ import { SupportersListComponent } from './supporters-list/supporters-list.compo
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { OrganizersListComponent } from './organizers-list/organizers-list.component';
 import { OrganizerProfileComponent } from './organizer-profile/organizer-profile.component';
+import { DonationsComponent } from './donations/donations.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { OrganizerProfileComponent } from './organizer-profile/organizer-profile
     ContactSectionComponent,
     OrganizersListComponent,
     OrganizerProfileComponent,
+    DonationsComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],

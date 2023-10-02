@@ -18,6 +18,8 @@ export class ScheduleComponent {
 
   innerWidth: number = 480;
 
+  showSchedule: boolean = false;
+
   getIcon(type: number): IconDefinition {
     return TypeEnum.getIcon(type);
   }

@@ -8,8 +8,8 @@ export const OrganizersData: Organizer[] = [
     'Docente no Departamento de Ciência da Computação'
   ),
   new Organizer(
-    '',
-    'assets/img/organizers/pessoa_placeholder.png',
+    'https://linkedin.com/in/stênio-soares-2a4960b',
+    'assets/img/organizers/steniosoares.webp',
     'Stênio Sã Rosário Furtado Soares',
     'Docente no Departamento de Ciência da Computação'
   ),
@@ -34,7 +34,7 @@ export const OrganizersData: Organizer[] = [
   ),
   new Organizer(
     'https://www.linkedin.com/in/rafael-coelho-5aa14a20b',
-    'assets/img/organizers/pessoa_placeholder.png',
+    'assets/img/organizers/rafaelcoelho.webp',
     'Rafael Fialho Pinto Coelho',
     'Colaborador do DA Computação'
   ),
