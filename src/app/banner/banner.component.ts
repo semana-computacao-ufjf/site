@@ -27,7 +27,7 @@ export class BannerComponent {
       'Dezembro',
     ];
 
-    return meses[mes - 1];
+    return meses[mes];
   }
 
   getEventDateString(): string {
