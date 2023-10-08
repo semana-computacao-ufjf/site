@@ -1,1 +1,51 @@
-<p>speakers-list works!</p>
+<section>
+
+  <h2>Palestrantes</h2>
+
+    <div class="table-container table-responsive align-middle">
+      <table class="table table-dark table-striped-columns" >
+        <thead>
+          <tr>
+            <th scope="col">Participante</th>
+            <th scope="col">Bio</th>
+            <th scope="col">Vínculo</th>
+            <th scope="col">Redes</th>
+            <th scope="col">Participação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let speaker of speakersList; let index = index">
+            <td align="center" valign="middle" class="lecture-type-indicator w-auto px-2"
+              [class]="{'text-secondary-emphasis':  'light'}">
+                <div >
+                  <div style="display: block;">{{speaker.fullName}}</div>
+                  <div>{{speaker.imageSrc}}</div>
+                </div>
+            </td>
+
+            <td align="center" valign="middle" class="lecture-type-indicator w-auto px-2"
+              [class]="{'text-secondary-emphasis':  'light'}">
+                <div>{{speaker.description}}</div>
+            </td>
+
+            <td align="center" valign="middle" class="lecture-type-indicator w-auto px-2"
+              [class]="{'text-secondary-emphasis':  'light'}">
+                <div>{{speaker.role}}</div>
+            </td>
+
+            <td align="center" valign="middle" class="lecture-type-indicator w-auto px-2"
+              [class]="{'text-secondary-emphasis':  'light'}">
+                <div>{{speaker.profileLink}}</div>
+            </td>
+
+            <td align="center" valign="middle" class="lecture-type-indicator w-auto px-2"
+              [class]="{'text-secondary-emphasis':  'light'}">
+                <div>{{getLectureById(speaker.lectureGiven)?.title}}</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+</section>

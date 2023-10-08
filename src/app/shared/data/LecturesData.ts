@@ -3,7 +3,7 @@ import Speaker from '../classes/speaker';
 import TypeEnum from '../enums/type-enum';
 
 export const SpeakersData: Speaker[] = [
-  new Speaker(0, 'Lahis', '', '', '', 'PGMC', 1),
+  new Speaker(0, 'Lahis', 'essa é a bio da moça', 'aqui a fotinha da moça', 'as redes sociais da moça', 'PGMC', 1),
   new Speaker(1, 'Priscila', '', '', '', 'PGMC', 2),
   new Speaker(2, 'IA', '', '', '', '', 3),
   new Speaker(3, '', '', '', '', '', 3),
