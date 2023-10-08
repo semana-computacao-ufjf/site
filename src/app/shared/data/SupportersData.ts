@@ -28,7 +28,20 @@ export const SupportersData: Supporter[] = [
   ),
 
   // Ouro
-
+  new Supporter(
+    'Codi Academy',
+    'assets/img/supporters/sponsors/ouro-codi.webp',
+    'https://codiacademy.com',
+    true
+  ),
 
   // Prata
+
+  // Bronze
+  new Supporter(
+    'Solucionar',
+    'assets/img/supporters/sponsors/bronze-solucionar.webp',
+    'http://www.solucionar.com.br',
+    true
+  ),
 ];
