@@ -19,6 +19,12 @@ export const OrganizersData: Organizer[] = [
     'Marcos de Mendonça Passini',
     'Docente no Departamento de Ciência da Computação'
   ),
+  new Organizer(
+    'https://www.linkedin.com/in/joventino/',
+    'assets/img/organizers/joventino.webp',
+    'Joventino de Oliveira Campos',
+    'Docente no Departamento de Ciência da Computação'
+  ),
 
   new Organizer(
     'https://www.linkedin.com/in/carlosalexandre94/',
