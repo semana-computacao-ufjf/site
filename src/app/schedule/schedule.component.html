@@ -58,10 +58,14 @@
         </tbody>
       </table>
     </div>
+
+    <app-alert [title]="'Atenção'" [message]="'Podem haver mudanças na programação'"></app-alert>
+
   </div>
 
   <div class="no-info" *ngIf="!showSchedule">
     <p>Em breve mais informações...</p>
   </div>
+
 
 </section>
