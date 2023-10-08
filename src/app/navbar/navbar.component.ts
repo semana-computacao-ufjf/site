@@ -33,6 +33,7 @@ export class NavbarComponent {
     new MenuItem('Patrocinadores', '#apoiadores'),
     new MenuItem('Contato', '#contato'),
     new MenuItem('Organizadores', '#organizadores'),
-    new MenuItem('Palestrantes', '#palestrantes'),
+    new MenuItem('Responsabilidade Social', '#doacoes'),
+    // new MenuItem('Palestrantes', '#palestrantes'),
   ];
 }
