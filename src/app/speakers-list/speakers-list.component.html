@@ -19,7 +19,7 @@
               [class]="{'text-secondary-emphasis':  'light'}">
                 <div >
                   <div style="display: block;">{{speaker.fullName}}</div>
-                  <div>{{speaker.imageSrc}}</div>
+                  <img [src]="speaker.imageSrc" [alt]="'Foto de ' + speaker.fullName" class="speaker-image shadow-text">
                 </div>
             </td>
 

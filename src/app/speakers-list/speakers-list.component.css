@@ -56,3 +56,12 @@ li a.active {
     background-color: var(--light-blue);
   }
 }
+
+.speaker-image{
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  object-fit: cover;
+  margin-bottom: 1em;
+  width: 11em;
+}
