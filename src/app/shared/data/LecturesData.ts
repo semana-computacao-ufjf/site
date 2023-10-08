@@ -173,7 +173,7 @@ export const SpeakersData: Speaker[] = [
     'Gabriel é graduando em Engenharia de Computação no CEFET-MG. Está no 8° período do curso. Participou de duas Iniciações Científicas: Análise e Evolução do Modelo de Proveniência de Dados PROV-SwProcess para apoiar o Desenvolvimento Global de Software e Análise de Dados de Processos de Desenvolvimento de Software ainda em andamento onde desenvolve programas de análise de dados em Python. Atualmente é membro do Programa de Educação Tutorial da Engenharia de Computação (PET.COMP).',
     'assets/img/speakers/gabriel-medeiros.webp',
     '',
-    'PET Comp',
+    'PET.COMP',
     28
   ),
   new Speaker(
@@ -194,7 +194,15 @@ export const SpeakersData: Speaker[] = [
     'Discente do DCC',
     30
   ),
-  new Speaker(31, '', '', '', '', 'PET Comp', 31),
+  new Speaker(
+    31,
+    'Arthur Mendes Rocha Alves',
+    'Arthur é graduando em Engenharia de Computação no CEFET-MG Campus Leopoldina. Já atuou como monitor da disciplina de Estrutura de Dados em 2021. Participou do projeto de extensão: “Minha Tarifa Branca: Sistema de Apoio à Decisão para Adesão à Tarifa Branca” durante o ano de 2022 como um dos desenvolvedores do sistema web. Atualmente é membro do Programa de Educação Tutorial da Engenharia de Computação (PET.COMP).',
+    'assets/img/speakers/arthur-mendes.webp',
+    '',
+    'PET.COMP',
+    30
+  ),
   new Speaker(
     32,
     'Carlos Augusto de Assis Lima',
@@ -289,6 +297,33 @@ export const SpeakersData: Speaker[] = [
     '',
     'PET.COMP',
     33
+  ),
+  new Speaker(
+    44,
+    'Humberto Motta da Cunha',
+    'Humberto é graduando em Engenharia de Computação no CEFET-MG Campus Leopoldina, e participou do Programa de Educação Tutorial de Computação (PET.COMP) em 2022. Durante sua participação no PET, teve a oportunidade de ingressar na Iniciação Científica (IC) na área de análise de dados e desenvolvimento web, com foco na análise do perfil de evasão escolar. Atualmente, é membro ativo do PET.COMP, tendo ingressado neste semestre. Além disso, ocupa o cargo de Presidente na atlética da instituição.',
+    'assets/img/speakers/humberto-motta.webp',
+    '',
+    'PET.COMP',
+    30
+  ),
+  new Speaker(
+    45,
+    'Lucas da Cruz Rezende',
+    'Lucas é graduando em Engenharia de Computação no CEFET-MG Campus Leopoldina. Já fez parte do projeto de extensão Educação para um Mundo Mais Maker, onde desenvolvia minicursos para proporcionar experiências de aprendizagem a crianças e jovens. Atualmente é membro do Programa de Educação Tutorial de Engenharia de Computação (PET.COMP). Dentro do PET, está realizando uma Iniciação Científica com o intuito de criar um site para gerenciar campeonatos de jogos.',
+    'assets/img/speakers/lucas-rezende.webp',
+    '',
+    'PET.COMP',
+    30
+  ),
+  new Speaker(
+    46,
+    'Rafaela Oliveira Lorenzeto Braga',
+    'Rafaela é graduanda em Engenharia de Computação no CEFET-MG Campus Leopoldina. Já fez parte da Encautech Júnior Consultoria (Empresa Júnior) onde desempenhava o cargo de Assessora Comercial. Atualmente é membro do Programa de Educação Tutorial de Engenharia de Computação (PET.COMP) desde 2022. Dentro do PET, teve oportunidade de realizar uma Iniciação Científica na área de Análise de Dados, cujo tema era Análise do perfil de evasão escolar no contexto de um curso de graduação em Engenharia de Computação em implantação',
+    'assets/img/speakers/rafaela-braga.webp',
+    '',
+    'PET.COMP',
+    30
   ),
 ];
 
@@ -606,12 +641,12 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       30,
       new Date(2023, 9, 26, 14, 0),
-      'Em breve mais informações',
+      'O minicurso tem como objetivo desenvolver habilidades introdutórias nas linguagens de marcação da web HTML e CSS. Além disso, com a realização do curso, o aluno estará apto a criar layouts a partir do zero e será apresentado a tecnologias que simplificam e potencializam esse processo, tais como Bootstrap e React.',
       240,
       'L205',
       'Fundamentos de desenvolvimento Web',
       TypeEnum.Minicurso,
-      SpeakersData[31]
+      [SpeakersData[31], SpeakersData[44], SpeakersData[45], SpeakersData[46]]
     ),
     new Lecture(
       31,
