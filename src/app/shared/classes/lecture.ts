@@ -8,7 +8,7 @@ export default class Lecture {
   private _duration: number; // tempo em minutos
   private _id: number;
   private _location: string;
-  private _speaker?: Speaker;
+  private _speaker?: Speaker | Speaker[];
   private _title: string;
   private _type: number;
 
@@ -20,7 +20,7 @@ export default class Lecture {
     location: string,
     title: string,
     type: number,
-    speaker?: Speaker
+    speaker?: Speaker | Speaker[]
   ) {
     this._id = id;
     this._dateTime = dateTime;
@@ -60,7 +60,7 @@ export default class Lecture {
     return this._location;
   }
 
-  get speaker(): Speaker | undefined {
+  get speaker(): Speaker | Speaker[] | undefined {
     return this._speaker;
   }
 

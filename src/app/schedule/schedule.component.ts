@@ -3,6 +3,7 @@ import Lecture from '../shared/classes/lecture';
 import TypeEnum from '../shared/enums/type-enum';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { LecturesData } from '../shared/data/LecturesData';
+import Speaker from '../shared/classes/speaker';
 
 @Component({
   selector: 'app-schedule',
@@ -18,7 +19,7 @@ export class ScheduleComponent {
 
   innerWidth: number = 480;
 
-  showSchedule: boolean = false;
+  showSchedule: boolean = true;
 
   getIcon(type: number): IconDefinition {
     return TypeEnum.getIcon(type);
@@ -38,6 +39,18 @@ export class ScheduleComponent {
 
   changeDay(day: number): void {
     this.dayActive = day;
+  }
+
+  getSpeakerName(speaker: Speaker | Speaker[]): string {
+    if (Array.isArray(speaker)) {
+      let speakerName = '';
+      speaker.forEach((speaker) => {
+        speakerName += `${speaker.fullName}, `;
+      });
+      return speakerName.slice(0, -2);
+    } else {
+      return speaker.fullName;
+    }
   }
 
   ngOnInit() {

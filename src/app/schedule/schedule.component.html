@@ -45,7 +45,8 @@
             <!-- <th scope="row"> -->
             <th scope="row" align="center" valign="middle" class="lecture-info w-75">
               <h3 class="lecture-title">{{ lecture.title }}</h3>
-              <p class="lecture-lecturer" *ngIf="lecture.speaker">{{ lecture?.speaker?.fullName }}</p>
+              <p class="lecture-lecturer" *ngIf="lecture.speaker">{{ getSpeakerName(lecture.speaker) }}</p>
+
               <p>{{ lecture.description }}</p>
             </th>
             <!-- </th> -->
