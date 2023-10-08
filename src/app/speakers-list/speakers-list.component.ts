@@ -1,6 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import Lecture from '../shared/classes/lecture';
+import TypeEnum from '../shared/enums/type-enum';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { LecturesData, SpeakersData } from '../shared/data/LecturesData';
+import Speaker from '../shared/classes/speaker';
 
-import { SpeakersData } from '../shared/data/LecturesData';
 
 @Component({
   selector: 'app-speakers-list',
@@ -8,5 +12,67 @@ import { SpeakersData } from '../shared/data/LecturesData';
   styleUrls: ['./speakers-list.component.css'],
 })
 export class SpeakersListComponent {
-  speakersData = SpeakersData;
+  dayActive: number = 0;
+
+  daysList = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta'];
+
+  lectureListByDays: Lecture[][] = LecturesData;
+  speakersList: Speaker[] = SpeakersData;
+
+  innerWidth: number = 480;
+
+  showSchedule: boolean = true;
+
+  getIcon(type: number): IconDefinition {
+    return TypeEnum.getIcon(type);
+  }
+
+  getColor(type: number): string {
+    return TypeEnum.getColor(type);
+  }
+
+  getLectureById(id: number): Lecture | null{
+    for (let day of LecturesData) {
+      for (let lecture of day) {
+        if (lecture.id === id) {
+          return lecture;
+        }
+      }
+    }
+    return null;
+  }
+
+
+  calculateEndTime(lecture: Lecture): Date {
+    // Calcula o horário de término da palestra pegando o horário de início e somando a duração em minutos
+    let endTime = new Date(
+      lecture.dateTime.getTime() + lecture.duration * 60000
+    );
+    return endTime;
+  }
+
+  changeDay(day: number): void {
+    this.dayActive = day;
+  }
+
+  getSpeakerName(speaker: Speaker | Speaker[]): string {
+    if (Array.isArray(speaker)) {
+      let speakerName = '';
+      speaker.forEach((speaker) => {
+        speakerName += `${speaker.fullName}, `;
+      });
+      return speakerName.slice(0, -2);
+    } else {
+      return speaker.fullName;
+    }
+  }
+
+  ngOnInit() {
+    this.innerWidth = window.innerWidth;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onWindowResize() {
+    this.innerWidth = window.innerWidth;
+  }
 }
