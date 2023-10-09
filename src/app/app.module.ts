@@ -20,6 +20,7 @@ import { OrganizersListComponent } from './organizers-list/organizers-list.compo
 import { OrganizerProfileComponent } from './organizer-profile/organizer-profile.component';
 import { DonationsComponent } from './donations/donations.component';
 import { SpeakersListComponent } from './speakers-list/speakers-list.component';
+import { EventsInstructionsComponent } from './events-instructions/events-instructions.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { SpeakersListComponent } from './speakers-list/speakers-list.component';
     OrganizerProfileComponent,
     DonationsComponent,
     SpeakersListComponent,
+    EventsInstructionsComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],

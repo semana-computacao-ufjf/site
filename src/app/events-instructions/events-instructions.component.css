@@ -1,0 +1,18 @@
+section {
+  background-color: var(--blue-bg);
+  background-color: rgba(29, 48, 91, 0.5);
+  color: white;
+  padding: 2em;
+}
+
+div {
+  margin-top: 1em;
+}
+
+li a {
+  color: var(--light-green);
+}
+
+.subtitle {
+  font-weight: bold;
+}
