@@ -15,7 +15,7 @@ export const OrganizersData: Organizer[] = [
   ),
   new Organizer(
     'https://www.linkedin.com/in/marcos-passini-9621b01a/',
-    'assets/img/organizers/pessoa_placeholder.png',
+    'assets/img/organizers/pessoa_placeholder.webp',
     'Marcos de Mendonça Passini',
     'Docente no Departamento de Ciência da Computação'
   ),
