@@ -43,8 +43,8 @@ export const SpeakersData: Speaker[] = [
     'PGMC',
     7
   ),
-  new Speaker(8, 'Codi', '', '', '', 'Codi', 8),
-  new Speaker(9, 'Codi', '', '', '', 'Codi', 9),
+  new Speaker(8, 'Codi Academy', '', '', '', 'Codi Academy', 8),
+  new Speaker(9, 'Codi Academy', '', '', '', 'Codi Academy', 9),
   new Speaker(
     10,
     'Valter Camargo',
@@ -361,13 +361,23 @@ export const LecturesData: Lecture[][] = [
     ),
     new Lecture(
       3,
-      new Date(2023, 9, 23, 17, 0),
+      new Date(2023, 9, 23, 14, 0),
       `Você é um entusiasta de Machine Learning? Gostaria de testar suas habilidades e competir com outros especialistas em um desafio emocionante? Junte-se à nossa competição de Previsão de Preços de Imóveis e mostre seu talento em análise de dados e aprendizado de máquina!`,
-      60,
+      150,
       'L205',
       'Competição de IA: Desafio de Previsão de Preços de Imóveis',
       TypeEnum.Competicao,
       SpeakersData[2]
+    ),
+    new Lecture(
+      43,
+      new Date(2023, 9, 23, 17, 0),
+      '',
+      60,
+      'A confirmar',
+      'Apresentação dos cursos de pós-graduação',
+      TypeEnum.Palestra,
+      SpeakersData[43]
     ),
     new Lecture(
       4,
@@ -384,7 +394,7 @@ export const LecturesData: Lecture[][] = [
       'Palestra de Abertura',
       90,
       'A confirmar',
-      'Palestra de Abertura',
+      'Mesa Redonda: Inteligência Artificial: aplicações atuais e tendências',
       TypeEnum.Palestra
     ),
   ],
@@ -413,19 +423,19 @@ export const LecturesData: Lecture[][] = [
       8,
       new Date(2023, 9, 24, 8, 0),
       'Mais informações me breve',
-      120,
+      90,
       'L205',
-      'Minicurso Codi Academy',
+      'Minicurso FrontEnd',
       TypeEnum.Minicurso,
       SpeakersData[8]
     ),
     new Lecture(
       9,
-      new Date(2023, 9, 24, 10, 0),
+      new Date(2023, 9, 24, 9, 30),
       'Mais informações me breve',
-      120,
+      90,
       'L205',
-      'Minicurso Codi Academy',
+      'Imersão IA',
       TypeEnum.Minicurso,
       SpeakersData[9]
     ),
@@ -441,9 +451,9 @@ export const LecturesData: Lecture[][] = [
     ),
     new Lecture(
       11,
-      new Date(2023, 9, 24, 14, 30),
+      new Date(2023, 9, 24, 15, 30),
       'A ideia principal da palestra é mostrar como hoje são desenvolvidos os projetos automotivos dos carros modernos. Design – Transformação do Sketch manual do Designer em uma superfície modelada nos softwares (Alias, Icem Surf). Desenvolvimento do Produto – da Superfície de Estilo para o modelamento de 100% das peças que compõem o automóvel. Validação Virtual – CAE – Cálculo Estrutural, Aerodinâmico do Automóvel e aprovação de acordo com critérios de confiabilidade e segurança. O carro do futuro – a conectividade do automóvel com os ocupantes (infotainment, EV, carro autônomo, carros voadores).',
-      90,
+      60,
       'A confirmar',
       'Projeto Automotivo do Design ao Protótipo com Auxílio da Ciência da Computação',
       TypeEnum.Palestra,
@@ -495,7 +505,7 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       16,
       new Date(2023, 9, 25, 8, 0),
-      'Carpintaria de Software',
+      'Aprenda o básico de Linux e scripts para automatização de compilação e execução de softwares. Trabalharemos com Makefile, Bash e CMake. Além disso, passaremos pelas partes mais importantes de um sistema operacional Linux, aprendendo o básico no caminho para dominar o assunto.',
       240,
       'L205',
       'Carpintaria de Software',
@@ -546,7 +556,7 @@ export const LecturesData: Lecture[][] = [
       21,
       new Date(2023, 9, 25, 14, 0),
       'Este curso apresentará uma breve introdução ao Ansys, um software de simulação amplamente utilizado na indústria para a solução de  diversos problemas de engenharia. Ao decorrer do curso, o aluno será introduzido a esta ferramenta, apresentando, sua interface, seus recursos e possibilidades de uso. Também será desenvolvida uma simulação por completo, desde a criação da geometria do problema, passando pela criação da malha, análise da física aplicada, validação e análise dos resultados. Ao final, espera-se que o aluno adquira conhecimento essencial sobre simulações e que esteja apto para começar a utilizar o Ansys.',
-      210,
+      150,
       'Lab 2 Engenharia Computacional',
       'Introdução a simulações computacionais com Ansys',
       TypeEnum.Minicurso,
@@ -709,16 +719,16 @@ export const LecturesData: Lecture[][] = [
       TypeEnum.Minicurso,
       SpeakersData[37]
     ),
-    // new Lecture(
-    //   37,
-    //   new Date(2023, 9, 27, 14, 0),
-    //   'Em breve mais informações',
-    //   60,
-    //   'A confirmar',
-    //   'Em breve',
-    //   TypeEnum.Palestra,
-    //   SpeakersData[39]
-    // ),
+    new Lecture(
+      37,
+      new Date(2023, 9, 27, 14, 0),
+      'Em breve mais informações',
+      90,
+      'A confirmar',
+      'Mesa Redonda: Mulheres na TI',
+      TypeEnum.Palestra,
+      SpeakersData[39]
+    ),
     new Lecture(
       38,
       new Date(2023, 9, 27, 14, 0),
