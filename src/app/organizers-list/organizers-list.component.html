@@ -1,0 +1,15 @@
+<section *ngIf="organizers && organizers.length > 0">
+  <h2 class="shadow-text">ORGANIZADORES</h2>
+
+  <div class="organizers-list">
+
+    <div class="row organizers-container">
+      <app-organizer-profile class="col-xs-2 col-md-3" *ngFor="let organizer of organizers"
+        [organizer]="organizer">
+
+      </app-organizer-profile>
+    </div>
+
+  </div>
+
+</section>

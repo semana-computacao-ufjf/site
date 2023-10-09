@@ -1,0 +1,16 @@
+.alert-cta {
+  background-color: var(--light-green);
+  color: var(--dark-blue);
+  font-weight: bold;
+  padding: 1em 1em;
+  text-align: center;
+}
+
+.alert-cta h1 {
+  font-size: 1.5em;
+}
+
+.alert-span {
+  font-size: 1.25em;
+  padding: 0 0.5em;
+}

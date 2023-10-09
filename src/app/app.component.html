@@ -1,0 +1,30 @@
+<app-navbar class="c-navbar" [eventEdition]="eventEdition"></app-navbar>
+
+<main>
+  <app-banner [eventBeginDate]="eventBeginDate" [eventEndDate]="eventEndDate"
+    [eventEdition]="eventEdition"></app-banner>
+
+  <app-clock-cta [eventBeginDate]="eventBeginDate" [eventEndDate]="eventEndDate"></app-clock-cta>
+
+  <app-event-description id="descricao"></app-event-description>
+
+  <app-register-cta id="inscricoes"></app-register-cta>
+
+  <app-alert [message]="alertMessageDonations"></app-alert>
+
+  <app-schedule id="programacao"></app-schedule>
+
+  <app-awards id="premiacoes"></app-awards>
+
+  <app-supporters-list id="apoiadores" [isSponsor]="true"></app-supporters-list>
+
+  <app-supporters-list [isSponsor]="false"></app-supporters-list>
+
+  <app-contact-section id="contato"></app-contact-section>
+
+  <app-donations id="doacoes"></app-donations>
+
+  <app-speakers-list id="palestrantes"></app-speakers-list>
+</main>
+
+<app-footer class="c-footer"></app-footer>

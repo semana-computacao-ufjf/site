@@ -1,0 +1,44 @@
+.event-description {
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  padding: 1em;
+  text-align: justify;
+}
+
+.event-description-container {
+  justify-content: space-around;
+  padding: 3em 3em 3em 6em;
+}
+
+.event-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event-img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  border-radius: 4px;
+  height: auto;
+  width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+  .event-description-container {
+    flex-direction: column;
+    margin: auto 0;
+    padding: 1em 0;
+    text-align: center;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}

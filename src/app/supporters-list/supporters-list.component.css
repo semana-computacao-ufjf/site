@@ -1,0 +1,50 @@
+section {
+  margin: 1em 0;
+  padding: 2em;
+}
+
+h2 {
+  color: white;
+}
+
+.supporters-container {
+  margin: 2em 0 0;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+  box-shadow: none;
+}
+
+a:hover img {
+  opacity: 0.3;
+}
+
+a:hover .middle {
+  opacity: 1;
+}
+
+a img {
+  backface-visibility: hidden;
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.middle {
+  opacity: 0;
+  transition: .5s ease;
+  text-align: center;
+  transform: translate(0%, -200%);
+  -ms-transform: translate(0%, -200%);
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}

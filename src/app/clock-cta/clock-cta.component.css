@@ -1,0 +1,92 @@
+.timer-container {
+  align-items: center;
+  /* background-color: var(--blue-accent); */
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 4em 0 3em;
+}
+
+.days-container {
+  margin-right: 2.5em;
+}
+
+.alternative-title {
+  font-size: 2em;
+  padding: 1em 0;
+}
+
+.timer-title {
+  font-size: 4em;
+  line-height: 70%;
+  text-align: center;
+}
+
+.begins-in {
+  line-height: 100%;
+}
+
+.timer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  padding: 0;
+}
+
+.time-container {
+  padding: 0 2em;
+  text-align: center;
+}
+
+.time-container h3 {
+  font-weight: normal;
+}
+
+@media screen and (max-width: 800px) {
+  .timer-title {
+    font-size: 4em;
+  }
+
+  .time-container h3 {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .alternative-title {
+    text-align: center;
+  }
+
+  .timer-title {
+    font-size: 4em;
+  }
+
+  .days-container {
+    margin-right: 0 !important;
+    margin-bottom: 2.5em !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .timer {
+    flex-direction: column;
+  }
+
+  .time-container {
+    margin: 0.8em 0;
+  }
+
+  .timer-title {
+    font-size: 3em;
+  }
+
+  .timer h2 {
+    font-size: 3em;
+  }
+
+  .timer h3 {
+    font-size: 2em;
+  }
+}

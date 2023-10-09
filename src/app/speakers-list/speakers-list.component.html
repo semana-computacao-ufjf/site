@@ -1,0 +1,55 @@
+<section>
+
+  <h2>Palestrantes</h2>
+
+  <div class="table-container table-responsive align-middle">
+    <table class="table table-dark table-striped-columns">
+      <thead>
+        <tr>
+          <th scope="col">Participante</th>
+          <th scope="col">Bio</th>
+          <th scope="col">Vínculo</th>
+          <!-- <th scope="col">Redes</th> -->
+          <th scope="col">Participação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let speaker of speakersList; let index = index">
+          <td align="center" valign="middle" class="lecture-type-indicator w-auto px-2"
+            [class]="{'text-secondary-emphasis':  'light'}">
+            <div>
+              <h6 style="display: block;">
+                <a *ngIf="speaker && speaker.profileLink" [href]="speaker.profileLink" target="_blank"
+                  rel="noopener noreferrer">
+                  {{ speaker.fullName }}
+                </a>
+                <span *ngIf="!speaker || !speaker.profileLink">
+                  {{ speaker.fullName }}
+                </span>
+              </h6>
+              <img [src]="speaker.imageSrc" [alt]="'Foto de ' + speaker.fullName" class="speaker-image shadow-text"
+                onerror="this.onerror=null;this.src='../../assets/img/speakers/pessoa_placeholder.png'">
+            </div>
+          </td>
+
+          <td align="center" valign="middle" class="lecture-type-indicator w-auto px-2"
+            [class]="{'text-secondary-emphasis':  'light'}">
+            <div>{{ speaker.description }}</div>
+          </td>
+
+          <td align="center" valign="middle" class="lecture-type-indicator w-auto px-2"
+            [class]="{'text-secondary-emphasis':  'light'}">
+            <div>{{ speaker.role }}</div>
+          </td>
+
+          <td align="center" valign="middle" class="lecture-type-indicator w-auto px-2"
+            [class]="{'text-secondary-emphasis':  'light'}">
+            <div>{{ getLecturesName(speaker.lectureGiven) }}</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+</section>

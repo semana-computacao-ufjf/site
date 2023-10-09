@@ -1,0 +1,5 @@
+<div [style]="{'background-color': backgroundColor}" [class]="{'shadow-text': hasShadow}">
+  <h2 class="edition-number" [style]="{'color': editionColor, 'font-size': fontSize}">{{ eventEdition }}</h2>
+  <h2 class="event-name" [style]="{'color': nameColor, 'font-size': fontSize}">Semana da <br *ngIf="wordBreak">
+    Computação</h2>
+</div>

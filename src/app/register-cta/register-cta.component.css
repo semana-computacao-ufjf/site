@@ -1,0 +1,113 @@
+.enroll-cta {
+  font-size: small;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.enroll-cta h1 {
+  color: var(--light-blue);
+  font-size: 3em;
+}
+
+.enroll-cta a {
+  background-color: var(--light-green);
+  border-radius: 6px;
+  box-shadow: none;
+  color: var(--dark-blue);
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: bolder;
+  margin: 1em;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  transition: none;
+}
+
+.enroll-cta p {
+  margin: 2.5em 0;
+}
+
+.enroll-cta a:hover {
+  background-color: var(--purple);
+  color: white;
+}
+
+p.description {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 1em 0 !important;
+}
+
+.bold {
+  font-weight: bolder;
+  margin: 0 !important;
+}
+
+.registering-container {
+  margin-bottom: 3em;
+}
+
+p.type-member-cta {
+  color: white;
+  font-size: 2em;
+  font-weight: bolder;
+  margin: 0 0 2.5em !important;
+}
+
+.video-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.enroll-tutorial-video {
+  margin: 1em 0;
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+}
+
+.enroll-tutorial-video::after {
+  padding-top: 56.25%;
+  display: block;
+  content: "";
+}
+
+.tutorial-video {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.registering-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 550px) {
+  .enroll-cta a {
+    margin: 1em 0;
+  }
+
+  .registering-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .registering-col {
+    padding: 0;
+  }
+
+  .description {
+    font-size: medium !important;
+  }
+
+  p.type-member-cta {
+    margin: 1.5em 0 !important;
+  }
+}

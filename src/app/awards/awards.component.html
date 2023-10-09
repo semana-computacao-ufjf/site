@@ -1,0 +1,22 @@
+<section *ngIf="awards && awards.length > 0">
+  <h2 class="shadow-text">PREMIAÇÕES</h2>
+
+  <div class="row">
+
+    <div class="col" *ngFor="let award of awards">
+      <h4 class="shadow-text">{{ award.name }}</h4>
+
+      <ul class="award-list">
+
+        <li *ngFor="let ranking of award.awardList; let index = index">
+          <span class="award-classification">
+            {{ index + 1 }}º Lugar:
+          </span>
+          {{ ranking }}
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</section>

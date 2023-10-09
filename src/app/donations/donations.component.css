@@ -1,0 +1,13 @@
+section {
+  margin: 1em 0;
+  padding: 2em;
+}
+
+h2 {
+  color: white;
+}
+
+.donations {
+  width: 50%;
+  margin: auto;
+}

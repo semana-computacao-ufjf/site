@@ -1,0 +1,57 @@
+section {
+  margin: 1em 0;
+  padding: 2em;
+}
+
+h2 {
+  color: white;
+}
+
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  box-shadow: inset 450px 0 0 0 var(--light-blue);
+  color: var(--dark-blue);
+  font-weight: bolder;
+}
+
+fa-icon {
+  font-size: 1.5em;
+  margin-right: 1.5em;
+}
+
+.social-media-icon {
+  font-size: 1.7em;
+}
+
+.social-ufjf-ic {
+  height: 3em;
+  margin-right: 0.8em;
+  width: 3em;
+}
+
+.map-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 400px) {
+  .social-media-container a {
+    font-size: small;
+  }
+}

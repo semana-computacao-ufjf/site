@@ -1,0 +1,144 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --pearl-white: #f1f1f1;
+  --light-gray: #bcbec0;
+  --medium-gray: #888482;
+  --dark-gray: #494746;
+  --lightest-blue: #e0f3f5;
+  --neon-blue: #3fd8d6;
+  --light-blue: #50bac8;
+  --dark-blue: #273657;
+  --blue-accent: #3f588d;
+  --purple: #5d36bb;
+  --lightest-purple: #e6dff6;
+  --light-purple: #9973ff;
+  --light-green: #38e2a5;
+  --logo-bg: #3990a8;
+  --blue-bg: #1d305b;
+}
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+  font-family: "Lovelo";
+  src: url("assets/fonts/Lovelo-Black.otf");
+}
+
+@font-face {
+  font-family: "Lovelo Line Bold";
+  src: url("assets/fonts/Lovelo-Line-Bold.otf");
+}
+
+@font-face {
+  font-family: "Nickainley";
+  src: url("assets/fonts/Nickainley.otf");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("assets/fonts/Quicksand-Book.otf");
+}
+
+@font-face {
+  font-family: "Quicksand Bold";
+  src: url("assets/fonts/Quicksand-Bold.otf");
+}
+
+html,
+body {
+  font-family: "Quicksand", sans-serif;
+  height: 100%;
+  margin: 0 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background-image: url("assets/img/background.webp");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lovelo";
+}
+
+::selection {
+  color: var(--dark-blue);
+  background-color: var(--light-blue);
+}
+
+/* Remove barra de rolagem */
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  box-shadow: inset 0 0 0 0 var(--light-blue);
+  padding: 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+a:hover {
+  box-shadow: inset 120px 0 0 0 var(--light-blue);
+  color: var(--dark-blue);
+}
+
+a:visited {
+  color: var(--purple);
+}
+
+.shadow {
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.shadow-text {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.blue-neon-text {
+  /* color: var(--lightest-blue); */
+  color: white;
+  text-shadow: 0 0 5px var(--light-blue), 0 0 15px var(--light-blue),
+    0 0 20px var(--light-blue), 0 0 40px var(--light-blue),
+    0 0 60px var(--purple), 0 0 10px var(--light-green), 0 0 98px var(--purple);
+}
+
+.purple-neon-text {
+  /* color: var(--lightest-purple); */
+  color: white;
+  text-shadow: 0 0 5px var(--light-purple), 0 0 15px var(--light-purple),
+    0 0 20px var(--light-purple), 0 0 40px var(--light-purple),
+    0 0 60px var(--purple), 0 0 10px var(--light-blue), 0 0 98px var(--purple);
+}
+
+.c-btn {
+  background-color: var(--blue-accent);
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 2em;
+  padding: 1em 2em;
+  text-align: center;
+}
+
+.c-btn:hover {
+  background-color: var(--logo-bg);
+}
+
+.c-btn a {
+  box-shadow: none;
+  color: white;
+  text-decoration: none;
+  transition: none;
+}
+
+@media screen and (max-width: 800px) {
+  .c-btn {
+    margin: 1em;
+  }
+}
