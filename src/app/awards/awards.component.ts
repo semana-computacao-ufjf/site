@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import Award from '../shared/classes/award';
+import { AwardsData } from '../shared/data/AwardsData';
 
 @Component({
   selector: 'app-awards',
@@ -7,9 +8,5 @@ import Award from '../shared/classes/award';
   styleUrls: ['./awards.component.css'],
 })
 export class AwardsComponent {
-  awards: Award[] = [
-    // new Award('Premiação 1', ['Descrição 1', 'Descrição 2', 'Descrição 3']),
-    // new Award('Premiação 2', ['Descrição 1', 'Descrição 2', 'Descrição 3']),
-    // new Award('Premiação 3', ['Descrição 1', 'Descrição 2', 'Descrição 3']),
-  ];
+  awards: Award[] = AwardsData;
 }
