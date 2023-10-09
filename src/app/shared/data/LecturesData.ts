@@ -72,7 +72,15 @@ export const SpeakersData: Speaker[] = [
     'Prefeitura de Juiz de Fora',
     12
   ),
-  new Speaker(13, '', '', '', '', 'GET SI', 13),
+  new Speaker(
+    13,
+    'Anastácia Malosto',
+    'Anastácia Malosto é graduanda em Sistemas de Informação, membro do GetSi e desenvolve projetos com o React para web. Trabalhou com simulação de modelos biológicos com interface Web, e em um sistema de gerenciamento de pesquisas limnológicas.',
+    'assets/img/speakers/anastacia-malosto.webp',
+    '',
+    'GET SI',
+    13
+  ),
   new Speaker(
     14,
     'Luiz Gustavo Nazareth',
@@ -325,6 +333,17 @@ export const SpeakersData: Speaker[] = [
     'PET.COMP',
     30
   ),
+  new Speaker(
+    47,
+    'Lucas Paiva',
+    'Lucas Paiva é graduando em Sistemas de Informação, membro do GetSi, e desenvolve projetos com o React para web. Trabalhou com a criação de jogos on-line, como um cubo mágico multijogador, e um jogo educativo sobre anatomia.',
+    'assets/img/speakers/lucas-paiva.webp',
+    '',
+    'GET SI',
+    13
+  ),
+  new Speaker(48, 'Alex Borges Vieira', '', '', '', 'Pós Graduação', 43),
+  new Speaker(49, 'Bernardo Martins Rocha', '', '', '', 'Pós Graduação', 43),
 ];
 
 export const LecturesData: Lecture[][] = [
@@ -377,7 +396,7 @@ export const LecturesData: Lecture[][] = [
       'A confirmar',
       'Apresentação dos cursos de pós-graduação',
       TypeEnum.Palestra,
-      SpeakersData[43]
+      [SpeakersData[48], SpeakersData[49]]
     ),
     new Lecture(
       4,
@@ -433,7 +452,7 @@ export const LecturesData: Lecture[][] = [
       9,
       new Date(2023, 9, 24, 9, 30),
       'Mais informações me breve',
-      90,
+      150,
       'L205',
       'Imersão IA',
       TypeEnum.Minicurso,
@@ -472,12 +491,12 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       13,
       new Date(2023, 9, 24, 19, 0),
-      'Em breve mais informações',
+      'Este minicurso explora os conceitos básicos de componentes, estilos, eventos, estado e uso de hooks da biblioteca React para desenvolvimento web. Um jogo no estilo idle clicker (Cookie Clicker, Universal Paperclips, Adventure Capitalist, etc.) é desenvolvido desde o início, passo a passo.',
       180,
       'L205',
       'Começando no React com um jogo idle clicker',
       TypeEnum.Minicurso,
-      SpeakersData[13]
+      [SpeakersData[13], SpeakersData[47]]
     ),
     new Lecture(
       14,
@@ -546,7 +565,7 @@ export const LecturesData: Lecture[][] = [
       20,
       new Date(2023, 9, 25, 14, 0),
       'Este minicurso tem como objetivo o ensino da linguagem de marcação para criação de documentos, chamada LaTeX, apresentando suas utilidades, vantagens e desvantagens.',
-      210,
+      150,
       'L107',
       'LaTeX: Criação de documentos e artigos técnicos e científicos',
       TypeEnum.Minicurso,

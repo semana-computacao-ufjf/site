@@ -7,6 +7,15 @@ h2 {
   color: white;
 }
 
+h6 a {
+  color: var(--light-green);
+}
+
+h6 a:hover {
+  color: var(--light-blue);
+  box-shadow: none;
+}
+
 ul a {
   color: white;
   font-weight: bolder;
@@ -57,11 +66,13 @@ li a.active {
   }
 }
 
-.speaker-image{
-  border-radius: 50%;
+.speaker-image {
+  border-radius: 4px;
+  content: ' ';
   display: flex;
   justify-content: space-evenly;
   object-fit: cover;
   margin-bottom: 1em;
-  width: 11em;
+  height: 8em;
+  width: 8em;
 }

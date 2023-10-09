@@ -11,25 +11,22 @@
   padding: 3em 3em 3em 6em;
 }
 
-
 .event-desc {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* margin: auto 0; */
-  /* width: 50%; */
+  justify-content: center;
 }
 
 .event-img {
   align-items: center;
   display: flex;
   justify-content: center;
-
 }
 
 img {
+  border-radius: 4px;
   height: auto;
-  width: 80%;
+  width: 70%;
 }
 
 @media screen and (max-width: 600px) {
@@ -44,5 +41,4 @@ img {
     height: auto;
     width: 100%;
   }
-  
 }
