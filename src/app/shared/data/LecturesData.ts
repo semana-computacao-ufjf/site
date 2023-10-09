@@ -25,7 +25,7 @@ export const SpeakersData: Speaker[] = [
     2,
     'Eduardo Santos de Oliveira Marques',
     'Possui graduação em Ciências Exatas pela Universidade Federal de Juiz de Fora (UFJF - 2022), graduação em andamento em Engenharia Mecânica e mestrado em andamento em Modelagem Computacional pela mesma instituição. Foi membro do Laboratório de Automação Industrial e Inteligência Computacional (LAIIC) e do European Organization for Nuclear Research (CERN). Tem experiência na área de Ciência da Computação, com ênfase em Machine Learning, atuando principalmente nos seguintes temas: chaotic time series, evolving fuzzy systems, time series forecasting, data transformation e security debt.',
-    '',
+    'assets/img/speakers/eduardo-marques.webp',
     '',
     'PGMC',
     3
@@ -146,7 +146,7 @@ export const SpeakersData: Speaker[] = [
     'assets/img/speakers/amanda-chenu.webp',
     'https://www.linkedin.com/in/amanda-chenu-romano-a81b19227?originalSubdomain=br',
     'ESSS',
-    24
+    23
   ),
   new Speaker(
     25,
@@ -164,7 +164,7 @@ export const SpeakersData: Speaker[] = [
     'assets/img/speakers/pablo-mendes.webp',
     '',
     '',
-    26
+    25
   ),
   new Speaker(
     27,
@@ -200,7 +200,7 @@ export const SpeakersData: Speaker[] = [
     'assets/img/speakers/leonardo-chaves.webp',
     '',
     'Discente do DCC',
-    30
+    29
   ),
   new Speaker(
     31,
@@ -266,7 +266,7 @@ export const SpeakersData: Speaker[] = [
     'assets/img/speakers/lucas-crispim.webp',
     '',
     '',
-    31
+    36
   ),
   new Speaker(
     38,
@@ -275,7 +275,7 @@ export const SpeakersData: Speaker[] = [
     'assets/img/speakers/joao-oliveira.webp',
     '',
     'GET EngComp',
-    14
+    [14, 16]
   ),
   new Speaker(39, '', '', '', '', '', 32),
   new Speaker(40, 'Sandra Ávila', '', '', '', '', 33),
@@ -295,7 +295,7 @@ export const SpeakersData: Speaker[] = [
     'assets/img/speakers/mateus-pereira.webp',
     '',
     'PET.COMP',
-    33
+    28
   ),
   new Speaker(
     43,
@@ -304,7 +304,7 @@ export const SpeakersData: Speaker[] = [
     'assets/img/speakers/victor-souza.webp',
     '',
     'PET.COMP',
-    33
+    28
   ),
   new Speaker(
     44,
