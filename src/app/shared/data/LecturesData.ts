@@ -31,9 +31,9 @@ export const SpeakersData: Speaker[] = [
     3
   ),
   new Speaker(3, '', '', '', '', '', 3),
-  new Speaker(4, '', '', '', '', '', 3),
-  new Speaker(5, '', '', '', '', '', 3),
-  new Speaker(6, '', '', '', '', '', 3),
+  new Speaker(4, '', '', '', '', '', 4),
+  new Speaker(5, '', '', '', '', '', 5),
+  new Speaker(6, '', '', '', '', '', 6),
   new Speaker(
     7,
     'Anderson de Moura Ribeiro',
@@ -77,7 +77,7 @@ export const SpeakersData: Speaker[] = [
     'Anastácia Malosto',
     'Anastácia Malosto é graduanda em Sistemas de Informação, membro do GetSi e desenvolve projetos com o React para web. Trabalhou com simulação de modelos biológicos com interface Web, e em um sistema de gerenciamento de pesquisas limnológicas.',
     'assets/img/speakers/anastacia-malosto.webp',
-    '',
+    'https://github.com/analexicon',
     'GET SI',
     13
   ),
@@ -100,7 +100,15 @@ export const SpeakersData: Speaker[] = [
     'GET EngComp',
     16
   ),
-  new Speaker(17, '', '', '', '', 'GET Comp', 17),
+  new Speaker(
+    17,
+    'André Martins Pereira',
+    'Membro do GETComp há seis meses, está no terceiro período de Ciência da Computação e é pesquisador na área de Deep Learning, especificamente utilizando Redes Neurais Convolucionais.',
+    'assets/img/speakers/andre-martins.webp',
+    '',
+    'GET Comp',
+    17
+  ),
   new Speaker(18, '', '', '', '', 'BITKA', 18),
   new Speaker(19, '', '', '', '', 'LEVTY', 19),
   new Speaker(
@@ -236,7 +244,7 @@ export const SpeakersData: Speaker[] = [
   Em 2012, o Bruno decidiu focar seus conhecimentos exclusivamente na gestão de ativos de software e SaaS, ou como a gente gosta de chamar, SAM (Software Asset Management). Ele ficou determinado a ajudar Clientes e Parceiros a botarem ordem na bagunça do software, tanto nas máquinas locais quanto nas nuvens SaaS, IaaS, PaaS.
   Com uma baita bagagem de experiência e um monte de certificações, o Bruno é simplesmente obcecado pelo mundo da ServiceNow. Ele gerencia projetos em grandes empresas com uma facilidade que faz parecer fácil como montar um quebra-cabeça.
   Então, se você está a fim de bater um papo sobre SaaS, ServiceNow,  governança de software, ou simplesmente quer pegar umas dicas com um verdadeiro mestre na área, o Bruno é o cara! Compareça e veja como ele pode te ajudar a dominar o mundo da TI. 💻🚀`,
-    '',
+    'assets/img/speakers/bruno-ferreira.webp',
     '',
     'Diretor Técnico na 4Matt Tecnologia',
     33
@@ -283,7 +291,7 @@ export const SpeakersData: Speaker[] = [
     41,
     'Raphaela Mansur',
     'Raphaela é formada em Engenharia Elétrica - Habilitação em Robótica e Automação Industrial pela UFJF e pós graduada em Administração de Empresas pela FGV. Iniciou sua trajetória na LEVTY em 2021 atuando como desenvolvedora e Agile Master. É certificada pela Scrum.org e pela Kanban University',
-    '',
+    'assets/img/speakers/raphaela-mansur.webp',
     '',
     'LEVTY',
     40
@@ -338,7 +346,7 @@ export const SpeakersData: Speaker[] = [
     'Lucas Paiva',
     'Lucas Paiva é graduando em Sistemas de Informação, membro do GetSi, e desenvolve projetos com o React para web. Trabalhou com a criação de jogos on-line, como um cubo mágico multijogador, e um jogo educativo sobre anatomia.',
     'assets/img/speakers/lucas-paiva.webp',
-    '',
+    'https://github.com/LucasPaivaSantos',
     'GET SI',
     13
   ),
@@ -534,10 +542,10 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       17,
       new Date(2023, 9, 25, 8, 0),
-      'Em breve mais informações',
+      'No minicurso, serão abordados tópicos básicos de GIT/GITHUB, a fim de auxiliar os alunos no versionamento de códigos durante os projetos desenvolvidos na Universidade. No geral, ensinaremos sobre clonagem de repositório, como criar e atualizar um repositório. além do básico da utilização de branches e merge.',
       240,
       'L107',
-      'Minicurso de GIT',
+      'Do zero ao básico de GIT/GITHUB',
       TypeEnum.Minicurso,
       SpeakersData[17]
     ),

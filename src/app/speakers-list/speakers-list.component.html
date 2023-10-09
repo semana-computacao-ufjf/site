@@ -19,9 +19,13 @@
             [class]="{'text-secondary-emphasis':  'light'}">
             <div>
               <h6 style="display: block;">
-                <a [href]="speaker.profileLink" target="_blank" rel="noopener noreferrer">
-                  {{speaker.fullName}}
+                <a *ngIf="speaker && speaker.profileLink" [href]="speaker.profileLink" target="_blank"
+                  rel="noopener noreferrer">
+                  {{ speaker.fullName }}
                 </a>
+                <span *ngIf="!speaker || !speaker.profileLink">
+                  {{ speaker.fullName }}
+                </span>
               </h6>
               <img [src]="speaker.imageSrc" [alt]="'Foto de ' + speaker.fullName" class="speaker-image shadow-text"
                 onerror="this.onerror=null;this.src='../../assets/img/speakers/pessoa_placeholder.png'">
@@ -30,17 +34,17 @@
 
           <td align="center" valign="middle" class="lecture-type-indicator w-auto px-2"
             [class]="{'text-secondary-emphasis':  'light'}">
-            <div>{{speaker.description}}</div>
+            <div>{{ speaker.description }}</div>
           </td>
 
           <td align="center" valign="middle" class="lecture-type-indicator w-auto px-2"
             [class]="{'text-secondary-emphasis':  'light'}">
-            <div>{{speaker.role}}</div>
+            <div>{{ speaker.role }}</div>
           </td>
 
           <td align="center" valign="middle" class="lecture-type-indicator w-auto px-2"
             [class]="{'text-secondary-emphasis':  'light'}">
-            <div>{{getLectureById(speaker.lectureGiven)?.title}}</div>
+            <div>{{ getLecturesName(speaker.lectureGiven) }}</div>
           </td>
         </tr>
       </tbody>

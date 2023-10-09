@@ -19,6 +19,16 @@ export class SpeakersListComponent {
 
   ngOnInit() {
     this.innerWidth = window.innerWidth;
+
+    this.getSpeakersList();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onWindowResize() {
+    this.innerWidth = window.innerWidth;
+  }
+
+  getSpeakersList() {
     let speakersFiltered = SpeakersData.filter((speaker) => {
       return (
         speaker && speaker.fullName && speaker.description && speaker.imageSrc
@@ -35,12 +45,7 @@ export class SpeakersListComponent {
     });
   }
 
-  @HostListener('window:resize', ['$event'])
-  onWindowResize() {
-    this.innerWidth = window.innerWidth;
-  }
-
-  getLectureById(id: number): Lecture | null {
+  getLectureById(id: number | number[]): Lecture | null {
     for (let day of LecturesData) {
       for (let lecture of day) {
         if (lecture.id === id) {
@@ -49,5 +54,24 @@ export class SpeakersListComponent {
       }
     }
     return null;
+  }
+
+  getLecturesName(ids: number | number[]) {
+    let lecturesList = [];
+    if (Array.isArray(ids)) {
+      ids.forEach((id) => {
+        let lecture = this.getLectureById(id);
+        if (lecture) {
+          lecturesList.push(lecture.title);
+        }
+      });
+    } else {
+      let lecture = this.getLectureById(ids);
+      if (lecture) {
+        lecturesList.push(lecture.title);
+      }
+    }
+
+    return lecturesList.join(', ');
   }
 }

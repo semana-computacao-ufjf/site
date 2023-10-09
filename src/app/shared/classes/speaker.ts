@@ -3,7 +3,7 @@ export default class Speaker {
   _fullName: string;
   _id: number;
   _imageSrc: string;
-  _lectureGiven: number;
+  _lectureGiven: number | number[];
   _profileLink: string;
   _role: string;
 
@@ -14,7 +14,7 @@ export default class Speaker {
     imageSrc: string,
     profileLink: string,
     role: string,
-    lectureGiven: number
+    lectureGiven: number | number[]
   ) {
     this._id = id;
     this._fullName = fullName;
@@ -41,7 +41,7 @@ export default class Speaker {
     return this._imageSrc;
   }
 
-  get lectureGiven(): number {
+  get lectureGiven(): number | number[] {
     return this._lectureGiven;
   }
 
