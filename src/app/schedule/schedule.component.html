@@ -32,6 +32,7 @@
               <div [class]="'bg-' + getColor(lecture.type)">
                 <fa-icon size="lg" [icon]="getIcon(lecture.type)"></fa-icon>
               </div>
+              <p>{{ getType(lecture.type) }}</p>
             </td>
 
             <td align="center" valign="middle" class="w-auto">
@@ -66,6 +67,5 @@
   <div class="no-info" *ngIf="!showSchedule">
     <p>Em breve mais informações...</p>
   </div>
-
 
 </section>

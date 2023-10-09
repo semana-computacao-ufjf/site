@@ -32,6 +32,12 @@ li a.active {
   padding: 0.6em;
 }
 
+.lecture-type-indicator p {
+  color: white;
+  font-weight: bold;
+  padding-top: 0.6em;
+}
+
 .lecture-lecturer {
   font-size: 1.25rem;
   font-weight: bolder;

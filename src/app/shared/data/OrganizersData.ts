@@ -44,4 +44,10 @@ export const OrganizersData: Organizer[] = [
     'Rafael Fialho Pinto Coelho',
     'Colaborador do DA Computação'
   ),
+  new Organizer(
+    'https://github.com/LucasPaivaSantos',
+    'assets/img/organizers/lucaspaiva.webp',
+    'Lucas Paiva',
+    'Colaborador do GET SI'
+  ),
 ];

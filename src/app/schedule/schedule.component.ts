@@ -29,6 +29,10 @@ export class ScheduleComponent {
     return TypeEnum.getColor(type);
   }
 
+  getType(type: number): string {
+    return TypeEnum.getType(type);
+  }
+
   calculateEndTime(lecture: Lecture): Date {
     // Calcula o horário de término da palestra pegando o horário de início e somando a duração em minutos
     let endTime = new Date(

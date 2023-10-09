@@ -38,12 +38,20 @@ export const SpeakersData: Speaker[] = [
     7,
     'Anderson de Moura Ribeiro',
     'Anderson de Moura Ribeiro possui graduação em Engenharia Mecânica pela Universidade Federal de São João Del-Rei (UFSJ) (2021), mestrado em Modelagem Computacional (2023) pelo Programa de Pós-graduação em Modelagem Computacional (PPGMC) da Universidade Federal de Juiz de Fora (UFJF). Atualmente é doutorando no PPGMC e bolsista Shell Brasil Petróleo LTDA no Laboratório de Matemática Aplicada (LAMAP/UFJF) desenvolvendo pesquisa com ênfase em quantificação de incertezas, análise de sensibilidade e métodos numéricos (FEM/FVM) aplicados à recuperação avançada de petróleo, além de ter contribuído em um projeto de pesquisa FAPEMIG sobre otimização de turbinas eólicas de eixo horizontal e de configurações de parques eólicos. Tem experiência nas áreas de simulação numérica em dinâmica dos fluidos computacional (FVM, OpenFOAM, Turbulência), otimização multiobjetivo utilizando algoritmos evolucionários e desenho assistido por computador (CAD).',
-    '',
     'assets/img/speakers/anderson-moura.webp',
+    '',
     'PGMC',
     7
   ),
-  new Speaker(8, 'Codi Academy', '', '', '', 'Codi Academy', 8),
+  new Speaker(
+    8,
+    'Yuri Medeiros',
+    ' Yuri Medeiros é Engenheiro Computacional pela UFJF e CEO da Codi Academy Treinamentos. Iniciou sua carreira como Professor de Física trabalhando na Prefeitura de Juiz de Fora, também foi Professor na Rede Apogeu e no Curso BMW onde lecionou Informática em Cursos Preparatórios, foi Diretor Pedagógico do Centro de Ensino Múltiplo, e na UFJF foi tutor das disciplinas Banco de Dados, Introdução ao Linux e Planilhas Eletrônicas.',
+    'assets/img/speakers/yuri-medeiros.webp',
+    '',
+    'Codi Academy',
+    8
+  ),
   new Speaker(9, 'Codi Academy', '', '', '', 'Codi Academy', 9),
   new Speaker(
     10,
@@ -351,7 +359,7 @@ export const SpeakersData: Speaker[] = [
     13
   ),
   new Speaker(48, 'Alex Borges Vieira', '', '', '', 'Pós Graduação', 43),
-  new Speaker(49, 'Bernardo Martins Rocha', '', '', '', 'Pós Graduação', 43),
+  new Speaker(49, 'Ruy Freitas Reis', '', '', '', 'Docente do DCC', 43),
 ];
 
 export const LecturesData: Lecture[][] = [
@@ -397,14 +405,14 @@ export const LecturesData: Lecture[][] = [
       SpeakersData[2]
     ),
     new Lecture(
-      43,
-      new Date(2023, 9, 23, 17, 0),
-      '',
+      11,
+      new Date(2023, 9, 24, 17, 0),
+      'A ideia principal da palestra é mostrar como hoje são desenvolvidos os projetos automotivos dos carros modernos. Design – Transformação do Sketch manual do Designer em uma superfície modelada nos softwares (Alias, Icem Surf). Desenvolvimento do Produto – da Superfície de Estilo para o modelamento de 100% das peças que compõem o automóvel. Validação Virtual – CAE – Cálculo Estrutural, Aerodinâmico do Automóvel e aprovação de acordo com critérios de confiabilidade e segurança. O carro do futuro – a conectividade do automóvel com os ocupantes (infotainment, EV, carro autônomo, carros voadores).',
       60,
       'A confirmar',
-      'Apresentação dos cursos de pós-graduação',
+      'Projeto Automotivo do Design ao Protótipo com Auxílio da Ciência da Computação',
       TypeEnum.Palestra,
-      [SpeakersData[48], SpeakersData[49]]
+      SpeakersData[11]
     ),
     new Lecture(
       4,
@@ -449,22 +457,22 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       8,
       new Date(2023, 9, 24, 8, 0),
-      'Mais informações me breve',
+      'No curso intensivo de UI/UX, você aprenderá a projetar experiências de design incríveis e profissionais, levando dinamismo e organização aos seus projetos, vamos explorar os seguintes tópicos: Tópico 1: User Stories; Tópico 2: Leis da UX; Tópico 3: Gestalt; Tópico 4: Prática: Criando um App com o que aprendemos; Começamos falando sobre qual público queremos atingir em nosso projeto prático, e como adaptar o design para atendê-lo, na sequência veremos as principais leis de experiência de usuário com exemplos reais, e no fim, uma prática onde vamos criar um aplicativo para organizar filmes assistidos.',
       90,
       'L205',
-      'Minicurso FrontEnd',
+      'Aprenda UI/UX na prática',
       TypeEnum.Minicurso,
       SpeakersData[8]
     ),
     new Lecture(
       9,
       new Date(2023, 9, 24, 9, 30),
-      'Mais informações me breve',
+      'No curso intensivo de Inteligência Artificial com Python, vamos utilizar o poder da linguagem Python junto a API da OpenAi para criar 3 IAs do zero. Na primeira, vamos criar uma inteligência artificial no estilo CHAT GPT que terá personalidade, ela será capaz de responder de formas diferentes as mesmas perguntas, usando termos mas tècnicos ou simples, com respostas mais curtas ou maiores, mais aleatórias e previsíveis, também será possível alterar a sua personalidade, inclusive seu humor. Na segunda, vamos criar um bot da wikipedia, que será capaz de criar trabalhos escolares do zero, apenas com um tema inserido no prompt. E na terceira, vamos criar uma IA que gera imagens do zero, a partir de um prompt digitado pelo usuário.',
       150,
       'L205',
-      'Imersão IA',
+      'Criando Inteligência Artificial com Python, construa 3 IAs do zero.',
       TypeEnum.Minicurso,
-      SpeakersData[9]
+      SpeakersData[8]
     ),
     new Lecture(
       10,
@@ -476,15 +484,20 @@ export const LecturesData: Lecture[][] = [
       TypeEnum.Palestra,
       SpeakersData[10]
     ),
+
     new Lecture(
-      11,
-      new Date(2023, 9, 24, 15, 30),
-      'A ideia principal da palestra é mostrar como hoje são desenvolvidos os projetos automotivos dos carros modernos. Design – Transformação do Sketch manual do Designer em uma superfície modelada nos softwares (Alias, Icem Surf). Desenvolvimento do Produto – da Superfície de Estilo para o modelamento de 100% das peças que compõem o automóvel. Validação Virtual – CAE – Cálculo Estrutural, Aerodinâmico do Automóvel e aprovação de acordo com critérios de confiabilidade e segurança. O carro do futuro – a conectividade do automóvel com os ocupantes (infotainment, EV, carro autônomo, carros voadores).',
+      22,
+      new Date(2023, 9, 25, 15, 30),
+      `Nessa conversa, iremos compartilhar a história da BITKA, empresa criada por grandes referências no mercado brasileiro na área de sistemas de apoio a decisão. Apesar de pouco tempo de existência, a BITKA se destaca pelo extraordinário crescimento desde então. Atualmente o time conta com aproximadamente 140 pessoas sendo 60% desses cientistas de dados.
+      Aliando técnicas de análise prescritiva (otimização) e preditiva, a BITKA tem como objetivo criar soluções de planejamento aderentes à realidade dos clientes e que irão auxiliá-los a extrair o máximo potencial do seu negócio.
+      A filosofia da empresa é construir um ambiente saudável e colaborativo entre as pessoas, ajudando cada indivíduo a atingir a excelência profissional e proporcionando o ambiente correto para a construção de soluções incríveis. Nesse ambiente a prioridade é valorizar as diferenças entre cada um dos indivíduos entendendo que elas são essenciais para construirmos sistemas aderentes e impactantes. Um acompanhamento de carreira, com feedbacks justos e transparentes, foi construído para sustentar esses pilares.
+      Os Palestrantes, além de dar dicas sobre carreira, irão falar um pouco a respeito dos projetos inovadores e oportunidades abertas na BITKA
+      `,
       60,
       'A confirmar',
-      'Projeto Automotivo do Design ao Protótipo com Auxílio da Ciência da Computação',
+      'BITKA Analytics - Decisões Inteligentes, Resultados Extraordinários: História, Inovação e Oportunidades',
       TypeEnum.Palestra,
-      SpeakersData[11]
+      [SpeakersData[22], SpeakersData[23]]
     ),
     new Lecture(
       12,
@@ -590,18 +603,14 @@ export const LecturesData: Lecture[][] = [
       [SpeakersData[21], SpeakersData[36]]
     ),
     new Lecture(
-      22,
-      new Date(2023, 9, 25, 17, 0),
-      `Nessa conversa, iremos compartilhar a história da BITKA, empresa criada por grandes referências no mercado brasileiro na área de sistemas de apoio a decisão. Apesar de pouco tempo de existência, a BITKA se destaca pelo extraordinário crescimento desde então. Atualmente o time conta com aproximadamente 140 pessoas sendo 60% desses cientistas de dados.
-      Aliando técnicas de análise prescritiva (otimização) e preditiva, a BITKA tem como objetivo criar soluções de planejamento aderentes à realidade dos clientes e que irão auxiliá-los a extrair o máximo potencial do seu negócio.
-      A filosofia da empresa é construir um ambiente saudável e colaborativo entre as pessoas, ajudando cada indivíduo a atingir a excelência profissional e proporcionando o ambiente correto para a construção de soluções incríveis. Nesse ambiente a prioridade é valorizar as diferenças entre cada um dos indivíduos entendendo que elas são essenciais para construirmos sistemas aderentes e impactantes. Um acompanhamento de carreira, com feedbacks justos e transparentes, foi construído para sustentar esses pilares.
-      Os Palestrantes, além de dar dicas sobre carreira, irão falar um pouco a respeito dos projetos inovadores e oportunidades abertas na BITKA
-      `,
+      43,
+      new Date(2023, 9, 23, 17, 0),
+      '',
       60,
       'A confirmar',
-      'BITKA Analytics - Decisões Inteligentes, Resultados Extraordinários: História, Inovação e Oportunidades',
+      'Apresentação dos cursos de pós-graduação',
       TypeEnum.Palestra,
-      [SpeakersData[22], SpeakersData[23]]
+      [SpeakersData[48], SpeakersData[49]]
     ),
     new Lecture(
       23,
