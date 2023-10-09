@@ -8,7 +8,8 @@
 
 .event-description-container {
   justify-content: space-around;
-  padding: 3em 3em 3em 6em;
+  margin: 0;
+  padding: 3em 0;
 }
 
 .event-desc {

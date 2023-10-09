@@ -46,7 +46,7 @@ p.description {
 }
 
 .registering-container {
-  margin-bottom: 3em;
+  margin: 0 0 3em 0;
 }
 
 p.type-member-cta {
@@ -89,14 +89,13 @@ p.type-member-cta {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 770px) {
   .enroll-cta a {
     margin: 1em 0;
   }
 
   .registering-container {
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
   }
 
   .registering-col {
