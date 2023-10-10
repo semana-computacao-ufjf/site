@@ -30,9 +30,33 @@ export const SpeakersData: Speaker[] = [
     'PGMC',
     3
   ),
-  new Speaker(3, '', '', '', '', '', 3),
-  new Speaker(4, '', '', '', '', '', 4),
-  new Speaker(5, '', '', '', '', '', 5),
+  new Speaker(
+    3,
+    'Meninas Programadoras UFJF',
+    'O projeto de extensão Meninas Programadoras JF tem como objetivo ensinar Python para meninas do Ensino Médio e incentivá-las  a conhecer melhor o universo da programação. O projeto Meninas Programadoras JF é uma ramificação do projeto Meninas Programadoras criado pela Professora Maria da Graça na USP.',
+    'assets/img/speakers/meninas-programadoras.webp',
+    'https://www.instagram.com/meninasprogramadorasjf/',
+    'UFJF',
+    37
+  ),
+  new Speaker(
+    4,
+    'Meninas Digitais UFJF',
+    'O Projeto Meninas Digitaus UFJF é inspirado no Programa Meninas Digitais organizado pela Sociedade Brasileira de Computação, realizando através de oficinas práticas e desplugadas, explicações sobre os conceitos da área de Computação com a motivação de despertar o interesse de meninas estudantes do ensino médio e dos anos finais do ensino fundamental, para que estas conheçam melhor a área e sintam-se motivadas em seguir uma carreira em Computação.',
+    'assets/img/speakers/meninas-digitais.webp',
+    'https://www.instagram.com/meninasdigitaisufjf/',
+    'UFJF',
+    37
+  ),
+  new Speaker(
+    5,
+    'ProgramAda',
+    '',
+    'assets/img/speakers/programada.webp',
+    'https://www.instagram.com/program_ada_ufjf/',
+    'UFJF',
+    37
+  ),
   new Speaker(6, '', '', '', '', '', 6),
   new Speaker(
     7,
@@ -141,7 +165,7 @@ export const SpeakersData: Speaker[] = [
     22,
     'Marcelo Ladeira Reis',
     'Marcelo Ladeira Reis é Diretor de Otimização na BITKA Analytics e um dos fundadores da empresa. É formado em Ciência da Computação pela Universidade Federal de Viçosa e mestre em Algoritmos e Otimização Combinatória pela PUC-Rio. Tem artigos científicos publicados em diversas revistas acadêmicas no Brasil e exterior, dentre elas a Mathematical Programming, revista mais importante de Pesquisa Operacional. Possui mais de 20 anos de experiência em Advanced Analytics, tendo atuado em projetos para grandes empresas brasileiras e multinacionais.',
-    'assets/img/speakers/marcelo-ladeira.webp',
+    'assets/img/speakers/marcelo-reis.webp',
     '',
     'BITKA',
     22
@@ -296,11 +320,11 @@ export const SpeakersData: Speaker[] = [
   new Speaker(
     39,
     'Café das Minas',
-    'Coletivo formado pelo Meninas Digitais UFJF, ProgramAda e Meninas Programadoras UFJF.',
+    'O Café das Minas é um evento mensal organizado pelos projetos Meninas Digitais UFJF, ProgramAda e Meninas Programadoras com o objetivo de reunir a comunidade de meninas dos cursos de Computação e Exatas da UFJF.',
     'assets/img/speakers/cafe-das-minas.webp',
-    '',
+    'https://sites.google.com/ice.ufjf.br/meninasdigitaisufjf/eventos',
     'Café das Minas',
-    32
+    37
   ),
   new Speaker(40, 'Sandra Ávila', '', '', '', '', 33),
   new Speaker(
@@ -417,7 +441,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 24, 17, 0),
       'A ideia principal da palestra é mostrar como hoje são desenvolvidos os projetos automotivos dos carros modernos. Design – Transformação do Sketch manual do Designer em uma superfície modelada nos softwares (Alias, Icem Surf). Desenvolvimento do Produto – da Superfície de Estilo para o modelamento de 100% das peças que compõem o automóvel. Validação Virtual – CAE – Cálculo Estrutural, Aerodinâmico do Automóvel e aprovação de acordo com critérios de confiabilidade e segurança. O carro do futuro – a conectividade do automóvel com os ocupantes (infotainment, EV, carro autônomo, carros voadores).',
       60,
-      'A confirmar',
+      'S404',
       'Projeto Automotivo do Design ao Protótipo com Auxílio da Ciência da Computação',
       TypeEnum.Palestra,
       SpeakersData[11]
@@ -427,7 +451,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 23, 19, 0),
       'Abertura da Semana da Computação e Credenciamento - entrega de crachás',
       60,
-      'A confirmar',
+      'S404',
       'Abertura da Semana da Computação e Credenciamento',
       TypeEnum.Palestra
     ),
@@ -436,7 +460,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 23, 19, 30),
       'Palestra de Abertura',
       90,
-      'A confirmar',
+      'S404',
       'Mesa Redonda: Inteligência Artificial: aplicações atuais e tendências',
       TypeEnum.Palestra
     ),
@@ -450,7 +474,8 @@ export const LecturesData: Lecture[][] = [
       240,
       'L107',
       'Hackathon Rerum',
-      TypeEnum.Competicao
+      TypeEnum.Competicao,
+      SpeakersData[32]
     ),
     new Lecture(
       7,
@@ -521,7 +546,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 24, 17, 0),
       'A Transformação Digital no governo é um processo complexo que envolve mudanças culturais, tecnológicas e regulatórias. Enfrentar esses desafios é essencial para melhorar a prestação de serviços públicos, aumentar a eficiência e atender às crescentes expectativas dos cidadãos em uma era cada vez mais digital.',
       60,
-      'A confirmar',
+      'S309',
       'Transformação Digital para Governo e seus desafios',
       TypeEnum.Palestra,
       SpeakersData[12]
@@ -614,7 +639,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 23, 17, 0),
       '',
       60,
-      'A confirmar',
+      'S309',
       'Apresentação dos cursos de pós-graduação - PGCC + PGMC',
       TypeEnum.Palestra,
       [SpeakersData[48], SpeakersData[49]]
@@ -706,7 +731,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 26, 19, 0),
       'Nesta palestra são exploradas técnicas de modelagem e padrões de projeto que permitem uma boa concepção de arquiteturas de sistema de informação com uso de microsserviços.',
       60,
-      'A confirmar',
+      'S401',
       'Desafios no desenvolvimento de sistemas eficientes com microsserviços',
       TypeEnum.Palestra,
       SpeakersData[32]
@@ -716,7 +741,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 26, 20, 0),
       'O mercado de dados está em alta e em constante evolução, vamos explorar as necessidades que as empresas têm para alcançar a cultura data driven hoje e quais papéis e responsabilidades cada profissional de dados deve possuir para prosperar na área.',
       60,
-      'A confirmar',
+      'S401',
       'Carreira em Dados - O que as empresas realmente precisam?',
       TypeEnum.Palestra,
       SpeakersData[33]
@@ -770,7 +795,7 @@ export const LecturesData: Lecture[][] = [
       'A confirmar',
       'Mesa Redonda: Mulheres e a TI: Oportunidades e carreira',
       TypeEnum.Palestra,
-      SpeakersData[39]
+      [SpeakersData[39], SpeakersData[3]]
     ),
     new Lecture(
       38,
@@ -797,7 +822,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 27, 17, 0),
       'O que grandes referências como a Apple, IBM e até o FBI têm em comum? A aplicação de metodologias ágeis no dia a dia de projetos de alta complexidade e incerteza. Porém, a agilidade vai além da aplicação do Kanban ou frameworks como o Scrum. Nesta palestra introduziremos os valores do mindset ágil e as principais práticas utilizadas para que você já comece a aplicá-las em seus projetos e colha os benefícios.',
       60,
-      'A confirmar',
+      'S402',
       'Agilidade em Projetos',
       TypeEnum.Palestra,
       SpeakersData[41]
