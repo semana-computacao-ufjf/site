@@ -25,6 +25,12 @@ export const OrganizersData: Organizer[] = [
     'Joventino de Oliveira Campos',
     'Docente no Departamento de Ciência da Computação'
   ),
+  new Organizer(
+    'https://www.linkedin.com/in/andr%C3%A9-luiz-de-oliveira-82325b34/',
+    'assets/img/organizers/andreoliveira.webp',
+    'André Luiz de Oliveira',
+    'Docente no Departamento de Ciência da Computação'
+  ),
 
   new Organizer(
     'https://www.linkedin.com/in/carlosalexandre94/',
@@ -48,6 +54,12 @@ export const OrganizersData: Organizer[] = [
     'https://github.com/LucasPaivaSantos',
     'assets/img/organizers/lucaspaiva.webp',
     'Lucas Paiva',
+    'Colaborador do GET SI'
+  ),
+  new Organizer(
+    'https://www.linkedin.com/in/1rodrigosoares/',
+    'assets/img/organizers/rodrigosoares.webp',
+    'Rodrigo Soares',
     'Colaborador do GET SI'
   ),
 ];

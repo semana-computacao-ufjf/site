@@ -281,7 +281,7 @@ export const SpeakersData: Speaker[] = [
     'Técnico em Desenvolvimento de Sistemas pelo Instituto Federal do Sudeste de Minas Gerais. Formado em Física pela Universidade Federal de Juiz de Fora. Possui mestrado e Doutorado em Modelagem Computacional pelo PPGMC-UFJF e realizou pós-doutorado em Engenharia pela Universidade Federal do Rio de Janeiro. Especialista em métodos numéricos e resolução de equações diferenciais. Atualmente é desenvolvedor de software na viasat inc, onde atua como Backend em Java e Front-end React, além de ser docente na XP educação. Entusiasta da educação financeira, produz conteúdo para desmistificar o universo das finanças utilizando Python.',
     'assets/img/speakers/lucas-crispim.webp',
     '',
-    '',
+    'Viasat Inc',
     36
   ),
   new Speaker(
@@ -293,7 +293,15 @@ export const SpeakersData: Speaker[] = [
     'GET EngComp',
     [14, 16]
   ),
-  new Speaker(39, '', '', '', '', '', 32),
+  new Speaker(
+    39,
+    'Café das Minas',
+    'Coletivo formado pelo Meninas Digitais UFJF, ProgramAda e Meninas Programadoras UFJF.',
+    'assets/img/speakers/cafe-das-minas.webp',
+    '',
+    'Café das Minas',
+    32
+  ),
   new Speaker(40, 'Sandra Ávila', '', '', '', '', 33),
   new Speaker(
     41,
@@ -417,7 +425,7 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       4,
       new Date(2023, 9, 23, 19, 0),
-      'Abertura da Semana da Computação e Credenciamento',
+      'Abertura da Semana da Computação e Credenciamento - entrega de crachás',
       60,
       'A confirmar',
       'Abertura da Semana da Computação e Credenciamento',
@@ -425,7 +433,7 @@ export const LecturesData: Lecture[][] = [
     ),
     new Lecture(
       5,
-      new Date(2023, 9, 23, 20, 0),
+      new Date(2023, 9, 23, 19, 30),
       'Palestra de Abertura',
       90,
       'A confirmar',
@@ -441,7 +449,7 @@ export const LecturesData: Lecture[][] = [
       'Mais informações em breve',
       240,
       'L107',
-      'Hackathon',
+      'Hackathon Rerum',
       TypeEnum.Competicao
     ),
     new Lecture(
@@ -473,6 +481,15 @@ export const LecturesData: Lecture[][] = [
       'Criando Inteligência Artificial com Python, construa 3 IAs do zero.',
       TypeEnum.Minicurso,
       SpeakersData[8]
+    ),
+    new Lecture(
+      44,
+      new Date(2023, 9, 24, 13, 0),
+      '',
+      90,
+      'A confirmar',
+      'Processo Seletivo Levty',
+      TypeEnum.ProcessoSeletivo
     ),
     new Lecture(
       10,
@@ -535,7 +552,7 @@ export const LecturesData: Lecture[][] = [
       'Em breve mais informações',
       180,
       'Lab 2 Engenharia Computacional',
-      'Hackathon',
+      'Hackathon 4Matt',
       TypeEnum.Competicao,
       SpeakersData[15]
     ),
@@ -573,16 +590,6 @@ export const LecturesData: Lecture[][] = [
       SpeakersData[18]
     ),
     new Lecture(
-      19,
-      new Date(2023, 9, 25, 8, 0),
-      'Em breve mais informações',
-      240,
-      'A confirmar',
-      'Processo Seletivo LEVTY',
-      TypeEnum.ProcessoSeletivo,
-      SpeakersData[19]
-    ),
-    new Lecture(
       20,
       new Date(2023, 9, 25, 14, 0),
       'Este minicurso tem como objetivo o ensino da linguagem de marcação para criação de documentos, chamada LaTeX, apresentando suas utilidades, vantagens e desvantagens.',
@@ -608,7 +615,7 @@ export const LecturesData: Lecture[][] = [
       '',
       60,
       'A confirmar',
-      'Apresentação dos cursos de pós-graduação',
+      'Apresentação dos cursos de pós-graduação - PGCC + PGMC',
       TypeEnum.Palestra,
       [SpeakersData[48], SpeakersData[49]]
     ),
@@ -618,7 +625,7 @@ export const LecturesData: Lecture[][] = [
       'Com o aumento do poder computacional, técnicas numéricas para a solução de problemas de engenharia se tornaram recorrentes na indústria. Os métodos numéricos utilizados na análise de problemas que envolvem mecânica dos fluidos e transferência de calor em escoamentos, são comumente referenciados como Dinâmica dos Fluidos Computacional, ou pela sigla CFD (Computational Fluid Dynamics). Esses métodos permitem obter aproximações numéricas para as equações de conservação que regem os fenômenos físicos de campos de escoamento. A dinâmica da modernidade indica que a aplicação de ferramentas de CFD será cada vez mais comum em indústrias e instituições de pesquisa. Esse panorama aponta a necessidade de divulgação científica e capacitação de profissionais capazes de operar com as mais novas ferramentas do mercado.',
       60,
       'On-line',
-      'O que é CFD',
+      'O que é CFD?',
       TypeEnum.Palestra,
       SpeakersData[24]
     ),
@@ -751,17 +758,17 @@ export const LecturesData: Lecture[][] = [
       'O minicurso oferece uma introdução abrangente e prática às aplicações da linguagem de programação Python no contexto do mercado financeiro. Durante o curso, os participantes aprendem a utilizar bibliotecas específicas, como Pandas e NumPy, para coletar, analisar e visualizar dados financeiros, bem como a implementar estratégias de análise quantitativa e backtesting de algoritmos de negociação. Além disso, são abordados tópicos como a obtenção de dados de mercado em tempo real, a construção de modelos de risco e a automação de tarefas rotineiras relacionadas a finanças, preparando os alunos para explorar oportunidades profissionais no setor financeiro com o auxílio da programação em Python.',
       240,
       'Lab 2 Engenharia Computacional',
-      'Python para Mercado Financeiro',
+      'Python Aplicado ao Mercado Financeiro',
       TypeEnum.Minicurso,
       SpeakersData[37]
     ),
     new Lecture(
       37,
       new Date(2023, 9, 27, 14, 0),
-      'Em breve mais informações',
+      'Para ampliar a inserção e a permanência de mulheres na área de Ciência da Computação e afins, percebe-se a necessidade de investir em iniciativas com tal propósito. Em sua terceira edição, o Café das Minas  - Edição Especial da Semana da Computação 2023 discutirá assuntos relacionados a questões de gênero e a Ciência da Computação – histórias de sucesso, políticas de incentivo e formas de engajamento e atração de mulheres, para as carreiras associadas à área. Organizado na forma de Mesa Redonda, nesta Edição Especial, o Café das Minas é centrado em debater problemas relacionados à mulher, tanto do ponto de vista de mercado de trabalho quanto de inclusão e alfabetização digital.',
       90,
       'A confirmar',
-      'Mesa Redonda: Mulheres na TI',
+      'Mesa Redonda: Mulheres e a TI: Oportunidades e carreira',
       TypeEnum.Palestra,
       SpeakersData[39]
     ),
@@ -769,7 +776,7 @@ export const LecturesData: Lecture[][] = [
       38,
       new Date(2023, 9, 27, 14, 0),
       `Resultado da Competição em IA`,
-      60,
+      90,
       'L205',
       'Competição de IA - Resultado',
       TypeEnum.Competicao,

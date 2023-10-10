@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   eventCompetitionIA: number = EventEnum.CompeticaoIA;
 
   alertMessageDonations: string =
-    'Para confirmar a sua participação no evento, é necessário realizar uma doação de pelo menos 1kg de alimento não perecível ou 1 caixa de leite. O local de entrega será divulgado em breve.';
+    'Para confirmar a sua participação no evento, é necessário realizar uma doação de pelo menos 1kg de alimento não perecível, 1 caixa de leite ou um PIX no valor de R$ 6,00. O local de entrega será divulgado em breve, assim como a chave de doação.';
 
   ngOnInit() {
     this.eventNumber =
