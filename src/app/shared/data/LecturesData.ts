@@ -51,7 +51,8 @@ export const SpeakersData: Speaker[] = [
   new Speaker(
     5,
     'ProgramAda',
-    '',
+    `O ProgramAda é um projeto de extensão da UFJF com um propósito transformador. Nosso foco é inspirar e motivar alunas a explorar o mundo da programação, reduzindo os índices de desistência e reprovação em disciplinas-chave como Algoritmos.
+    Nossa abordagem é única: estamos construindo um jogo funcional e interativo com aspectos lúdicos e personalizáveis, projetado para evoluir junto às alunas ao longo do semestre acadêmico. Ao estimular a criatividade e a lógica, o jogo tem como intuito enriquecer o aprendizado desde o início do curso.`,
     'assets/img/speakers/programada.webp',
     'https://www.instagram.com/program_ada_ufjf/',
     'UFJF',
