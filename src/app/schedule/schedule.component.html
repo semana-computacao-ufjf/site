@@ -48,12 +48,17 @@
               <h3 class="lecture-title">{{ lecture.title }}</h3>
               <p class="lecture-lecturer" *ngIf="lecture.speaker">{{ getSpeakerName(lecture.speaker) }}</p>
 
-              <p>{{ lecture.description }}</p>
+              <p [innerHTML]="replaceURLsWithAnchorTags(lecture.description)"></p>
             </th>
             <!-- </th> -->
 
             <td align="center" valign="middle" class="lecture-location w-25">
-              {{ lecture.location }}
+              <span *ngIf="lecture.location.includes('https')">
+                <a [href]="lecture.location" target="_blank" rel="noopener noreferrer">YouTube</a>
+              </span>
+              <span *ngIf="!lecture.location.includes('https')">
+                {{ lecture.location }}
+              </span>
             </td>
           </tr>
         </tbody>

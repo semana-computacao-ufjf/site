@@ -57,6 +57,18 @@ export class ScheduleComponent {
     }
   }
 
+  replaceURLsWithAnchorTags(input: string): string {
+    // Expressão regular para encontrar URLs que começam com "https://" ou "http://"
+    const urlRegex = /https?:\/\/[^\s/$.?#].[^\s]*/g;
+
+    // Substitui as URLs encontradas por uma tag <a> com o link
+    const replacedString = input.replace(urlRegex, (url) => {
+      return `<a href="${url}" target="_blank">${url}</a>`;
+    });
+
+    return replacedString;
+  }
+
   ngOnInit() {
     this.innerWidth = window.innerWidth;
   }

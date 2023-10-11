@@ -272,14 +272,14 @@ export const SpeakersData: Speaker[] = [
   ),
   new Speaker(
     34,
-    'Bruno Ferreira',
-    `Bruno Ferreira começou sua jornada na área de Tecnologia da Informação lá em 2002, quando plataforma SaaS eram apenas uma ideia distante. Desde então, ele mergulhou de cabeça em diversas tecnologias SaaS e liderou projetos que supercomplexos.
-  Em 2012, o Bruno decidiu focar seus conhecimentos exclusivamente na gestão de ativos de software e SaaS, ou como a gente gosta de chamar, SAM (Software Asset Management). Ele ficou determinado a ajudar Clientes e Parceiros a botarem ordem na bagunça do software, tanto nas máquinas locais quanto nas nuvens SaaS, IaaS, PaaS.
-  Com uma baita bagagem de experiência e um monte de certificações, o Bruno é simplesmente obcecado pelo mundo da ServiceNow. Ele gerencia projetos em grandes empresas com uma facilidade que faz parecer fácil como montar um quebra-cabeça.
-  Então, se você está a fim de bater um papo sobre SaaS, ServiceNow,  governança de software, ou simplesmente quer pegar umas dicas com um verdadeiro mestre na área, o Bruno é o cara! Compareça e veja como ele pode te ajudar a dominar o mundo da TI. 💻🚀`,
-    'assets/img/speakers/bruno-ferreira.webp',
-    '',
-    'Diretor Técnico na 4Matt Tecnologia',
+    'Marcelo Theóphilo',
+    `Marcelo começou sua jornada na área de Tecnologia da Informação lá em 1999, quando plataforma SaaS eram apenas uma ideia distante. Desde então, ele mergulhou de cabeça em diversas tecnologias SaaS e liderou projetos que supercomplexos.
+    Em 2012, o Marcelo decidiu focar seus conhecimentos exclusivamente na gestão de ativos de software e SaaS, ou como a gente gosta de chamar, SAM (Software Asset Management). Ele ficou determinado a ajudar Clientes e Parceiros a botarem ordem na bagunça do software, tanto nas máquinas locais quanto nas nuvens SaaS, IaaS, PaaS.
+    Com uma baita bagagem de experiência e um monte de certificações, o Marcelo é simplesmente obcecado pelo mundo da ServiceNow. Ele gerencia projetos em grandes empresas com uma facilidade que faz parecer fácil como montar um quebra-cabeça.
+    Então, se você está a fim de bater um papo sobre SaaS, ServiceNow, governança de software, ou simplesmente quer pegar umas dicas com um verdadeiro mestre na área, o Marcelo é o cara! Compareça e veja como ele pode te ajudar a dominar o mundo da TI. 💻🚀`,
+    'assets/img/speakers/marcelo-theophilo.webp',
+    'https://www.linkedin.com/in/marcelotheophilo/?locale=pt_BR',
+    'Diretor de Serviços de Consultoria na 4Matt Tecnologia',
     33
   ),
   new Speaker(
@@ -511,7 +511,8 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       44,
       new Date(2023, 9, 24, 13, 0),
-      '',
+      `O processo seletivo da LEVTY atualmente acontece em três etapas principais: teste de raciocínio lógico, bate-papo com o RH e bate-papo técnico. A ideia é que essa primeira etapa seja feita na UFJF em parceria coma Semana da Computação e as demais acontecerão de forma remota pelo Google Meet.
+      O teste de lógica é composto por 20 questões de múltipla escolha de lógica geral, nada específico da área de programação. Ele será realizado no dia 24/10/2023 às 13:00 e para participar basta se inscrever pelo site da LEVTY: https://levty.com/trainee e, caso o seu currículo seja selecionado, a LEVTY entrará em contato com mais informações sobre o teste de lógica.`,
       90,
       'A confirmar',
       'Processo Seletivo Levty',
@@ -608,7 +609,12 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       18,
       new Date(2023, 9, 25, 8, 0),
-      'Em breve mais informações',
+      `A BITKA, empresa que cria soluções inovadoras na área de sistemas de apoio a decisão, está à procura de talentos para preencher futuras vagas nas áreas de TI, Otimização e Análise Preditiva.
+      Faremos na Semana da Computação a primeira etapa do processo seletivo, que será aberta para candidatos que estão cursando do 4º período para frente (quem estiver em períodos anteriores a esses podem enviar o currículo para cadastramos na nossa base de talentos para futuras oportunidades).
+      Iremos considerar currículos para vagas efetivas ou part-time dependendo da proximidade de formatura de cada candidato.
+      Temos como prioridade construir um ambiente saudável, colaborativo e justo entre as pessoas para que possamos construir soluções incríveis. Venha trabalhar em uma empresa que está em pleno crescimento e que investe na carreira das suas pessoas.
+      Os interessados, devem preencher o formulário seguinte: https://forms.office.com/r/tPMeEBHFy9
+      Logo após, o agendamento do horário da conversa deve ser feito pelo link: https://calendly.com/livio-guerra/xxvsecomp-conversa-bitka`,
       240,
       'A confirmar',
       'Processo Seletivo BITKA',
@@ -650,7 +656,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 25, 19, 0),
       'Com o aumento do poder computacional, técnicas numéricas para a solução de problemas de engenharia se tornaram recorrentes na indústria. Os métodos numéricos utilizados na análise de problemas que envolvem mecânica dos fluidos e transferência de calor em escoamentos, são comumente referenciados como Dinâmica dos Fluidos Computacional, ou pela sigla CFD (Computational Fluid Dynamics). Esses métodos permitem obter aproximações numéricas para as equações de conservação que regem os fenômenos físicos de campos de escoamento. A dinâmica da modernidade indica que a aplicação de ferramentas de CFD será cada vez mais comum em indústrias e instituições de pesquisa. Esse panorama aponta a necessidade de divulgação científica e capacitação de profissionais capazes de operar com as mais novas ferramentas do mercado.',
       60,
-      'On-line',
+      'https://www.youtube.com/watch?v=KI9s6PQxXto',
       'O que é CFD?',
       TypeEnum.Palestra,
       SpeakersData[24]
@@ -660,7 +666,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 25, 20, 0),
       'Você já parou para pensar como os Modelos de Linguagem estão transformando nossa forma de interagir, aprender e comunicar? Essas tecnologias estão no centro das revoluções digitais recentes, influenciando diversas áreas da sociedade. Nesta palestra, você irá entender um pouco sobre como funcionam as LLMs, suas limitações, riscos, aplicações bem como questões éticas e sociais.',
       60,
-      'On-line',
+      'https://www.youtube.com/watch?v=wDaG-Kh5shc',
       'Modelos de Linguagem e seus impactos na sociedade',
       TypeEnum.Palestra,
       SpeakersData[25]
@@ -670,7 +676,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 25, 21, 0),
       'Nascido e estudado em Juiz de Fora, escrevi meu primeiro programa de IA nos meados dos anos noventa. Explorei abordagens simbólicas e conexionistas, trabalhei em universidades, empresas grandes e pequenas, cada uma com suas próprias inclinações metodológicas. Nessa conversa, vou falar de algumas lições aprendidas nesse caminho e abrir um bate papo para alunos que estejam interessados em seguir carreira no exterior, ou em startups, e compartilharei minhas opiniões sobre os melhores caminhos nesse sentido.',
       60,
-      'On-line',
+      'https://www.youtube.com/watch?v=_gAnWXWYwZc',
       'Minha Jornada em Inteligência Artificial -- Era Uma Vez, Quando Redes Neurais Eram Curiosidade Histórica...',
       TypeEnum.Palestra,
       SpeakersData[26]
