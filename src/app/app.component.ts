@@ -14,7 +14,6 @@ export class AppComponent implements OnInit {
   eventEndDate = new Date(2023, 19, 27, 0);
   eventNumber: number = 0;
   eventEdition: string = '';
-  eventCompetitionIA: number = EventEnum.CompeticaoIA;
 
   alertMessageDonations: string =
     'Para confirmar a sua participação no evento, é necessário realizar uma doação de pelo menos 1kg de alimento não perecível, 1 caixa de leite ou um PIX no valor de R$ 6,00. O local de entrega será divulgado em breve, assim como a chave de doação.';
