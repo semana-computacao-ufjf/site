@@ -401,7 +401,7 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       0,
       new Date(2023, 9, 23, 10, 0),
-      'Abertura da Semana do ICE',
+      '',
       120,
       'Auditório do ICE',
       'Abertura da Semana do ICE',
@@ -471,7 +471,7 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       6,
       new Date(2023, 9, 24, 8, 0),
-      'Mais informações em breve',
+      'Mais informações abaixo',
       240,
       'L107',
       'Hackathon Rerum',
@@ -523,7 +523,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 24, 14, 30),
       'Inteligência Artificial e Aprendizado de Máquina tem ganhado grande espaço nos últimos anos em várias áreas do conhecimento. Dentro da Engenharia de Software, esses temas também tem sido investigados e empregados com frequência, sempre com a intenção de melhorar atividades e resultados. Nesta palestra, será fornecido um panorama de como IA e Aprendizado de Máquina tem sido empregadas na engenharia de software. Mais especificamente, serão mostrados exemplos do uso de Aprendizado de Máquina na identificação de smells de código fonte e de  recomendação de refatorações.',
       60,
-      'A confirmar',
+      'S309',
       'Engenharia de Software e Inteligência Artificial: Panorama Geral e Aplicações em Aprendizado de Máquina',
       TypeEnum.Palestra,
       SpeakersData[10]
@@ -538,7 +538,7 @@ export const LecturesData: Lecture[][] = [
       Os Palestrantes, além de dar dicas sobre carreira, irão falar um pouco a respeito dos projetos inovadores e oportunidades abertas na BITKA
       `,
       60,
-      'A confirmar',
+      'S309',
       'BITKA Analytics - Decisões Inteligentes, Resultados Extraordinários: História, Inovação e Oportunidades',
       TypeEnum.Palestra,
       [SpeakersData[22], SpeakersData[23]]
@@ -576,7 +576,7 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       15,
       new Date(2023, 9, 24, 19, 0),
-      'Em breve mais informações',
+      'Mais informações abaixo',
       180,
       'Lab 2 Engenharia Computacional',
       'Hackathon 4Matt',
@@ -616,7 +616,7 @@ export const LecturesData: Lecture[][] = [
       Os interessados, devem preencher o formulário seguinte: https://forms.office.com/r/tPMeEBHFy9
       Logo após, o agendamento do horário da conversa deve ser feito pelo link: https://calendly.com/livio-guerra/xxvsecomp-conversa-bitka`,
       240,
-      'A confirmar',
+      'Sala de Reuniões DCC',
       'Processo Seletivo BITKA',
       TypeEnum.ProcessoSeletivo,
       SpeakersData[18]
@@ -758,7 +758,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 26, 21, 0),
       'Prepare-se para uma jornada de descoberta, aprendizado, crescimento profissional e Internacional. Não perca esta oportunidade de dar o primeiro passo rumo a uma carreira promissora na ServiceNow. Junte-se a nós neste evento e comece a trilhar o caminho para o sucesso na maior plataforma SaaS do mundo. Então, se você está a fim de bater um papo sobre SaaS, ServiceNow,  governança de software, ou simplesmente quer pegar umas dicas com um verdadeiro mestre na área, o Bruno é o cara! Compareça e veja como ele pode te ajudar a dominar o mundo da TI',
       60,
-      'A confirmar',
+      'S401',
       'Como Iniciar sua Carreira Internacional em uma das maiores plataformas SaaS do Mundo: ServiceNow',
       TypeEnum.Palestra,
       SpeakersData[34]
@@ -799,7 +799,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 27, 14, 0),
       'Para ampliar a inserção e a permanência de mulheres na área de Ciência da Computação e afins, percebe-se a necessidade de investir em iniciativas com tal propósito. Em sua terceira edição, o Café das Minas  - Edição Especial da Semana da Computação 2023 discutirá assuntos relacionados a questões de gênero e a Ciência da Computação – histórias de sucesso, políticas de incentivo e formas de engajamento e atração de mulheres, para as carreiras associadas à área. Organizado na forma de Mesa Redonda, nesta Edição Especial, o Café das Minas é centrado em debater problemas relacionados à mulher, tanto do ponto de vista de mercado de trabalho quanto de inclusão e alfabetização digital.',
       90,
-      'A confirmar',
+      'S402',
       'Mesa Redonda: Mulheres e a TI: Oportunidades e carreira',
       TypeEnum.Palestra,
       [SpeakersData[39], SpeakersData[3]]
@@ -819,7 +819,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 27, 15, 30),
       'Em breve mais informações',
       90,
-      'A confirmar',
+      'S402',
       'Em breve mais informações',
       TypeEnum.Palestra,
       SpeakersData[40]
