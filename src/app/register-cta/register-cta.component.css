@@ -1,7 +1,7 @@
 .enroll-cta {
   font-size: small;
   text-align: center;
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 }
 
 .enroll-cta h1 {
@@ -59,7 +59,12 @@ p.type-member-cta {
 .video-container {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+.video-container .type-member-cta {
+  margin: 0;
 }
 
 .enroll-tutorial-video {
