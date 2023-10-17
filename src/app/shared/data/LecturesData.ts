@@ -422,7 +422,7 @@ export const SpeakersData: Speaker[] = [
   new Speaker(
     52,
     'Raul Fonseca Neto',
-    '',
+    ' O Raul Fonseca Neto é Professor Titular do Departamento de Ciência da Computação da Universidade Federal de Juiz de Fora - UFJF,   graduado em Engenharia Civil UFJF , especialista em Pesquisa Operacional pelo Instituto Militar de Engenharia -IME , meste em Engenharia de Transportes também pelo IME, doutor em Engenharia de Sistemas e Computação pela Universidade Federal do Rio de Janeiro - UFRJ,  e com pós-doutorado em Modelagem Computacional pelo Laboratório Nacional de Computação Científica - LNCC e  pós-doutorado em Inteligência Computacional pelo Departamento de Eletrônica da Universidade Federal de Minas Gerais -UFMG. Atua como pesquisador nos Programsa de Pós-Graduação em Modelagem Computacional (UFJF) e em Ciência da Computação (UFJF) nas áreas de Ciência da Computação e Engenharia de Sistemas, com ênfase em Sistemas de Computação, atuando principalmente nos seguintes temas: inteligência artificial, otimização combinatória, otimização convexa, fluxo em redes, planejamento e scheduling, aprendizado de máquinas, reconhecimento de padrões, predição estruturada, aprendizado online, redes complexas e bioinformática.',
     'assets/img/speakers/raul-fonseca.webp',
     '',
     'Docente do DCC',
