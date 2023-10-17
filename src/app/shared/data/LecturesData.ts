@@ -324,10 +324,18 @@ export const SpeakersData: Speaker[] = [
     'O Café das Minas é um evento mensal organizado pelos projetos Meninas Digitais UFJF, ProgramAda e Meninas Programadoras com o objetivo de reunir a comunidade de meninas dos cursos de Computação e Exatas da UFJF.',
     'assets/img/speakers/cafe-das-minas.webp',
     'https://sites.google.com/ice.ufjf.br/meninasdigitaisufjf/eventos',
-    'Café das Minas',
+    'UFJF',
     37
   ),
-  new Speaker(40, 'Sandra Ávila', '', '', '', '', 33),
+  new Speaker(
+    40,
+    'Sandra Ávila',
+    'Sandra Avila é professora no Instituto de Computação, da Universidade Estadual de Campinas. É doutora em Ciência da Computação, com duplo diploma, pela UFMG e pela Sorbonne Université. Seus interesses de pesquisa estão voltados para IA, mais especificamente Visão Computacional e Processamento de Linguagem Natural, com aplicações na Saúde e Análise de conteúdo sensível. Em 2020, foi selecionada para representar o Brasil no Fórum de Jovens Cientistas do BRICS, na área de IA. Sua paixão é incentivar meninas e mulheres a apostarem em carreiras nas áreas de STEM (Ciências, Tecnologia, Engenharias e Matemática).',
+    'assets/img/speakers/sandra-avila.webp',
+    'https://www.linkedin.com/in/avilasandra/?originalSubdomain=br',
+    'UNICAMP',
+    39
+  ),
   new Speaker(
     41,
     'Raphaela Mansur',
@@ -393,6 +401,69 @@ export const SpeakersData: Speaker[] = [
   ),
   new Speaker(48, 'Alex Borges Vieira', '', '', '', 'Pós Graduação', 43),
   new Speaker(49, 'Ruy Freitas Reis', '', '', '', 'Docente do DCC', 43),
+  new Speaker(
+    50,
+    'Sara Salomão Salles',
+    `Sara Salomão Salles atualmente, atua como Gerente de QA na Thomson Reuters, onde é responsável por produtos de software que atendem diferentes segmentos de mercado. Possui mais de 10 anos de experiência na área de Qualidade de Software. Conta com especialização em Engenharia de Qualidade de Software e também, especialização em Modelos Ágeis de desenvolvimento de software. Possui mestrado em Biotecnologia e genética e Bacharelado em Ciência da Computação pela UFJF. Durante a graduação, atuou como estagiária em desenvolvimento de softwares para diferentes instituições em Juiz de Fora/MG`,
+    '',
+    '',
+    'Gerente de QA na Thomson Reuters',
+    37
+  ),
+  new Speaker(
+    51,
+    'Priscila Capriles Goliatt',
+    'Priscila Capriles é pesquisadora da UFJF, professora do Departamento de Ciência da Computação e do Programa de Pós-graduação em Modelagem Computacional, é coordenadora do Grupo de Modelagem Computacional Aplicada do CNPq, coordenadora do Time Enactus UFJF para o Empreendedorismo Social, e foi vice-diretora executiva da FADEPE. Trabalha nas áreas de Biologia Computacional, Ciência de Dados, Desenvolvimento de Sistemas, Inovação Tecnológica e Empreendedorismo',
+    'assets/img/speakers/priscila-capriles.webp',
+    '',
+    'Docente do DCC',
+    5
+  ),
+  new Speaker(
+    52,
+    'Raul Fonseca Neto',
+    '',
+    'assets/img/speakers/raul-fonseca.webp',
+    '',
+    'Docente do DCC',
+    5
+  ),
+  new Speaker(
+    53,
+    'Wagner Antônio Arbex',
+    'Wagner Arbex é Professor Adjunto da Universidade Federal de Juiz de Fora (UFJF) e Analista Científico da Empresa Brasileira de Pesquisa Agopecuária (Embrapa), com doutorado em Engenharia de Sistemas e Computação. Idealizador do IDEAS FOR MILK, VACATHON e RESIDÊNCIA ZOOTÉCNICA DIGITAL, atua há mais de 35 anos em PD&I, aplicando Ciência da Computação, Ciência de Dados e TIC ao Agronegócio.',
+    'assets/img/speakers/wagner-arbex.webp',
+    '',
+    'Docente do DCC',
+    5
+  ),
+  new Speaker(
+    54,
+    'Fabio do Vale',
+    'Fabio do Vale é Assessor de VPGG na Code Jr, está no sétimo período de Sistemas de informação e é desenvolver web backend focado nas tecnologias de PHP e Laravel.',
+    'assets/img/speakers/fabio-vale.webp',
+    '',
+    'Code Empresa Júnior de Computação',
+    17
+  ),
+  new Speaker(
+    55,
+    'Dayane Guimarães Gomes Godoy',
+    'Membro do GETComp há onze meses, está no quarto período de Ciência da Computação e é pesquisadora na área de Análise de Dados com foco em análise de dados em grandes grafos de conhecimento.',
+    'assets/img/speakers/dayane-guimaraes.webp',
+    '',
+    'GET Comp',
+    17
+  ),
+  new Speaker(
+    56,
+    'Daniel Jorge Reis Caldeira',
+    'Membro do GETComp há seis meses, está no oitavo período de Ciência da Computação e é desenvolvedor de jogos educacionais focados no ensino de programação.',
+    'assets/img/speakers/daniel-jorge.webp',
+    '',
+    'GET Comp',
+    17
+  ),
 ];
 
 export const LecturesData: Lecture[][] = [
@@ -463,7 +534,8 @@ export const LecturesData: Lecture[][] = [
       90,
       'S404',
       'Mesa Redonda: Inteligência Artificial: aplicações atuais e tendências',
-      TypeEnum.Palestra
+      TypeEnum.Palestra,
+      [SpeakersData[51], SpeakersData[52], SpeakersData[53]]
     ),
   ],
   // Terça
@@ -604,7 +676,7 @@ export const LecturesData: Lecture[][] = [
       'L107',
       'Do zero ao básico de GIT/GITHUB',
       TypeEnum.Minicurso,
-      SpeakersData[17]
+      [SpeakersData[17], SpeakersData[54], SpeakersData[55], SpeakersData[56]]
     ),
     new Lecture(
       18,
@@ -771,7 +843,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 27, 8, 0),
       'Maratona de Programação JR',
       240,
-      'L107',
+      'Lab 2 Engenharia Computacional',
       'Maratona de Programação JR',
       TypeEnum.Competicao
     ),
@@ -789,7 +861,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 27, 8, 0),
       'O minicurso oferece uma introdução abrangente e prática às aplicações da linguagem de programação Python no contexto do mercado financeiro. Durante o curso, os participantes aprendem a utilizar bibliotecas específicas, como Pandas e NumPy, para coletar, analisar e visualizar dados financeiros, bem como a implementar estratégias de análise quantitativa e backtesting de algoritmos de negociação. Além disso, são abordados tópicos como a obtenção de dados de mercado em tempo real, a construção de modelos de risco e a automação de tarefas rotineiras relacionadas a finanças, preparando os alunos para explorar oportunidades profissionais no setor financeiro com o auxílio da programação em Python.',
       240,
-      'Lab 2 Engenharia Computacional',
+      'L107',
       'Python Aplicado ao Mercado Financeiro',
       TypeEnum.Minicurso,
       SpeakersData[37]
@@ -802,7 +874,7 @@ export const LecturesData: Lecture[][] = [
       'S402',
       'Mesa Redonda: Mulheres e a TI: Oportunidades e carreira',
       TypeEnum.Palestra,
-      [SpeakersData[39], SpeakersData[3]]
+      [SpeakersData[39], SpeakersData[3], SpeakersData[40], SpeakersData[50]]
     ),
     new Lecture(
       38,
@@ -817,10 +889,10 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       39,
       new Date(2023, 9, 27, 15, 30),
-      'Em breve mais informações',
+      'Nesta conversa, vamos falar como funcionam os grandes modelos de linguagem, em especial a ferramenta ChatGPT, bem como os seus riscos, limitações e desafios. Na conversa também será abordada a experiência da pesquisadora no desenvolvimento de modelos de linguagem voltados para a língua portuguesa.',
       90,
       'S402',
-      'Em breve mais informações',
+      'ChatGP Quê?',
       TypeEnum.Palestra,
       SpeakersData[40]
     ),
