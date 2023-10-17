@@ -758,10 +758,10 @@ export const LecturesData: Lecture[][] = [
   [
     new Lecture(
       26,
-      new Date(2023, 9, 26, 8, 0),
-      'Em breve mais informações',
-      660,
-      'A confirmar',
+      new Date(2023, 9, 26, 7, 30),
+      'Visita ao Campo Experimental da Embrapa Gado de Leite em Coronel Pacheco. Inscrições encerradas.',
+      670,
+      'Saída às 7:30 da manhã em frente à APES',
       'Visita Técnica à EMBRAPA',
       TypeEnum.VisitaTecnica
     ),
