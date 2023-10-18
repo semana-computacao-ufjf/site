@@ -586,7 +586,7 @@ export const LecturesData: Lecture[][] = [
       `O processo seletivo da LEVTY atualmente acontece em três etapas principais: teste de raciocínio lógico, bate-papo com o RH e bate-papo técnico. A ideia é que essa primeira etapa seja feita na UFJF em parceria coma Semana da Computação e as demais acontecerão de forma remota pelo Google Meet.
       O teste de lógica é composto por 20 questões de múltipla escolha de lógica geral, nada específico da área de programação. Ele será realizado no dia 24/10/2023 às 13:00 e para participar basta se inscrever pelo site da LEVTY: https://levty.com/trainee e, caso o seu currículo seja selecionado, a LEVTY entrará em contato com mais informações sobre o teste de lógica.`,
       90,
-      'A confirmar',
+      'S309',
       'Processo Seletivo Levty',
       TypeEnum.ProcessoSeletivo
     ),
