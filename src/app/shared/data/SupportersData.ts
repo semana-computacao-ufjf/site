@@ -44,4 +44,12 @@ export const SupportersData: Supporter[] = [
     'http://www.solucionar.com.br',
     true
   ),
+
+  // Apoio
+  new Supporter(
+    'RNP',
+    'assets/img/supporters/supporters/apoio-rnp.webp',
+    'https://www.rnp.br',
+    false
+  ),
 ];

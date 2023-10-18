@@ -44,3 +44,7 @@ Thumbs.db
 .angular
 /.angular/
 .angular/
+
+.vscode
+.vscode/
+/.vscode/

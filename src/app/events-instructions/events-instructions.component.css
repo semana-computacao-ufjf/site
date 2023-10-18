@@ -17,6 +17,10 @@ li a {
   color: var(--light-green);
 }
 
+li a:hover {
+  color: var(--dark-blue);
+}
+
 .subtitle {
   font-weight: bold;
 }
