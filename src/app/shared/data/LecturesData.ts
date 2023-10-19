@@ -126,9 +126,9 @@ export const SpeakersData: Speaker[] = [
   new Speaker(15, '', '', '', '', '', 15),
   new Speaker(
     16,
-    'Marcelo Yan Rezende Menezes',
+    'Marcelo Ian Rezende Menezes',
     'Marcelo é estudante de Engenharia Computacional e bolsista do GET Engenharia Computacional. Trabalha em projeto de iniciação científica da área de pesquisa operacional.',
-    'assets/img/speakers/marcelo-yan.webp',
+    'assets/img/speakers/marcelo-ian.webp',
     '',
     'GET EngComp',
     16
