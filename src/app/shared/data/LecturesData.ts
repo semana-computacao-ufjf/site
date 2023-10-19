@@ -464,6 +464,24 @@ export const SpeakersData: Speaker[] = [
     'GET Comp',
     17
   ),
+  new Speaker(
+    57,
+    'Crystiam Kelle Pereira e Silva',
+    `Crystiam Kelle possui graduação em Ciência da Computação pela Universidade Federal de Juiz de Fora (2007), mestrado em Ciência da Computação pela Universidade Federal de Juiz de Fora (2015) e doutorado pela UNIRIO (2021). Tanto no mestrado, quanto no doutorado focou em tecnologias aplicadas à educação e web semântica. Atua também como analista de tecnologia da informação da Universidade Federal de Juiz de Fora há 15 anos, tendo neste período trabalhado como desenvolvedora, gerente de equipe e product owner. Atualmente gerencia a equipe de projetos e sistemas do CGCO e atua também como product owner em projetos no CGCO.`,
+    'assets/img/speakers/crystiam-kelle.webp',
+    '',
+    'CGCO',
+    37
+  ),
+  new Speaker(
+    58,
+    'Luiza Caldeira Daniel',
+    'Luiza Caldeira Daniel tem 18 anos e cursa Sistemas de Informação na Universidade Federal de Juiz de Fora. É voluntária do projeto de extensão Meninas Digitais UFJF.',
+    'assets/img/speakers/luiza-caldeira.webp',
+    'https://github.com/luizacaldeira',
+    'Meninas Digitais UFJF',
+    37
+  ),
 ];
 
 export const LecturesData: Lecture[][] = [
@@ -790,7 +808,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 26, 14, 0),
       'Este minicurso busca explorar e recriar as mecânicas de movimentação da Madeline, protagonista do jogo Celeste. Nele, você aprenderá a montar habilidades da personagem, como dashes, wall jumps e o "coyote time", que são fundamentais em jogos de plataforma.',
       240,
-      'L107',
+      'L205',
       'Recriando as mecânicas de Celeste na Unity',
       TypeEnum.Minicurso,
       [SpeakersData[29], SpeakersData[30]]
@@ -800,7 +818,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 26, 14, 0),
       'O minicurso tem como objetivo desenvolver habilidades introdutórias nas linguagens de marcação da web HTML e CSS. Além disso, com a realização do curso, o aluno estará apto a criar layouts a partir do zero e será apresentado a tecnologias que simplificam e potencializam esse processo, tais como Bootstrap e React.',
       240,
-      'L205',
+      'L107',
       'Fundamentos de desenvolvimento Web',
       TypeEnum.Minicurso,
       [SpeakersData[31], SpeakersData[44], SpeakersData[45], SpeakersData[46]]
@@ -874,7 +892,15 @@ export const LecturesData: Lecture[][] = [
       'S402',
       'Mesa Redonda: Mulheres e a TI: Oportunidades e carreira',
       TypeEnum.Palestra,
-      [SpeakersData[39], SpeakersData[3], SpeakersData[40], SpeakersData[50]]
+      [
+        SpeakersData[39],
+        SpeakersData[3],
+        SpeakersData[4],
+        SpeakersData[5],
+        SpeakersData[40],
+        SpeakersData[50],
+        SpeakersData[57],
+      ]
     ),
     new Lecture(
       38,
