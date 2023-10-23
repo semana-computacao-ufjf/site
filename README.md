@@ -44,6 +44,12 @@ Os arquivos dentro da pasta `src/app/shared/data` determinam as informações ex
 - O arquivo `OrganizersData.ts` contém as informações sobre os integrantes da comissão organizadora do evento, que são exibidas pelo componente `src/app/organizers-list/*`;
 - O arquivo `SupportersData.ts` contém as informações sobre os patrocinadores e apoiadores do evento, que são exibidas pelo componente `src/app/supporters-list/*`.
 
+## Instruções de desenvolvimento:
+
+- Pode ser interessante fazer o [Fork/Bifurcação do Repositório](https://docs.github.com/pt/get-started/quickstart/fork-a-repo) para se criar o site de outros anos, mas é importante que isto esteja alinhado às ;
+- Deve-se manter as alterações documentadas (por meio de comentários em partes difíceis);
+- O site deve ter [Acessibilidade](https://guia-wcag.com) como um dos seus pilares de desenvolvimento. Isso é importante porque a Universidade é um local para todes, e a função de um desenvolvedor web é garantir o acesso à informação disponível naquele site.
+
 ## Melhorias para o futuro
 
 - Solicitar à UFJF um subdomínio para o site do evento;
@@ -51,6 +57,7 @@ Os arquivos dentro da pasta `src/app/shared/data` determinam as informações ex
 - Adicionar a edição 2022 do evento ao site do projeto (está na branch `edicao-2022`), deixando-a disponível para acesso;
 - Adicionar links para as edições anteriores do evento ao site do projeto, deixando-as disponíveis para acesso (estão hospedadas no site da UFJF);
 - Organizar os componentes por módulos, refazendo a estrutura;
+- Utilizar BEM CSS para organizar o CSS do projeto;
 - Melhorar a responsividade do site;
 - Melhorar a acessibilidade do site;
 
