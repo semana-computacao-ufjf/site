@@ -550,7 +550,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 23, 19, 30),
       'Palestra de Abertura',
       90,
-      'S404',
+      'Anfiteatro',
       'Mesa Redonda: Inteligência Artificial: aplicações atuais e tendências',
       TypeEnum.Palestra,
       [SpeakersData[51], SpeakersData[52], SpeakersData[53]]
