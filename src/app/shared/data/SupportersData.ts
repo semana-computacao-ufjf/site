@@ -36,6 +36,12 @@ export const SupportersData: Supporter[] = [
   ),
 
   // Prata
+  new Supporter(
+    'Cia do Leite',
+    'assets/img/supporters/sponsors/prata-ciadoleite.webp',
+    'https://www.ciadoleite.com.br',
+    true
+  ),
 
   // Bronze
   new Supporter(
