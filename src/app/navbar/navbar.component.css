@@ -6,6 +6,7 @@
   align-items: center;
   display: flex;
   text-decoration: none;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
 }
 
 .nav-logo {
@@ -65,7 +66,7 @@
 }
 
 .social-ufjf {
-  margin-left: 1em;
+  margin: 0;
   height: 3em;
   width: 3em;
 }
@@ -101,7 +102,6 @@
 }
 
 @media screen and (max-width: 500px) {
-
   .nav-links-ul {
     text-align: center;
   }

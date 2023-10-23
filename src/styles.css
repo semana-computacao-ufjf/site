@@ -55,6 +55,7 @@ body {
 
 body {
   background-image: url("assets/img/background.webp");
+  background-size: cover;
 }
 
 h1,
@@ -79,11 +80,11 @@ h6 {
 a {
   box-shadow: inset 0 0 0 0 var(--light-blue);
   padding: 0.25rem;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 1s ease-in-out;
 }
 
 a:hover {
-  box-shadow: inset 120px 0 0 0 var(--light-blue);
+  box-shadow: inset 640px 0 0 0 var(--light-blue);
   color: var(--dark-blue);
 }
 

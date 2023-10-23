@@ -8,9 +8,4 @@ import Organizer from '../shared/classes/organizer';
 })
 export class OrganizerProfileComponent {
   @Input() organizer!: Organizer;
-
-  ngOnInit() {
-    console.log(this.organizer);
-  }
-
 }

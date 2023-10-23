@@ -40,3 +40,11 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+.angular
+/.angular/
+.angular/
+
+.vscode
+.vscode/
+/.vscode/

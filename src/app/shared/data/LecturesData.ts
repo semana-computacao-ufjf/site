@@ -30,20 +30,53 @@ export const SpeakersData: Speaker[] = [
     'PGMC',
     3
   ),
-  new Speaker(3, '', '', '', '', '', 3),
-  new Speaker(4, '', '', '', '', '', 4),
-  new Speaker(5, '', '', '', '', '', 5),
+  new Speaker(
+    3,
+    'Meninas Programadoras UFJF',
+    'O projeto de extensão Meninas Programadoras JF tem como objetivo ensinar Python para meninas do Ensino Médio e incentivá-las  a conhecer melhor o universo da programação. O projeto Meninas Programadoras JF é uma ramificação do projeto Meninas Programadoras criado pela Professora Maria da Graça na USP.',
+    'assets/img/speakers/meninas-programadoras.webp',
+    'https://www.instagram.com/meninasprogramadorasjf/',
+    'UFJF',
+    37
+  ),
+  new Speaker(
+    4,
+    'Meninas Digitais UFJF',
+    'O Projeto Meninas Digitaus UFJF é inspirado no Programa Meninas Digitais organizado pela Sociedade Brasileira de Computação, realizando através de oficinas práticas e desplugadas, explicações sobre os conceitos da área de Computação com a motivação de despertar o interesse de meninas estudantes do ensino médio e dos anos finais do ensino fundamental, para que estas conheçam melhor a área e sintam-se motivadas em seguir uma carreira em Computação.',
+    'assets/img/speakers/meninas-digitais.webp',
+    'https://www.instagram.com/meninasdigitaisufjf/',
+    'UFJF',
+    37
+  ),
+  new Speaker(
+    5,
+    'ProgramAda',
+    `O ProgramAda é um projeto de extensão da UFJF com um propósito transformador. Nosso foco é inspirar e motivar alunas a explorar o mundo da programação, reduzindo os índices de desistência e reprovação em disciplinas-chave como Algoritmos.
+    Nossa abordagem é única: estamos construindo um jogo funcional e interativo com aspectos lúdicos e personalizáveis, projetado para evoluir junto às alunas ao longo do semestre acadêmico. Ao estimular a criatividade e a lógica, o jogo tem como intuito enriquecer o aprendizado desde o início do curso.`,
+    'assets/img/speakers/programada.webp',
+    'https://www.instagram.com/program_ada_ufjf/',
+    'UFJF',
+    37
+  ),
   new Speaker(6, '', '', '', '', '', 6),
   new Speaker(
     7,
     'Anderson de Moura Ribeiro',
     'Anderson de Moura Ribeiro possui graduação em Engenharia Mecânica pela Universidade Federal de São João Del-Rei (UFSJ) (2021), mestrado em Modelagem Computacional (2023) pelo Programa de Pós-graduação em Modelagem Computacional (PPGMC) da Universidade Federal de Juiz de Fora (UFJF). Atualmente é doutorando no PPGMC e bolsista Shell Brasil Petróleo LTDA no Laboratório de Matemática Aplicada (LAMAP/UFJF) desenvolvendo pesquisa com ênfase em quantificação de incertezas, análise de sensibilidade e métodos numéricos (FEM/FVM) aplicados à recuperação avançada de petróleo, além de ter contribuído em um projeto de pesquisa FAPEMIG sobre otimização de turbinas eólicas de eixo horizontal e de configurações de parques eólicos. Tem experiência nas áreas de simulação numérica em dinâmica dos fluidos computacional (FVM, OpenFOAM, Turbulência), otimização multiobjetivo utilizando algoritmos evolucionários e desenho assistido por computador (CAD).',
-    '',
     'assets/img/speakers/anderson-moura.webp',
+    '',
     'PGMC',
     7
   ),
-  new Speaker(8, 'Codi Academy', '', '', '', 'Codi Academy', 8),
+  new Speaker(
+    8,
+    'Yuri Medeiros',
+    ' Yuri Medeiros é Engenheiro Computacional pela UFJF e CEO da Codi Academy Treinamentos. Iniciou sua carreira como Professor de Física trabalhando na Prefeitura de Juiz de Fora, também foi Professor na Rede Apogeu e no Curso BMW onde lecionou Informática em Cursos Preparatórios, foi Diretor Pedagógico do Centro de Ensino Múltiplo, e na UFJF foi tutor das disciplinas Banco de Dados, Introdução ao Linux e Planilhas Eletrônicas.',
+    'assets/img/speakers/yuri-medeiros.webp',
+    '',
+    'Codi Academy',
+    8
+  ),
   new Speaker(9, 'Codi Academy', '', '', '', 'Codi Academy', 9),
   new Speaker(
     10,
@@ -93,9 +126,9 @@ export const SpeakersData: Speaker[] = [
   new Speaker(15, '', '', '', '', '', 15),
   new Speaker(
     16,
-    'Marcelo Yan Rezende Menezes',
+    'Marcelo Ian Rezende Menezes',
     'Marcelo é estudante de Engenharia Computacional e bolsista do GET Engenharia Computacional. Trabalha em projeto de iniciação científica da área de pesquisa operacional.',
-    'assets/img/speakers/marcelo-yan.webp',
+    'assets/img/speakers/marcelo-ian.webp',
     '',
     'GET EngComp',
     16
@@ -133,7 +166,7 @@ export const SpeakersData: Speaker[] = [
     22,
     'Marcelo Ladeira Reis',
     'Marcelo Ladeira Reis é Diretor de Otimização na BITKA Analytics e um dos fundadores da empresa. É formado em Ciência da Computação pela Universidade Federal de Viçosa e mestre em Algoritmos e Otimização Combinatória pela PUC-Rio. Tem artigos científicos publicados em diversas revistas acadêmicas no Brasil e exterior, dentre elas a Mathematical Programming, revista mais importante de Pesquisa Operacional. Possui mais de 20 anos de experiência em Advanced Analytics, tendo atuado em projetos para grandes empresas brasileiras e multinacionais.',
-    'assets/img/speakers/marcelo-ladeira.webp',
+    'assets/img/speakers/marcelo-reis.webp',
     '',
     'BITKA',
     22
@@ -239,14 +272,14 @@ export const SpeakersData: Speaker[] = [
   ),
   new Speaker(
     34,
-    'Bruno Ferreira',
-    `Bruno Ferreira começou sua jornada na área de Tecnologia da Informação lá em 2002, quando plataforma SaaS eram apenas uma ideia distante. Desde então, ele mergulhou de cabeça em diversas tecnologias SaaS e liderou projetos que supercomplexos.
-  Em 2012, o Bruno decidiu focar seus conhecimentos exclusivamente na gestão de ativos de software e SaaS, ou como a gente gosta de chamar, SAM (Software Asset Management). Ele ficou determinado a ajudar Clientes e Parceiros a botarem ordem na bagunça do software, tanto nas máquinas locais quanto nas nuvens SaaS, IaaS, PaaS.
-  Com uma baita bagagem de experiência e um monte de certificações, o Bruno é simplesmente obcecado pelo mundo da ServiceNow. Ele gerencia projetos em grandes empresas com uma facilidade que faz parecer fácil como montar um quebra-cabeça.
-  Então, se você está a fim de bater um papo sobre SaaS, ServiceNow,  governança de software, ou simplesmente quer pegar umas dicas com um verdadeiro mestre na área, o Bruno é o cara! Compareça e veja como ele pode te ajudar a dominar o mundo da TI. 💻🚀`,
-    'assets/img/speakers/bruno-ferreira.webp',
-    '',
-    'Diretor Técnico na 4Matt Tecnologia',
+    'Marcelo Theóphilo',
+    `Marcelo começou sua jornada na área de Tecnologia da Informação lá em 1999, quando plataforma SaaS eram apenas uma ideia distante. Desde então, ele mergulhou de cabeça em diversas tecnologias SaaS e liderou projetos que supercomplexos.
+    Em 2012, o Marcelo decidiu focar seus conhecimentos exclusivamente na gestão de ativos de software e SaaS, ou como a gente gosta de chamar, SAM (Software Asset Management). Ele ficou determinado a ajudar Clientes e Parceiros a botarem ordem na bagunça do software, tanto nas máquinas locais quanto nas nuvens SaaS, IaaS, PaaS.
+    Com uma baita bagagem de experiência e um monte de certificações, o Marcelo é simplesmente obcecado pelo mundo da ServiceNow. Ele gerencia projetos em grandes empresas com uma facilidade que faz parecer fácil como montar um quebra-cabeça.
+    Então, se você está a fim de bater um papo sobre SaaS, ServiceNow, governança de software, ou simplesmente quer pegar umas dicas com um verdadeiro mestre na área, o Marcelo é o cara! Compareça e veja como ele pode te ajudar a dominar o mundo da TI. 💻🚀`,
+    'assets/img/speakers/marcelo-theophilo.webp',
+    'https://www.linkedin.com/in/marcelotheophilo/?locale=pt_BR',
+    'Diretor de Serviços de Consultoria na 4Matt Tecnologia',
     33
   ),
   new Speaker(
@@ -273,7 +306,7 @@ export const SpeakersData: Speaker[] = [
     'Técnico em Desenvolvimento de Sistemas pelo Instituto Federal do Sudeste de Minas Gerais. Formado em Física pela Universidade Federal de Juiz de Fora. Possui mestrado e Doutorado em Modelagem Computacional pelo PPGMC-UFJF e realizou pós-doutorado em Engenharia pela Universidade Federal do Rio de Janeiro. Especialista em métodos numéricos e resolução de equações diferenciais. Atualmente é desenvolvedor de software na viasat inc, onde atua como Backend em Java e Front-end React, além de ser docente na XP educação. Entusiasta da educação financeira, produz conteúdo para desmistificar o universo das finanças utilizando Python.',
     'assets/img/speakers/lucas-crispim.webp',
     '',
-    '',
+    'Viasat Inc',
     36
   ),
   new Speaker(
@@ -285,8 +318,24 @@ export const SpeakersData: Speaker[] = [
     'GET EngComp',
     [14, 16]
   ),
-  new Speaker(39, '', '', '', '', '', 32),
-  new Speaker(40, 'Sandra Ávila', '', '', '', '', 33),
+  new Speaker(
+    39,
+    'Café das Minas',
+    'O Café das Minas é um evento mensal organizado pelos projetos Meninas Digitais UFJF, ProgramAda e Meninas Programadoras com o objetivo de reunir a comunidade de meninas dos cursos de Computação e Exatas da UFJF.',
+    'assets/img/speakers/cafe-das-minas.webp',
+    'https://sites.google.com/ice.ufjf.br/meninasdigitaisufjf/eventos',
+    'UFJF',
+    37
+  ),
+  new Speaker(
+    40,
+    'Sandra Ávila',
+    'Sandra Avila é professora no Instituto de Computação, da Universidade Estadual de Campinas. É doutora em Ciência da Computação, com duplo diploma, pela UFMG e pela Sorbonne Université. Seus interesses de pesquisa estão voltados para IA, mais especificamente Visão Computacional e Processamento de Linguagem Natural, com aplicações na Saúde e Análise de conteúdo sensível. Em 2020, foi selecionada para representar o Brasil no Fórum de Jovens Cientistas do BRICS, na área de IA. Sua paixão é incentivar meninas e mulheres a apostarem em carreiras nas áreas de STEM (Ciências, Tecnologia, Engenharias e Matemática).',
+    'assets/img/speakers/sandra-avila.webp',
+    'https://www.linkedin.com/in/avilasandra/?originalSubdomain=br',
+    'UNICAMP',
+    39
+  ),
   new Speaker(
     41,
     'Raphaela Mansur',
@@ -351,7 +400,88 @@ export const SpeakersData: Speaker[] = [
     13
   ),
   new Speaker(48, 'Alex Borges Vieira', '', '', '', 'Pós Graduação', 43),
-  new Speaker(49, 'Bernardo Martins Rocha', '', '', '', 'Pós Graduação', 43),
+  new Speaker(49, 'Ruy Freitas Reis', '', '', '', 'Docente do DCC', 43),
+  new Speaker(
+    50,
+    'Sara Salomão Salles',
+    `Sara Salomão Salles atualmente, atua como Gerente de QA na Thomson Reuters, onde é responsável por produtos de software que atendem diferentes segmentos de mercado. Possui mais de 10 anos de experiência na área de Qualidade de Software. Conta com especialização em Engenharia de Qualidade de Software e também, especialização em Modelos Ágeis de desenvolvimento de software. Possui mestrado em Biotecnologia e genética e Bacharelado em Ciência da Computação pela UFJF. Durante a graduação, atuou como estagiária em desenvolvimento de softwares para diferentes instituições em Juiz de Fora/MG`,
+    '',
+    '',
+    'Gerente de QA na Thomson Reuters',
+    37
+  ),
+  new Speaker(
+    51,
+    'Priscila Capriles Goliatt',
+    'Priscila Capriles é pesquisadora da UFJF, professora do Departamento de Ciência da Computação e do Programa de Pós-graduação em Modelagem Computacional, é coordenadora do Grupo de Modelagem Computacional Aplicada do CNPq, coordenadora do Time Enactus UFJF para o Empreendedorismo Social, e foi vice-diretora executiva da FADEPE. Trabalha nas áreas de Biologia Computacional, Ciência de Dados, Desenvolvimento de Sistemas, Inovação Tecnológica e Empreendedorismo',
+    'assets/img/speakers/priscila-capriles.webp',
+    '',
+    'Docente do DCC',
+    5
+  ),
+  new Speaker(
+    52,
+    'Raul Fonseca Neto',
+    ' O Raul Fonseca Neto é Professor Titular do Departamento de Ciência da Computação da Universidade Federal de Juiz de Fora - UFJF,   graduado em Engenharia Civil UFJF , especialista em Pesquisa Operacional pelo Instituto Militar de Engenharia -IME , meste em Engenharia de Transportes também pelo IME, doutor em Engenharia de Sistemas e Computação pela Universidade Federal do Rio de Janeiro - UFRJ,  e com pós-doutorado em Modelagem Computacional pelo Laboratório Nacional de Computação Científica - LNCC e  pós-doutorado em Inteligência Computacional pelo Departamento de Eletrônica da Universidade Federal de Minas Gerais -UFMG. Atua como pesquisador nos Programsa de Pós-Graduação em Modelagem Computacional (UFJF) e em Ciência da Computação (UFJF) nas áreas de Ciência da Computação e Engenharia de Sistemas, com ênfase em Sistemas de Computação, atuando principalmente nos seguintes temas: inteligência artificial, otimização combinatória, otimização convexa, fluxo em redes, planejamento e scheduling, aprendizado de máquinas, reconhecimento de padrões, predição estruturada, aprendizado online, redes complexas e bioinformática.',
+    'assets/img/speakers/raul-fonseca.webp',
+    '',
+    'Docente do DCC',
+    5
+  ),
+  new Speaker(
+    53,
+    'Wagner Antônio Arbex',
+    'Wagner Arbex é Professor Adjunto da Universidade Federal de Juiz de Fora (UFJF) e Analista Científico da Empresa Brasileira de Pesquisa Agopecuária (Embrapa), com doutorado em Engenharia de Sistemas e Computação. Idealizador do IDEAS FOR MILK, VACATHON e RESIDÊNCIA ZOOTÉCNICA DIGITAL, atua há mais de 35 anos em PD&I, aplicando Ciência da Computação, Ciência de Dados e TIC ao Agronegócio.',
+    'assets/img/speakers/wagner-arbex.webp',
+    '',
+    'Docente do DCC',
+    5
+  ),
+  new Speaker(
+    54,
+    'Fabio do Vale',
+    'Fabio do Vale é Assessor de VPGG na Code Jr, está no sétimo período de Sistemas de informação e é desenvolver web backend focado nas tecnologias de PHP e Laravel.',
+    'assets/img/speakers/fabio-vale.webp',
+    '',
+    'Code Empresa Júnior de Computação',
+    17
+  ),
+  new Speaker(
+    55,
+    'Dayane Guimarães Gomes Godoy',
+    'Membro do GETComp há onze meses, está no quarto período de Ciência da Computação e é pesquisadora na área de Análise de Dados com foco em análise de dados em grandes grafos de conhecimento.',
+    'assets/img/speakers/dayane-guimaraes.webp',
+    '',
+    'GET Comp',
+    17
+  ),
+  new Speaker(
+    56,
+    'Daniel Jorge Reis Caldeira',
+    'Membro do GETComp há seis meses, está no oitavo período de Ciência da Computação e é desenvolvedor de jogos educacionais focados no ensino de programação.',
+    'assets/img/speakers/daniel-jorge.webp',
+    '',
+    'GET Comp',
+    17
+  ),
+  new Speaker(
+    57,
+    'Crystiam Kelle Pereira e Silva',
+    `Crystiam Kelle possui graduação em Ciência da Computação pela Universidade Federal de Juiz de Fora (2007), mestrado em Ciência da Computação pela Universidade Federal de Juiz de Fora (2015) e doutorado pela UNIRIO (2021). Tanto no mestrado, quanto no doutorado focou em tecnologias aplicadas à educação e web semântica. Atua também como analista de tecnologia da informação da Universidade Federal de Juiz de Fora há 15 anos, tendo neste período trabalhado como desenvolvedora, gerente de equipe e product owner. Atualmente gerencia a equipe de projetos e sistemas do CGCO e atua também como product owner em projetos no CGCO.`,
+    'assets/img/speakers/crystiam-kelle.webp',
+    '',
+    'CGCO',
+    37
+  ),
+  new Speaker(
+    58,
+    'Luiza Caldeira Daniel',
+    'Luiza Caldeira Daniel tem 18 anos e cursa Sistemas de Informação na Universidade Federal de Juiz de Fora. É voluntária do projeto de extensão Meninas Digitais UFJF.',
+    'assets/img/speakers/luiza-caldeira.webp',
+    'https://github.com/luizacaldeira',
+    'Meninas Digitais UFJF',
+    37
+  ),
 ];
 
 export const LecturesData: Lecture[][] = [
@@ -360,7 +490,7 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       0,
       new Date(2023, 9, 23, 10, 0),
-      'Abertura da Semana do ICE',
+      '',
       120,
       'Auditório do ICE',
       'Abertura da Semana do ICE',
@@ -397,32 +527,33 @@ export const LecturesData: Lecture[][] = [
       SpeakersData[2]
     ),
     new Lecture(
-      43,
-      new Date(2023, 9, 23, 17, 0),
-      '',
+      11,
+      new Date(2023, 9, 24, 17, 0),
+      'A ideia principal da palestra é mostrar como hoje são desenvolvidos os projetos automotivos dos carros modernos. Design – Transformação do Sketch manual do Designer em uma superfície modelada nos softwares (Alias, Icem Surf). Desenvolvimento do Produto – da Superfície de Estilo para o modelamento de 100% das peças que compõem o automóvel. Validação Virtual – CAE – Cálculo Estrutural, Aerodinâmico do Automóvel e aprovação de acordo com critérios de confiabilidade e segurança. O carro do futuro – a conectividade do automóvel com os ocupantes (infotainment, EV, carro autônomo, carros voadores).',
       60,
-      'A confirmar',
-      'Apresentação dos cursos de pós-graduação',
+      'S404',
+      'Projeto Automotivo do Design ao Protótipo com Auxílio da Ciência da Computação',
       TypeEnum.Palestra,
-      [SpeakersData[48], SpeakersData[49]]
+      SpeakersData[11]
     ),
     new Lecture(
       4,
       new Date(2023, 9, 23, 19, 0),
       'Abertura da Semana da Computação e Credenciamento',
       60,
-      'A confirmar',
+      'S404',
       'Abertura da Semana da Computação e Credenciamento',
       TypeEnum.Palestra
     ),
     new Lecture(
       5,
-      new Date(2023, 9, 23, 20, 0),
+      new Date(2023, 9, 23, 19, 30),
       'Palestra de Abertura',
       90,
-      'A confirmar',
+      'Anfiteatro do ICE',
       'Mesa Redonda: Inteligência Artificial: aplicações atuais e tendências',
-      TypeEnum.Palestra
+      TypeEnum.Palestra,
+      [SpeakersData[51], SpeakersData[52], SpeakersData[53]]
     ),
   ],
   // Terça
@@ -430,11 +561,12 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       6,
       new Date(2023, 9, 24, 8, 0),
-      'Mais informações em breve',
+      'Mais informações abaixo',
       240,
       'L107',
-      'Hackathon',
-      TypeEnum.Competicao
+      'Hackathon Rerum',
+      TypeEnum.Competicao,
+      SpeakersData[32]
     ),
     new Lecture(
       7,
@@ -449,49 +581,64 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       8,
       new Date(2023, 9, 24, 8, 0),
-      'Mais informações me breve',
-      90,
+      'No curso intensivo de UI/UX, você aprenderá a projetar experiências de design incríveis e profissionais, levando dinamismo e organização aos seus projetos, vamos explorar os seguintes tópicos: Tópico 1: User Stories; Tópico 2: Leis da UX; Tópico 3: Gestalt; Tópico 4: Prática: Criando um App com o que aprendemos; Começamos falando sobre qual público queremos atingir em nosso projeto prático, e como adaptar o design para atendê-lo, na sequência veremos as principais leis de experiência de usuário com exemplos reais, e no fim, uma prática onde vamos criar um aplicativo para organizar filmes assistidos.',
+      120,
       'L205',
-      'Minicurso FrontEnd',
+      'Aprenda UI/UX na prática',
       TypeEnum.Minicurso,
       SpeakersData[8]
     ),
     new Lecture(
       9,
       new Date(2023, 9, 24, 9, 30),
-      'Mais informações me breve',
-      150,
+      'No curso intensivo de Inteligência Artificial com Python, vamos utilizar o poder da linguagem Python junto a API da OpenAi para criar 3 IAs do zero. Na primeira, vamos criar uma inteligência artificial no estilo CHAT GPT que terá personalidade, ela será capaz de responder de formas diferentes as mesmas perguntas, usando termos mas tècnicos ou simples, com respostas mais curtas ou maiores, mais aleatórias e previsíveis, também será possível alterar a sua personalidade, inclusive seu humor. Na segunda, vamos criar um bot da wikipedia, que será capaz de criar trabalhos escolares do zero, apenas com um tema inserido no prompt. E na terceira, vamos criar uma IA que gera imagens do zero, a partir de um prompt digitado pelo usuário.',
+      120,
       'L205',
-      'Imersão IA',
+      'Criando Inteligência Artificial com Python, construa 3 IAs do zero.',
       TypeEnum.Minicurso,
-      SpeakersData[9]
+      SpeakersData[8]
+    ),
+    new Lecture(
+      44,
+      new Date(2023, 9, 24, 13, 0),
+      `O processo seletivo da LEVTY atualmente acontece em três etapas principais: teste de raciocínio lógico, bate-papo com o RH e bate-papo técnico. A ideia é que essa primeira etapa seja feita na UFJF em parceria coma Semana da Computação e as demais acontecerão de forma remota pelo Google Meet.
+      O teste de lógica é composto por 20 questões de múltipla escolha de lógica geral, nada específico da área de programação. Ele será realizado no dia 24/10/2023 às 13:00 e para participar basta se inscrever pelo site da LEVTY: https://levty.com/trainee e, caso o seu currículo seja selecionado, a LEVTY entrará em contato com mais informações sobre o teste de lógica.`,
+      90,
+      'S309',
+      'Processo Seletivo Levty',
+      TypeEnum.ProcessoSeletivo
     ),
     new Lecture(
       10,
       new Date(2023, 9, 24, 14, 30),
       'Inteligência Artificial e Aprendizado de Máquina tem ganhado grande espaço nos últimos anos em várias áreas do conhecimento. Dentro da Engenharia de Software, esses temas também tem sido investigados e empregados com frequência, sempre com a intenção de melhorar atividades e resultados. Nesta palestra, será fornecido um panorama de como IA e Aprendizado de Máquina tem sido empregadas na engenharia de software. Mais especificamente, serão mostrados exemplos do uso de Aprendizado de Máquina na identificação de smells de código fonte e de  recomendação de refatorações.',
       60,
-      'A confirmar',
+      'S309',
       'Engenharia de Software e Inteligência Artificial: Panorama Geral e Aplicações em Aprendizado de Máquina',
       TypeEnum.Palestra,
       SpeakersData[10]
     ),
+
     new Lecture(
-      11,
-      new Date(2023, 9, 24, 15, 30),
-      'A ideia principal da palestra é mostrar como hoje são desenvolvidos os projetos automotivos dos carros modernos. Design – Transformação do Sketch manual do Designer em uma superfície modelada nos softwares (Alias, Icem Surf). Desenvolvimento do Produto – da Superfície de Estilo para o modelamento de 100% das peças que compõem o automóvel. Validação Virtual – CAE – Cálculo Estrutural, Aerodinâmico do Automóvel e aprovação de acordo com critérios de confiabilidade e segurança. O carro do futuro – a conectividade do automóvel com os ocupantes (infotainment, EV, carro autônomo, carros voadores).',
+      22,
+      new Date(2023, 9, 25, 15, 30),
+      `Nessa conversa, iremos compartilhar a história da BITKA, empresa criada por grandes referências no mercado brasileiro na área de sistemas de apoio a decisão. Apesar de pouco tempo de existência, a BITKA se destaca pelo extraordinário crescimento desde então. Atualmente o time conta com aproximadamente 140 pessoas sendo 60% desses cientistas de dados.
+      Aliando técnicas de análise prescritiva (otimização) e preditiva, a BITKA tem como objetivo criar soluções de planejamento aderentes à realidade dos clientes e que irão auxiliá-los a extrair o máximo potencial do seu negócio.
+      A filosofia da empresa é construir um ambiente saudável e colaborativo entre as pessoas, ajudando cada indivíduo a atingir a excelência profissional e proporcionando o ambiente correto para a construção de soluções incríveis. Nesse ambiente a prioridade é valorizar as diferenças entre cada um dos indivíduos entendendo que elas são essenciais para construirmos sistemas aderentes e impactantes. Um acompanhamento de carreira, com feedbacks justos e transparentes, foi construído para sustentar esses pilares.
+      Os Palestrantes, além de dar dicas sobre carreira, irão falar um pouco a respeito dos projetos inovadores e oportunidades abertas na BITKA
+      `,
       60,
-      'A confirmar',
-      'Projeto Automotivo do Design ao Protótipo com Auxílio da Ciência da Computação',
+      'S309',
+      'BITKA Analytics - Decisões Inteligentes, Resultados Extraordinários: História, Inovação e Oportunidades',
       TypeEnum.Palestra,
-      SpeakersData[11]
+      [SpeakersData[22], SpeakersData[23]]
     ),
     new Lecture(
       12,
       new Date(2023, 9, 24, 17, 0),
       'A Transformação Digital no governo é um processo complexo que envolve mudanças culturais, tecnológicas e regulatórias. Enfrentar esses desafios é essencial para melhorar a prestação de serviços públicos, aumentar a eficiência e atender às crescentes expectativas dos cidadãos em uma era cada vez mais digital.',
       60,
-      'A confirmar',
+      'S309',
       'Transformação Digital para Governo e seus desafios',
       TypeEnum.Palestra,
       SpeakersData[12]
@@ -519,10 +666,10 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       15,
       new Date(2023, 9, 24, 19, 0),
-      'Em breve mais informações',
+      'Mais informações abaixo',
       180,
       'Lab 2 Engenharia Computacional',
-      'Hackathon',
+      'Hackathon 4Matt',
       TypeEnum.Competicao,
       SpeakersData[15]
     ),
@@ -547,27 +694,22 @@ export const LecturesData: Lecture[][] = [
       'L107',
       'Do zero ao básico de GIT/GITHUB',
       TypeEnum.Minicurso,
-      SpeakersData[17]
+      [SpeakersData[17], SpeakersData[54], SpeakersData[55], SpeakersData[56]]
     ),
     new Lecture(
       18,
       new Date(2023, 9, 25, 8, 0),
-      'Em breve mais informações',
+      `A BITKA, empresa que cria soluções inovadoras na área de sistemas de apoio a decisão, está à procura de talentos para preencher futuras vagas nas áreas de TI, Otimização e Análise Preditiva.
+      Faremos na Semana da Computação a primeira etapa do processo seletivo, que será aberta para candidatos que estão cursando do 4º período para frente (quem estiver em períodos anteriores a esses podem enviar o currículo para cadastramos na nossa base de talentos para futuras oportunidades).
+      Iremos considerar currículos para vagas efetivas ou part-time dependendo da proximidade de formatura de cada candidato.
+      Temos como prioridade construir um ambiente saudável, colaborativo e justo entre as pessoas para que possamos construir soluções incríveis. Venha trabalhar em uma empresa que está em pleno crescimento e que investe na carreira das suas pessoas.
+      Os interessados, devem preencher o formulário seguinte: https://forms.office.com/r/tPMeEBHFy9
+      Logo após, o agendamento do horário da conversa deve ser feito pelo link: https://calendly.com/livio-guerra/xxvsecomp-conversa-bitka`,
       240,
-      'A confirmar',
+      'Sala de Reuniões DCC',
       'Processo Seletivo BITKA',
       TypeEnum.ProcessoSeletivo,
       SpeakersData[18]
-    ),
-    new Lecture(
-      19,
-      new Date(2023, 9, 25, 8, 0),
-      'Em breve mais informações',
-      240,
-      'A confirmar',
-      'Processo Seletivo LEVTY',
-      TypeEnum.ProcessoSeletivo,
-      SpeakersData[19]
     ),
     new Lecture(
       20,
@@ -590,26 +732,22 @@ export const LecturesData: Lecture[][] = [
       [SpeakersData[21], SpeakersData[36]]
     ),
     new Lecture(
-      22,
-      new Date(2023, 9, 25, 17, 0),
-      `Nessa conversa, iremos compartilhar a história da BITKA, empresa criada por grandes referências no mercado brasileiro na área de sistemas de apoio a decisão. Apesar de pouco tempo de existência, a BITKA se destaca pelo extraordinário crescimento desde então. Atualmente o time conta com aproximadamente 140 pessoas sendo 60% desses cientistas de dados.
-      Aliando técnicas de análise prescritiva (otimização) e preditiva, a BITKA tem como objetivo criar soluções de planejamento aderentes à realidade dos clientes e que irão auxiliá-los a extrair o máximo potencial do seu negócio.
-      A filosofia da empresa é construir um ambiente saudável e colaborativo entre as pessoas, ajudando cada indivíduo a atingir a excelência profissional e proporcionando o ambiente correto para a construção de soluções incríveis. Nesse ambiente a prioridade é valorizar as diferenças entre cada um dos indivíduos entendendo que elas são essenciais para construirmos sistemas aderentes e impactantes. Um acompanhamento de carreira, com feedbacks justos e transparentes, foi construído para sustentar esses pilares.
-      Os Palestrantes, além de dar dicas sobre carreira, irão falar um pouco a respeito dos projetos inovadores e oportunidades abertas na BITKA
-      `,
+      43,
+      new Date(2023, 9, 23, 17, 0),
+      '',
       60,
-      'A confirmar',
-      'BITKA Analytics - Decisões Inteligentes, Resultados Extraordinários: História, Inovação e Oportunidades',
+      'S309',
+      'Apresentação dos cursos de pós-graduação - PGCC + PGMC',
       TypeEnum.Palestra,
-      [SpeakersData[22], SpeakersData[23]]
+      [SpeakersData[48], SpeakersData[49]]
     ),
     new Lecture(
       23,
       new Date(2023, 9, 25, 19, 0),
       'Com o aumento do poder computacional, técnicas numéricas para a solução de problemas de engenharia se tornaram recorrentes na indústria. Os métodos numéricos utilizados na análise de problemas que envolvem mecânica dos fluidos e transferência de calor em escoamentos, são comumente referenciados como Dinâmica dos Fluidos Computacional, ou pela sigla CFD (Computational Fluid Dynamics). Esses métodos permitem obter aproximações numéricas para as equações de conservação que regem os fenômenos físicos de campos de escoamento. A dinâmica da modernidade indica que a aplicação de ferramentas de CFD será cada vez mais comum em indústrias e instituições de pesquisa. Esse panorama aponta a necessidade de divulgação científica e capacitação de profissionais capazes de operar com as mais novas ferramentas do mercado.',
       60,
-      'On-line',
-      'O que é CFD',
+      'https://www.youtube.com/watch?v=KI9s6PQxXto',
+      'O que é CFD?',
       TypeEnum.Palestra,
       SpeakersData[24]
     ),
@@ -618,7 +756,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 25, 20, 0),
       'Você já parou para pensar como os Modelos de Linguagem estão transformando nossa forma de interagir, aprender e comunicar? Essas tecnologias estão no centro das revoluções digitais recentes, influenciando diversas áreas da sociedade. Nesta palestra, você irá entender um pouco sobre como funcionam as LLMs, suas limitações, riscos, aplicações bem como questões éticas e sociais.',
       60,
-      'On-line',
+      'https://www.youtube.com/watch?v=wDaG-Kh5shc',
       'Modelos de Linguagem e seus impactos na sociedade',
       TypeEnum.Palestra,
       SpeakersData[25]
@@ -628,7 +766,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 25, 21, 0),
       'Nascido e estudado em Juiz de Fora, escrevi meu primeiro programa de IA nos meados dos anos noventa. Explorei abordagens simbólicas e conexionistas, trabalhei em universidades, empresas grandes e pequenas, cada uma com suas próprias inclinações metodológicas. Nessa conversa, vou falar de algumas lições aprendidas nesse caminho e abrir um bate papo para alunos que estejam interessados em seguir carreira no exterior, ou em startups, e compartilharei minhas opiniões sobre os melhores caminhos nesse sentido.',
       60,
-      'On-line',
+      'https://www.youtube.com/watch?v=_gAnWXWYwZc',
       'Minha Jornada em Inteligência Artificial -- Era Uma Vez, Quando Redes Neurais Eram Curiosidade Histórica...',
       TypeEnum.Palestra,
       SpeakersData[26]
@@ -638,10 +776,10 @@ export const LecturesData: Lecture[][] = [
   [
     new Lecture(
       26,
-      new Date(2023, 9, 26, 8, 0),
-      'Em breve mais informações',
-      660,
-      'A confirmar',
+      new Date(2023, 9, 26, 7, 30),
+      'Visita ao Campo Experimental da Embrapa Gado de Leite em Coronel Pacheco. Inscrições encerradas.',
+      670,
+      'Saída às 7:30 da manhã em frente à APES',
       'Visita Técnica à EMBRAPA',
       TypeEnum.VisitaTecnica
     ),
@@ -670,7 +808,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 26, 14, 0),
       'Este minicurso busca explorar e recriar as mecânicas de movimentação da Madeline, protagonista do jogo Celeste. Nele, você aprenderá a montar habilidades da personagem, como dashes, wall jumps e o "coyote time", que são fundamentais em jogos de plataforma.',
       240,
-      'L107',
+      'L205',
       'Recriando as mecânicas de Celeste na Unity',
       TypeEnum.Minicurso,
       [SpeakersData[29], SpeakersData[30]]
@@ -680,7 +818,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 26, 14, 0),
       'O minicurso tem como objetivo desenvolver habilidades introdutórias nas linguagens de marcação da web HTML e CSS. Além disso, com a realização do curso, o aluno estará apto a criar layouts a partir do zero e será apresentado a tecnologias que simplificam e potencializam esse processo, tais como Bootstrap e React.',
       240,
-      'L205',
+      'L107',
       'Fundamentos de desenvolvimento Web',
       TypeEnum.Minicurso,
       [SpeakersData[31], SpeakersData[44], SpeakersData[45], SpeakersData[46]]
@@ -690,7 +828,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 26, 19, 0),
       'Nesta palestra são exploradas técnicas de modelagem e padrões de projeto que permitem uma boa concepção de arquiteturas de sistema de informação com uso de microsserviços.',
       60,
-      'A confirmar',
+      'S401',
       'Desafios no desenvolvimento de sistemas eficientes com microsserviços',
       TypeEnum.Palestra,
       SpeakersData[32]
@@ -700,17 +838,17 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 26, 20, 0),
       'O mercado de dados está em alta e em constante evolução, vamos explorar as necessidades que as empresas têm para alcançar a cultura data driven hoje e quais papéis e responsabilidades cada profissional de dados deve possuir para prosperar na área.',
       60,
-      'A confirmar',
+      'S401',
       'Carreira em Dados - O que as empresas realmente precisam?',
       TypeEnum.Palestra,
       SpeakersData[33]
     ),
     new Lecture(
       33,
-      new Date(2023, 9, 26, 21, 0),
+      new Date(2023, 9, 26, 21, 30),
       'Prepare-se para uma jornada de descoberta, aprendizado, crescimento profissional e Internacional. Não perca esta oportunidade de dar o primeiro passo rumo a uma carreira promissora na ServiceNow. Junte-se a nós neste evento e comece a trilhar o caminho para o sucesso na maior plataforma SaaS do mundo. Então, se você está a fim de bater um papo sobre SaaS, ServiceNow,  governança de software, ou simplesmente quer pegar umas dicas com um verdadeiro mestre na área, o Bruno é o cara! Compareça e veja como ele pode te ajudar a dominar o mundo da TI',
       60,
-      'A confirmar',
+      'S401',
       'Como Iniciar sua Carreira Internacional em uma das maiores plataformas SaaS do Mundo: ServiceNow',
       TypeEnum.Palestra,
       SpeakersData[34]
@@ -723,7 +861,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 27, 8, 0),
       'Maratona de Programação JR',
       240,
-      'L107',
+      'Lab 2 Engenharia Computacional',
       'Maratona de Programação JR',
       TypeEnum.Competicao
     ),
@@ -741,26 +879,34 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 27, 8, 0),
       'O minicurso oferece uma introdução abrangente e prática às aplicações da linguagem de programação Python no contexto do mercado financeiro. Durante o curso, os participantes aprendem a utilizar bibliotecas específicas, como Pandas e NumPy, para coletar, analisar e visualizar dados financeiros, bem como a implementar estratégias de análise quantitativa e backtesting de algoritmos de negociação. Além disso, são abordados tópicos como a obtenção de dados de mercado em tempo real, a construção de modelos de risco e a automação de tarefas rotineiras relacionadas a finanças, preparando os alunos para explorar oportunidades profissionais no setor financeiro com o auxílio da programação em Python.',
       240,
-      'Lab 2 Engenharia Computacional',
-      'Python para Mercado Financeiro',
+      'L107',
+      'Python Aplicado ao Mercado Financeiro',
       TypeEnum.Minicurso,
       SpeakersData[37]
     ),
     new Lecture(
       37,
       new Date(2023, 9, 27, 14, 0),
-      'Em breve mais informações',
+      'Para ampliar a inserção e a permanência de mulheres na área de Ciência da Computação e afins, percebe-se a necessidade de investir em iniciativas com tal propósito. Em sua terceira edição, o Café das Minas  - Edição Especial da Semana da Computação 2023 discutirá assuntos relacionados a questões de gênero e a Ciência da Computação – histórias de sucesso, políticas de incentivo e formas de engajamento e atração de mulheres, para as carreiras associadas à área. Organizado na forma de Mesa Redonda, nesta Edição Especial, o Café das Minas é centrado em debater problemas relacionados à mulher, tanto do ponto de vista de mercado de trabalho quanto de inclusão e alfabetização digital.',
       90,
-      'A confirmar',
-      'Mesa Redonda: Mulheres na TI',
+      'S402',
+      'Mesa Redonda: Mulheres e a TI: Oportunidades e carreira',
       TypeEnum.Palestra,
-      SpeakersData[39]
+      [
+        SpeakersData[39],
+        SpeakersData[3],
+        SpeakersData[4],
+        SpeakersData[5],
+        SpeakersData[40],
+        SpeakersData[50],
+        SpeakersData[57],
+      ]
     ),
     new Lecture(
       38,
       new Date(2023, 9, 27, 14, 0),
       `Resultado da Competição em IA`,
-      60,
+      90,
       'L205',
       'Competição de IA - Resultado',
       TypeEnum.Competicao,
@@ -769,10 +915,10 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       39,
       new Date(2023, 9, 27, 15, 30),
-      'Em breve mais informações',
-      90,
-      'A confirmar',
-      'Em breve mais informações',
+      'Nesta conversa, vamos falar como funcionam os grandes modelos de linguagem, em especial a ferramenta ChatGPT, bem como os seus riscos, limitações e desafios. Na conversa também será abordada a experiência da pesquisadora no desenvolvimento de modelos de linguagem voltados para a língua portuguesa.',
+      60,
+      'S402',
+      'ChatGP Quê?',
       TypeEnum.Palestra,
       SpeakersData[40]
     ),
@@ -781,7 +927,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 27, 17, 0),
       'O que grandes referências como a Apple, IBM e até o FBI têm em comum? A aplicação de metodologias ágeis no dia a dia de projetos de alta complexidade e incerteza. Porém, a agilidade vai além da aplicação do Kanban ou frameworks como o Scrum. Nesta palestra introduziremos os valores do mindset ágil e as principais práticas utilizadas para que você já comece a aplicá-las em seus projetos e colha os benefícios.',
       60,
-      'A confirmar',
+      'S402',
       'Agilidade em Projetos',
       TypeEnum.Palestra,
       SpeakersData[41]

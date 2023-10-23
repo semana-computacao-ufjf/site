@@ -1,0 +1,26 @@
+section {
+  background-color: var(--blue-bg);
+  background-color: rgba(29, 48, 91, 0.5);
+  color: white;
+  padding: 2em;
+}
+
+div {
+  margin-top: 1em;
+}
+
+.accordion-item {
+  margin-top: 0;
+}
+
+li a {
+  color: var(--light-green);
+}
+
+li a:hover {
+  color: var(--dark-blue);
+}
+
+.subtitle {
+  font-weight: bold;
+}

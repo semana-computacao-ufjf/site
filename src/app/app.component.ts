@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import EventEnum from './shared/enums/event-enum';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,8 @@ export class AppComponent implements OnInit {
   eventNumber: number = 0;
   eventEdition: string = '';
 
-  alertMessageDonations: string = 'Para confirmar a sua participação no evento, é necessário realizar uma doação de pelo menos 1kg de alimento não perecível ou 1 caixa de leite. O local de entrega será divulgado em breve.'
+  alertMessageDonations: string =
+    'Para confirmar a sua participação no evento, é necessário realizar uma doação de um PIX no valor de R$ 6,00. A chave de doação é 20756049000186. Você deve enviar o comprovante para o formulário https://forms.gle/EwaQvDw8zYpsgZe97';
 
   ngOnInit() {
     this.eventNumber =

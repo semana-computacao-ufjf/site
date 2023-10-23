@@ -29,6 +29,10 @@ export class ScheduleComponent {
     return TypeEnum.getColor(type);
   }
 
+  getType(type: number): string {
+    return TypeEnum.getType(type);
+  }
+
   calculateEndTime(lecture: Lecture): Date {
     // Calcula o horário de término da palestra pegando o horário de início e somando a duração em minutos
     let endTime = new Date(
@@ -51,6 +55,18 @@ export class ScheduleComponent {
     } else {
       return speaker.fullName;
     }
+  }
+
+  replaceURLsWithAnchorTags(input: string): string {
+    // Expressão regular para encontrar URLs que começam com "https://" ou "http://"
+    const urlRegex = /https?:\/\/[^\s/$.?#].[^\s]*/g;
+
+    // Substitui as URLs encontradas por uma tag <a> com o link
+    const replacedString = input.replace(urlRegex, (url) => {
+      return `<a href="${url}" target="_blank">${url}</a>`;
+    });
+
+    return replacedString;
   }
 
   ngOnInit() {
