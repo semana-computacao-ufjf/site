@@ -62,4 +62,10 @@ export const OrganizersData: Organizer[] = [
     'Rodrigo Soares',
     'Colaborador do GET SI'
   ),
+  new Organizer(
+    'https://www.linkedin.com/in/joão-stephan-silva-maurício-880a5917a/',
+    'assets/img/organizers/joaostephan.webp',
+    'João Stephan Silva Maurício',
+    'Colaborador do GET EngComp'
+  )
 ];
