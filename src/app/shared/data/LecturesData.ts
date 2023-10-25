@@ -499,7 +499,7 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       1,
       new Date(2023, 9, 23, 14, 0),
-      'O software Abaqus é um programa comercial baseado no Método dos Elementos Finitos (MEF) e amplamente utilizado para a modelagem computacional de problemas das mais diversas áreas da engenharia. Neste curso introdutório serão apresentadas as funcionalidades básicas da ferramenta, tanto através da interface gráfica quanto a partir do desenvolvimento de scripts na linguagem Python, para que os participantes tenham uma ideia geral do pré-processamento, do processamento e do pós-processamento do Abaqus, e sejam capazes de utilizar a ferramenta para a simulação de seus problemas de interesse.',
+      'O software Abaqus é um programa comercial baseado no Método dos Elementos Finitos (MEF) e amplamente utilizado para a modelagem computacional de problemas das mais diversas áreas da engenharia. Neste curso introdutório serão apresentadas as funcionalidades básicas da ferramenta, tanto através da interface gráfica quanto a partir do desenvolvimento de scripts na linguagem Python, para que os participantes tenham uma ideia geral do pré-processamento, do processamento e do pós-processamento do Abaqus, e sejam capazes de utilizar a ferramenta para a simulação de seus problemas de interesse. [Material disponível aqui](https://semana-computacao-ufjf.github.io/site/assets/materials/MinicursoAbaqus.pdf)',
       150,
       'Lab 2 Engenharia Computacional',
       'Introdução a simulações da mecânica dos sólidos com Abaqus/CAE',
@@ -571,7 +571,7 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       7,
       new Date(2023, 9, 24, 8, 0),
-      'O software OpenFOAM é uma aplicação de código aberto amplamente utilizado na simulação numérica de equações diferenciais parciais, com ênfase em dinâmica dos fluidos computacional (CFD). Este curso introdutório fornece uma visão geral dos conceitos iniciais de volumes finitos, empregado pelo OpenFOAM, utilizando exemplos práticos de escoamentos laminar e turbulento para demonstrar o fluxo de trabalho no software. Os participantes terão uma visão geral das etapas essenciais do processo de simulação, abrangendo o pré-processamento, que inclui a criação da malha e definição de condições de contorno/iniciais, a simulação propriamente dita, envolvendo solvers e modelos implementados no OpenFOAM para a resolução de dois estudos de caso, e o pós-processamento, realizado com ferramentas como Paraview e Python. Os conceitos apresentados têm aplicação em diversas áreas, como aerodinâmica, transferência de calor, combustão, entre outras, permitindo que os participantes apliquem esse conhecimento em demais problemas de interesse próprio. É desejável que os participantes já tenham cursado a disciplina de Cálculo Numérico ou tenham conhecimento da área de Métodos Numéricos.',
+      'O software OpenFOAM é uma aplicação de código aberto amplamente utilizado na simulação numérica de equações diferenciais parciais, com ênfase em dinâmica dos fluidos computacional (CFD). Este curso introdutório fornece uma visão geral dos conceitos iniciais de volumes finitos, empregado pelo OpenFOAM, utilizando exemplos práticos de escoamentos laminar e turbulento para demonstrar o fluxo de trabalho no software. Os participantes terão uma visão geral das etapas essenciais do processo de simulação, abrangendo o pré-processamento, que inclui a criação da malha e definição de condições de contorno/iniciais, a simulação propriamente dita, envolvendo solvers e modelos implementados no OpenFOAM para a resolução de dois estudos de caso, e o pós-processamento, realizado com ferramentas como Paraview e Python. Os conceitos apresentados têm aplicação em diversas áreas, como aerodinâmica, transferência de calor, combustão, entre outras, permitindo que os participantes apliquem esse conhecimento em demais problemas de interesse próprio. É desejável que os participantes já tenham cursado a disciplina de Cálculo Numérico ou tenham conhecimento da área de Métodos Numéricos. [Material disponível aqui](https://semana-computacao-ufjf.github.io/site/assets/materials/MinicursoOpenfoam.pdf)',
       240,
       'Lab 2 Engenharia Computacional',
       'Introdução à simulação de dinâmica dos fluidos usando OpenFOAM',
@@ -602,7 +602,7 @@ export const LecturesData: Lecture[][] = [
       44,
       new Date(2023, 9, 24, 13, 0),
       `O processo seletivo da LEVTY atualmente acontece em três etapas principais: teste de raciocínio lógico, bate-papo com o RH e bate-papo técnico. A ideia é que essa primeira etapa seja feita na UFJF em parceria coma Semana da Computação e as demais acontecerão de forma remota pelo Google Meet.
-      O teste de lógica é composto por 20 questões de múltipla escolha de lógica geral, nada específico da área de programação. Ele será realizado no dia 24/10/2023 às 13:00 e para participar basta se inscrever pelo site da LEVTY: https://levty.com/trainee e, caso o seu currículo seja selecionado, a LEVTY entrará em contato com mais informações sobre o teste de lógica.`,
+      O teste de lógica é composto por 20 questões de múltipla escolha de lógica geral, nada específico da área de programação. Ele será realizado no dia 24/10/2023 às 13:00 e para participar basta se inscrever pelo site da LEVTY: [https://levty.com/trainee](https://levty.com/trainee) e, caso o seu currículo seja selecionado, a LEVTY entrará em contato com mais informações sobre o teste de lógica.`,
       90,
       'S309',
       'Processo Seletivo Levty',
@@ -646,7 +646,7 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       13,
       new Date(2023, 9, 24, 19, 0),
-      'Este minicurso explora os conceitos básicos de componentes, estilos, eventos, estado e uso de hooks da biblioteca React para desenvolvimento web. Um jogo no estilo idle clicker (Cookie Clicker, Universal Paperclips, Adventure Capitalist, etc.) é desenvolvido desde o início, passo a passo.',
+      'Este minicurso explora os conceitos básicos de componentes, estilos, eventos, estado e uso de hooks da biblioteca React para desenvolvimento web. Um jogo no estilo idle clicker (Cookie Clicker, Universal Paperclips, Adventure Capitalist, etc.) é desenvolvido desde o início, passo a passo. [Material disponível aqui](https://docs.google.com/presentation/d/1946AIDlJ2nlBlvPZ7fwzyzeiwdBqmKJCam7jFNcyYKQ/edit?usp=sharing)',
       180,
       'L205',
       'Começando no React com um jogo idle clicker',
@@ -689,7 +689,7 @@ export const LecturesData: Lecture[][] = [
     new Lecture(
       17,
       new Date(2023, 9, 25, 8, 0),
-      'No minicurso, serão abordados tópicos básicos de GIT/GITHUB, a fim de auxiliar os alunos no versionamento de códigos durante os projetos desenvolvidos na Universidade. No geral, ensinaremos sobre clonagem de repositório, como criar e atualizar um repositório. além do básico da utilização de branches e merge.',
+      'No minicurso, serão abordados tópicos básicos de GIT/GITHUB, a fim de auxiliar os alunos no versionamento de códigos durante os projetos desenvolvidos na Universidade. No geral, ensinaremos sobre clonagem de repositório, como criar e atualizar um repositório. além do básico da utilização de branches e merge. [Material dispponível aqui](https://drive.google.com/file/d/1iXYLPL2TR-Ff9LguQWz9NlIfz-_GZEXu/view)',
       240,
       'L107',
       'Do zero ao básico de GIT/GITHUB',
@@ -703,8 +703,8 @@ export const LecturesData: Lecture[][] = [
       Faremos na Semana da Computação a primeira etapa do processo seletivo, que será aberta para candidatos que estão cursando do 4º período para frente (quem estiver em períodos anteriores a esses podem enviar o currículo para cadastramos na nossa base de talentos para futuras oportunidades).
       Iremos considerar currículos para vagas efetivas ou part-time dependendo da proximidade de formatura de cada candidato.
       Temos como prioridade construir um ambiente saudável, colaborativo e justo entre as pessoas para que possamos construir soluções incríveis. Venha trabalhar em uma empresa que está em pleno crescimento e que investe na carreira das suas pessoas.
-      Os interessados, devem preencher o formulário seguinte: https://forms.office.com/r/tPMeEBHFy9
-      Logo após, o agendamento do horário da conversa deve ser feito pelo link: https://calendly.com/livio-guerra/xxvsecomp-conversa-bitka`,
+      Os interessados, devem preencher o formulário seguinte: [https://forms.office.com/r/tPMeEBHFy9](https://forms.office.com/r/tPMeEBHFy9)
+      Logo após, o agendamento do horário da conversa deve ser feito pelo link: [https://calendly.com/livio-guerra/xxvsecomp-conversa-bitka](https://calendly.com/livio-guerra/xxvsecomp-conversa-bitka)`,
       240,
       'Sala de Reuniões DCC',
       'Processo Seletivo BITKA',

@@ -48,7 +48,7 @@
               <h3 class="lecture-title">{{ lecture.title }}</h3>
               <p class="lecture-lecturer" *ngIf="lecture.speaker">{{ getSpeakerName(lecture.speaker) }}</p>
 
-              <p [innerHTML]="replaceURLsWithAnchorTags(lecture.description)"></p>
+              <p [innerHTML]="replaceMarkdownUrlWithAnchorTag(lecture.description)"></p>
             </th>
             <!-- </th> -->
 
