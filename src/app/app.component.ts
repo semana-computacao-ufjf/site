@@ -17,6 +17,8 @@ export class AppComponent implements OnInit {
 
   alertMessageDonations: string =
     'Para confirmar a sua participação no evento, é necessário realizar uma doação de um PIX no valor de R$ 6,00. A chave de doação é 20756049000186. Você deve enviar o comprovante para o formulário https://forms.gle/EwaQvDw8zYpsgZe97';
+  alertMessageDownpour: string = `Hoje, no final da tarde e início da noite, uma tempestade em Juiz de Fora causou danos em várias unidades da UFJF. Muitas quedas de árvore levaram o caos aos acessos de entrada e de saída do campus. Apesar do trabalho das equipes da Proinfra, ainda há retenções em vários lugares. Além disso, tivemos vidraças quebradas, salas encharcadas, portas arrancadas e outros danos. Nas instalações do Instituto de Ciências Exatas diversos foram os problemas. <br>Neste sentido, todas as palestras da XXV Semana da Computação da UFJF que estavam previstas para as salas do prédio do Reuni foram transferidas para o auditório do prédio DCC/EST. Além disso, como alguns acessos estão com retenções ainda, sugerimos àqueles que ainda não se dirigiram ao campus que acompanhem as transmissões das palestras nos links que serão postados nas redes sociais do evento. <br> Os locais das atividades de amanhã, 27/10/2023, serão confirmados no site e redes sociais do evento. <br>Gratos pela compreensão,
+  `;
 
   ngOnInit() {
     this.eventNumber =
