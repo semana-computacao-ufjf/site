@@ -828,7 +828,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 26, 19, 0),
       'Nesta palestra são exploradas técnicas de modelagem e padrões de projeto que permitem uma boa concepção de arquiteturas de sistema de informação com uso de microsserviços.',
       60,
-      'S401',
+      'Auditório DCC/EST, [Youtube](https://www.youtube.com/watch?v=-Yv5NQetIYg)',
       'Desafios no desenvolvimento de sistemas eficientes com microsserviços',
       TypeEnum.Palestra,
       SpeakersData[32]
@@ -838,7 +838,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 26, 20, 0),
       'O mercado de dados está em alta e em constante evolução, vamos explorar as necessidades que as empresas têm para alcançar a cultura data driven hoje e quais papéis e responsabilidades cada profissional de dados deve possuir para prosperar na área.',
       60,
-      'S401',
+      'Auditório DCC/EST, [Youtube](https://www.youtube.com/watch?v=vqF7LKuJR6E)',
       'Carreira em Dados - O que as empresas realmente precisam?',
       TypeEnum.Palestra,
       SpeakersData[33]
@@ -848,7 +848,7 @@ export const LecturesData: Lecture[][] = [
       new Date(2023, 9, 26, 21, 30),
       'Prepare-se para uma jornada de descoberta, aprendizado, crescimento profissional e Internacional. Não perca esta oportunidade de dar o primeiro passo rumo a uma carreira promissora na ServiceNow. Junte-se a nós neste evento e comece a trilhar o caminho para o sucesso na maior plataforma SaaS do mundo. Então, se você está a fim de bater um papo sobre SaaS, ServiceNow,  governança de software, ou simplesmente quer pegar umas dicas com um verdadeiro mestre na área, o Bruno é o cara! Compareça e veja como ele pode te ajudar a dominar o mundo da TI',
       60,
-      'S401',
+      'Auditório DCC/EST',
       'Como Iniciar sua Carreira Internacional em uma das maiores plataformas SaaS do Mundo: ServiceNow',
       TypeEnum.Palestra,
       SpeakersData[34]

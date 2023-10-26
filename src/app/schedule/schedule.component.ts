@@ -60,18 +60,24 @@ export class ScheduleComponent {
   replaceMarkdownUrlWithAnchorTag(input: string): string {
     const urlRegex = /(\[([^\]]+)])\(([^)]+)\)/g;
 
-    const replacedString = input.replace(urlRegex, '<a href="$3" target="_blank"> $2 </a>');
+    const replacedString = input.replace(
+      urlRegex,
+      '<a href="$3" target="_blank"> $2 </a>'
+    );
 
     return replacedString;
   }
 
   replaceURLsWithAnchorTags(input: string): string {
+    if (input.includes('(')) {
+      return this.replaceMarkdownUrlWithAnchorTag(input);
+    }
     // Expressão regular para encontrar URLs que começam com "https://" ou "http://"
     const urlRegex = /https?:\/\/[^\s/$.?#].[^\s]*/g;
 
     // Substitui as URLs encontradas por uma tag <a> com o link
     const replacedString = input.replace(urlRegex, (url) => {
-      return `<a href="${url}" target="_blank">${url}</a>`;
+      return `<a href="${url}" target="_blank">Youtube</a>`;
     });
 
     return replacedString;

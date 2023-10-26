@@ -53,11 +53,11 @@
             <!-- </th> -->
 
             <td align="center" valign="middle" class="lecture-location w-25">
-              <span *ngIf="lecture.location.includes('https')">
+              <!-- <span *ngIf="lecture.location.includes('https')">
                 <a [href]="lecture.location" target="_blank" rel="noopener noreferrer">YouTube</a>
-              </span>
-              <span *ngIf="!lecture.location.includes('https')">
-                {{ lecture.location }}
+              </span> -->
+              <span [innerHTML]="replaceURLsWithAnchorTags(lecture.location)">
+                <!-- *ngIf="!lecture.location.includes('https')" -->
               </span>
             </td>
           </tr>
