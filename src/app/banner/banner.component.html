@@ -12,8 +12,11 @@
         </div>
         <div class="cta-btn-container">
           <div class="c-btn shadow-text">
-            <a href="https://oauth.integra.nrc.ice.ufjf.br/login" target="_blank">
+            <a href="https://oauth.integra.nrc.ice.ufjf.br/login" target="_blank" *ngIf="!isPastEventDate()">
               Inscreva-se!
+            </a>
+            <a href="#" *ngIf="isPastEventDate()">
+              O evento foi um sucesso!
             </a>
           </div>
         </div>

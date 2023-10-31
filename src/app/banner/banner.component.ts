@@ -39,4 +39,18 @@ export class BannerComponent {
       this.eventBeginDate.getMonth()
     )}, ${this.eventBeginDate.getFullYear()}`;
   }
+
+  // Função redundante.
+  // TODO: Criar mixin e colocar esta função lá
+  isPastEventDate(): boolean {
+    // Checa se datas foram passadas
+    if (!this.eventBeginDate || !this.eventEndDate) {
+      return false;
+    }
+    const now = new Date();
+    console.log(now.getTime(), this.eventEndDate);
+
+    // Checa se evento já acabou
+    return now.getTime() > this.eventEndDate.getTime();
+  }
 }

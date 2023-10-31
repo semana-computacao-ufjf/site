@@ -45,6 +45,7 @@ export class ClockCtaComponent {
       return false;
     }
     const now = new Date();
+    console.log(now.getTime(), this.eventEndDate);
 
     // Checa se evento já acabou
     return now.getTime() > this.eventEndDate.getTime();

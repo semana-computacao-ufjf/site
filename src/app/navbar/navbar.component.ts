@@ -28,7 +28,7 @@ export class NavbarComponent {
 
   menuItems: MenuItem[] = [
     new MenuItem('Apresentação', '#descricao'),
-    new MenuItem('Inscrições', '#inscricoes'),
+    // new MenuItem('Inscrições', '#inscricoes'),
     new MenuItem('Programação', '#programacao'),
     new MenuItem('Patrocinadores', '#apoiadores'),
     new MenuItem('Contato', '#contato'),

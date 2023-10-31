@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   firstEventDate = new Date(1998, 1, 1);
   // OBS: meses no JavaScript começam em 0 = Janeiro
   eventBeginDate = new Date(2023, 9, 23, 0);
-  eventEndDate = new Date(2023, 19, 27, 0);
+  eventEndDate = new Date(2023, 9, 27, 0);
   eventNumber: number = 0;
   eventEdition: string = '';
 
